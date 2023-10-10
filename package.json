@@ -1,0 +1,23 @@
+{
+  "name": "nexgencss",
+  "version": "1.0.0",
+  "description": "This is a fast easy CSS framework for your next project . It will provide a bunch of features to fast your development process and make writing CSS fast !!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass src/index.scss -o src/final/index.css",
+    "scss-watch": "node-sass --watch assets/scss -o assets/css"
+  },
+  "keywords": [
+    "css",
+    "css",
+    "framework",
+    "uiux",
+    "framework"
+  ],
+  "author": "Rudransh Bhardwaj",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
