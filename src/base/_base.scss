@@ -1,0 +1,20 @@
+@import '../variables/variables.scss';
+@import '../fonts/fonts.scss';
+*{
+    //base
+    margin:$default-margin;
+    padding:$default-padding;
+
+    //font
+    font-family: $default-font;
+
+}
+
+h {
+    font-family: $heading-font;
+    font-weight: bold;
+}
+
+text {
+    font-family: $text-font;
+}

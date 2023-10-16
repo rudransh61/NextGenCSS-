@@ -1,7 +1,5 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+//all variables 
+@import 'variables/variables.scss';
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
+// basic setup
+@import 'base/base.scss';
