@@ -1,0 +1,14 @@
+@import '../variables/variables';
+
+//padding syntax :- pd-{some number}
+@mixin padding-utility($num) {
+    .pd-#{$num} {
+      padding: #{$num*$base-unit}px;
+    }
+  }
+  
+  @include padding-utility(0);
+  @include padding-utility(1);
+  @include padding-utility(2);
+  @include padding-utility(3);
+  @include padding-utility(4);

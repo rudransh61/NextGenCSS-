@@ -1,5 +1,37 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.cdnfonts.com/css/georgia");
+.button-rect {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  .button-rect:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca; }
+
+.button-curve {
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+  color: #fff; }
+
 * {
   margin: 10px;
   padding: 10px;
@@ -11,3 +43,18 @@ h {
 
 text {
   font-family: "Helvetica", serif; }
+
+.pd-0 {
+  padding: 0px; }
+
+.pd-1 {
+  padding: 10px; }
+
+.pd-2 {
+  padding: 20px; }
+
+.pd-3 {
+  padding: 30px; }
+
+.pd-4 {
+  padding: 40px; }

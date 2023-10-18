@@ -1,5 +1,8 @@
 @import '../variables/variables.scss';
 @import '../fonts/fonts.scss';
+
+//importing buttons
+@import './button';
 *{
     //base
     margin:$default-margin;
