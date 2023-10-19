@@ -1,0 +1,30 @@
+// import variables
+@import '../variables/variables';
+
+
+//background color
+//Syntax :- bg-{color}
+// compiled as :- background-color : {color}; 
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+// Define mixin for background color using RGB values
+@mixin background-rgb($red, $green, $blue) {
+    .bg-rgb-#{$red}-#{$green}-#{$blue} {
+        background-color: rgb($red, $green, $blue);
+    }
+}
+
+.bg-primary {
+    @include background-color(blue);
+}
+
+.bg-dark {
+    @include background-color(black);
+}
+
+
+//rgb
+
+  

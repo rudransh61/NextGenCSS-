@@ -1,9 +1,12 @@
 @import '../variables/variables';
 
+
 //padding syntax :- pd-{some number}
+// Compiled as :- padding : {some number};
+
 @mixin padding-utility($num) {
     .pd-#{$num} {
-      padding: #{$num*$base-unit}px;
+      padding: #{$num*$base-unit-padding}px;
     }
   }
   
@@ -12,3 +15,78 @@
   @include padding-utility(2);
   @include padding-utility(3);
   @include padding-utility(4);
+
+
+
+
+
+
+// Syntax :- pd-{direction}-{some number}
+// Compiled as :- padding-{direction} : {some number};
+
+
+// padding top
+@mixin padding-top-utility($num) {
+  .pd-top-#{$num} {
+    padding-top: #{$num*$base-unit-padding}px;
+  }
+}
+@include padding-top-utility(0);
+@include padding-top-utility(1);
+@include padding-top-utility(2);
+@include padding-top-utility(3);
+@include padding-top-utility(4);
+
+
+
+
+//padding bottom
+@mixin padding-bottom-utility($num) {
+  .pd-top-#{$num} {
+    padding-bottom: #{$num*$base-unit-padding}px;
+  }
+}
+@include padding-bottom-utility(0);
+@include padding-bottom-utility(1);
+@include padding-bottom-utility(2);
+@include padding-bottom-utility(3);
+@include padding-bottom-utility(4);
+
+
+
+
+//padding right
+@mixin padding-right-utility($num) {
+  .pd-top-#{$num} {
+    padding-right: #{$num*$base-unit-padding}px;
+  }
+}
+@include padding-right-utility(0);
+@include padding-right-utility(1);
+@include padding-right-utility(2);
+@include padding-right-utility(3);
+@include padding-right-utility(4);
+
+
+
+//padding left
+@mixin padding-left-utility($num) {
+  .pd-top-#{$num} {
+    padding-left: #{$num*$base-unit-padding}px;
+  }
+}
+@include padding-left-utility(0);
+@include padding-left-utility(1);
+@include padding-left-utility(2);
+@include padding-left-utility(3);
+@include padding-left-utility(4);
+
+
+
+
+
+
+
+
+
+

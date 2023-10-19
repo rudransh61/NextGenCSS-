@@ -1,0 +1,92 @@
+@import '../variables/variables';
+
+
+//Margin Syntax :- pd-{some number}
+// Compiled as :- margin : {some number};
+
+@mixin margin-utility($num) {
+    .mg-#{$num} {
+      margin: #{$num*$base-unit-margin}px;
+    }
+  }
+  
+  @include margin-utility(0);
+  @include margin-utility(1);
+  @include margin-utility(2);
+  @include margin-utility(3);
+  @include margin-utility(4);
+
+
+
+
+
+
+// Syntax :- pd-{direction}-{some number}
+// Compiled as :- margin-{direction} : {some number};
+
+
+// margin top
+@mixin margin-top-utility($num) {
+  .mg-top-#{$num} {
+    margin-top: #{$num*$base-unit-margin}px;
+  }
+}
+@include margin-top-utility(0);
+@include margin-top-utility(1);
+@include margin-top-utility(2);
+@include margin-top-utility(3);
+@include margin-top-utility(4);
+
+
+
+
+//margin bottom
+@mixin margin-bottom-utility($num) {
+  .mg-top-#{$num} {
+    margin-bottom: #{$num*$base-unit-margin}px;
+  }
+}
+@include margin-bottom-utility(0);
+@include margin-bottom-utility(1);
+@include margin-bottom-utility(2);
+@include margin-bottom-utility(3);
+@include margin-bottom-utility(4);
+
+
+
+
+//margin right
+@mixin margin-right-utility($num) {
+  .mg-top-#{$num} {
+    margin-right: #{$num*$base-unit-margin}px;
+  }
+}
+@include margin-right-utility(0);
+@include margin-right-utility(1);
+@include margin-right-utility(2);
+@include margin-right-utility(3);
+@include margin-right-utility(4);
+
+
+
+//margin left
+@mixin margin-left-utility($num) {
+  .mg-top-#{$num} {
+    margin-left: #{$num*$base-unit-margin}px;
+  }
+}
+@include margin-left-utility(0);
+@include margin-left-utility(1);
+@include margin-left-utility(2);
+@include margin-left-utility(3);
+@include margin-left-utility(4);
+
+
+
+
+
+
+
+
+
+

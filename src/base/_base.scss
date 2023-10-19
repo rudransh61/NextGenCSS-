@@ -3,6 +3,9 @@
 
 //importing buttons
 @import './button';
+
+//import colors 
+@import './color';
 *{
     //base
     margin:$default-margin;
