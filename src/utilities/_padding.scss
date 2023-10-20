@@ -42,7 +42,7 @@
 
 //padding bottom
 @mixin padding-bottom-utility($num) {
-  .pd-top-#{$num} {
+  .pd-bottom-#{$num} {
     padding-bottom: #{$num*$base-unit-padding}px;
   }
 }
@@ -57,7 +57,7 @@
 
 //padding right
 @mixin padding-right-utility($num) {
-  .pd-top-#{$num} {
+  .pd-right-#{$num} {
     padding-right: #{$num*$base-unit-padding}px;
   }
 }
@@ -71,7 +71,7 @@
 
 //padding left
 @mixin padding-left-utility($num) {
-  .pd-top-#{$num} {
+  .pd-left-#{$num} {
     padding-left: #{$num*$base-unit-padding}px;
   }
 }

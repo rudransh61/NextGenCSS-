@@ -15,7 +15,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 
-  ![logo](./logo.jpg)
+  ![logo](./logo.png)
 
 This is a fast easy CSS framework for your next project . It will provide a bunch of features to fast your development process and make writing CSS fast !!!
 

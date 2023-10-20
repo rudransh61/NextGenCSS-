@@ -1,4 +1,65 @@
+/* Box sizing rules */
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5; }
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1; }
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit; }
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em; }
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex; }
+
 .button-rect {
   cursor: pointer;
   outline: 0;
@@ -37,14 +98,121 @@
 .bg-dark {
   background-color: black; }
 
+html {
+  font-size: 16px; }
+
 * {
   margin: 10px;
   padding: 10px;
   font-family: "Arial", sans-serif; }
 
-h {
-  font-family: "Georgia", serif;
-  font-weight: bold; }
+h1.h1 {
+  font-size: 2rem; }
+
+h1.h2 {
+  font-size: 1.5rem; }
+
+h1.h3 {
+  font-size: 1.25rem; }
+
+h1.h4 {
+  font-size: 1rem; }
+
+h1.h5 {
+  font-size: 0.875rem; }
+
+h1.h6 {
+  font-size: 0.75rem; }
+
+h2.h1 {
+  font-size: 2rem; }
+
+h2.h2 {
+  font-size: 1.5rem; }
+
+h2.h3 {
+  font-size: 1.25rem; }
+
+h2.h4 {
+  font-size: 1rem; }
+
+h2.h5 {
+  font-size: 0.875rem; }
+
+h2.h6 {
+  font-size: 0.75rem; }
+
+h3.h1 {
+  font-size: 2rem; }
+
+h3.h2 {
+  font-size: 1.5rem; }
+
+h3.h3 {
+  font-size: 1.25rem; }
+
+h3.h4 {
+  font-size: 1rem; }
+
+h3.h5 {
+  font-size: 0.875rem; }
+
+h3.h6 {
+  font-size: 0.75rem; }
+
+h4.h1 {
+  font-size: 2rem; }
+
+h4.h2 {
+  font-size: 1.5rem; }
+
+h4.h3 {
+  font-size: 1.25rem; }
+
+h4.h4 {
+  font-size: 1rem; }
+
+h4.h5 {
+  font-size: 0.875rem; }
+
+h4.h6 {
+  font-size: 0.75rem; }
+
+h5.h1 {
+  font-size: 2rem; }
+
+h5.h2 {
+  font-size: 1.5rem; }
+
+h5.h3 {
+  font-size: 1.25rem; }
+
+h5.h4 {
+  font-size: 1rem; }
+
+h5.h5 {
+  font-size: 0.875rem; }
+
+h5.h6 {
+  font-size: 0.75rem; }
+
+h6.h1 {
+  font-size: 2rem; }
+
+h6.h2 {
+  font-size: 1.5rem; }
+
+h6.h3 {
+  font-size: 1.25rem; }
+
+h6.h4 {
+  font-size: 1rem; }
+
+h6.h5 {
+  font-size: 0.875rem; }
+
+h6.h6 {
+  font-size: 0.75rem; }
 
 text {
   font-family: "Helvetica", serif; }
@@ -79,49 +247,49 @@ text {
 .pd-top-4 {
   padding-top: 40px; }
 
-.pd-top-0 {
+.pd-bottom-0 {
   padding-bottom: 0px; }
 
-.pd-top-1 {
+.pd-bottom-1 {
   padding-bottom: 10px; }
 
-.pd-top-2 {
+.pd-bottom-2 {
   padding-bottom: 20px; }
 
-.pd-top-3 {
+.pd-bottom-3 {
   padding-bottom: 30px; }
 
-.pd-top-4 {
+.pd-bottom-4 {
   padding-bottom: 40px; }
 
-.pd-top-0 {
+.pd-right-0 {
   padding-right: 0px; }
 
-.pd-top-1 {
+.pd-right-1 {
   padding-right: 10px; }
 
-.pd-top-2 {
+.pd-right-2 {
   padding-right: 20px; }
 
-.pd-top-3 {
+.pd-right-3 {
   padding-right: 30px; }
 
-.pd-top-4 {
+.pd-right-4 {
   padding-right: 40px; }
 
-.pd-top-0 {
+.pd-left-0 {
   padding-left: 0px; }
 
-.pd-top-1 {
+.pd-left-1 {
   padding-left: 10px; }
 
-.pd-top-2 {
+.pd-left-2 {
   padding-left: 20px; }
 
-.pd-top-3 {
+.pd-left-3 {
   padding-left: 30px; }
 
-.pd-top-4 {
+.pd-left-4 {
   padding-left: 40px; }
 
 .mg-0 {
