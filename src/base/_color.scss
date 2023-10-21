@@ -17,11 +17,50 @@
 }
 
 .bg-primary {
-    @include background-color(blue);
+    //Classic Blue
+    @include background-color(#0074D9);
 }
 
 .bg-dark {
+    //black
     @include background-color(black);
+}
+
+.bg-alert {
+    //Crimson Red (#DC143C)
+    @include background-color(#DC143C);
+}
+.bg-leaf {
+    //Forest Green (#228B22)
+    @include background-color(#228B22);
+}
+.bg-orange {
+    //Sunset Orange (#FF4500)
+    @include background-color(#FF4500);
+}
+.bg-yellow {
+    //Golden Yellow (#FFD700)
+    @include background-color(#FFD700);
+}
+.bg-gray {
+    //Slate Gray (#708090)
+    @include background-color(#708090);
+}
+.bg-purple {
+    //Lavender Purple (#967BB6)
+    @include background-color(#967BB6);
+}
+.bg-choco {
+    //Chocolate Brown (#D2691E)
+    @include background-color(#D2691E);
+}
+.bg-pink {
+    //Hot Pink (#FF69B4)
+    @include background-color(#FF69B4);
+}
+.bg-white {
+    //White (##FFFFFF)
+    @include background-color(#FFFFFF);
 }
 
 
