@@ -1,0 +1,53 @@
+@import '../../variables/variables';
+// border-right utility classes for specific sides
+@mixin border-right($color) {
+    border-right: .1rem solid $color; 
+}
+
+
+.border-right-primary {
+    //Classic Blue
+    @include border-right(#0074D9);
+}
+
+.border-right-dark {
+    //black
+    @include border-right(black);
+}
+
+.border-right-alert {
+    //Crimson Red (#DC143C)
+    @include border-right(#DC143C);
+}
+.border-right-leaf {
+    //Forest Green (#228B22)
+    @include border-right(#228B22);
+}
+.border-right-orange {
+    //Sunset Orange (#FF4500)
+    @include border-right(#FF4500);
+}
+.border-right-yellow {
+    //Golden Yellow (#FFD700)
+    @include border-right(#FFD700,);
+}
+.border-right-gray {
+    //Slate Gray (#708090)
+    @include border-right(#708090);
+}
+.border-right-purple {
+    //Lavender Purple (#967BB6)
+    @include border-right(#967BB6);
+}
+.border-right-choco {
+    //Chocolate Brown (#D2691E)
+    @include border-right(#D2691E);
+}
+.border-right-pink {
+    //Hot Pink (#FF69B4)
+    @include border-right(#FF69B4);
+}
+.border-right-white {
+    //White (##FFFFFF)
+    @include border-right(#FFFFFF);
+}

@@ -4,11 +4,19 @@ $default-margin : 1rem;
 
 
 //fonts 
-$default-font : 'Arial',sans-serif;
-$text-font : 'Helvetica',serif;
-$heading-font : 'Arial', serif;
+$default-font : 'Arial',
+sans-serif;
+$text-font : 'Helvetica',
+serif;
+$heading-font : 'Arial',
+serif;
 
 
 //units
 $base-unit-padding : 1;
 $base-unit-margin : 1;
+
+//grid
+$max-width-grid: 75rem;
+$gutter-width: 1.25rem;
+$grid-columns: 12;

@@ -1,0 +1,53 @@
+@import '../../variables/variables';
+// border-top utility classes for specific sides
+@mixin border-top($color) {
+    border-top: .1rem solid $color; 
+}
+
+
+.border-top-primary {
+    //Classic Blue
+    @include border-top(#0074D9);
+}
+
+.border-top-dark {
+    //black
+    @include border-top(black);
+}
+
+.border-top-alert {
+    //Crimson Red (#DC143C)
+    @include border-top(#DC143C);
+}
+.border-top-leaf {
+    //Forest Green (#228B22)
+    @include border-top(#228B22);
+}
+.border-top-orange {
+    //Sunset Orange (#FF4500)
+    @include border-top(#FF4500);
+}
+.border-top-yellow {
+    //Golden Yellow (#FFD700)
+    @include border-top(#FFD700,);
+}
+.border-top-gray {
+    //Slate Gray (#708090)
+    @include border-top(#708090);
+}
+.border-top-purple {
+    //Lavender Purple (#967BB6)
+    @include border-top(#967BB6);
+}
+.border-top-choco {
+    //Chocolate Brown (#D2691E)
+    @include border-top(#D2691E);
+}
+.border-top-pink {
+    //Hot Pink (#FF69B4)
+    @include border-top(#FF69B4);
+}
+.border-top-white {
+    //White (##FFFFFF)
+    @include border-top(#FFFFFF);
+}

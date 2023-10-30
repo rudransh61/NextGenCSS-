@@ -1,0 +1,57 @@
+@import '../../variables/variables';
+@import './_border_right.scss';
+@import './_border_left.scss';
+@import './_border_top.scss';
+@import './_border_bottom.scss';
+// Border utility classes for specific sides
+@mixin border($color) {
+    border: .1rem solid $color; 
+}
+
+
+.border-primary {
+    //Classic Blue
+    @include border(#0074D9);
+}
+
+.border-dark {
+    //black
+    @include border(black);
+}
+
+.border-alert {
+    //Crimson Red (#DC143C)
+    @include border(#DC143C);
+}
+.border-leaf {
+    //Forest Green (#228B22)
+    @include border(#228B22);
+}
+.border-orange {
+    //Sunset Orange (#FF4500)
+    @include border(#FF4500);
+}
+.border-yellow {
+    //Golden Yellow (#FFD700)
+    @include border(#FFD700,);
+}
+.border-gray {
+    //Slate Gray (#708090)
+    @include border(#708090);
+}
+.border-purple {
+    //Lavender Purple (#967BB6)
+    @include border(#967BB6);
+}
+.border-choco {
+    //Chocolate Brown (#D2691E)
+    @include border(#D2691E);
+}
+.border-pink {
+    //Hot Pink (#FF69B4)
+    @include border(#FF69B4);
+}
+.border-white {
+    //White (##FFFFFF)
+    @include border(#FFFFFF);
+}

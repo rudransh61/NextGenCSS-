@@ -1,0 +1,53 @@
+@import '../../variables/variables';
+// border-left utility classes for specific sides
+@mixin border-left($color) {
+    border-left: .1rem solid $color; 
+}
+
+
+.border-left-primary {
+    //Classic Blue
+    @include border-left(#0074D9);
+}
+
+.border-left-dark {
+    //black
+    @include border-left(black);
+}
+
+.border-left-alert {
+    //Crimson Red (#DC143C)
+    @include border-left(#DC143C);
+}
+.border-left-leaf {
+    //Forest Green (#228B22)
+    @include border-left(#228B22);
+}
+.border-left-orange {
+    //Sunset Orange (#FF4500)
+    @include border-left(#FF4500);
+}
+.border-left-yellow {
+    //Golden Yellow (#FFD700)
+    @include border-left(#FFD700,);
+}
+.border-left-gray {
+    //Slate Gray (#708090)
+    @include border-left(#708090);
+}
+.border-left-purple {
+    //Lavender Purple (#967BB6)
+    @include border-left(#967BB6);
+}
+.border-left-choco {
+    //Chocolate Brown (#D2691E)
+    @include border-left(#D2691E);
+}
+.border-left-pink {
+    //Hot Pink (#FF69B4)
+    @include border-left(#FF69B4);
+}
+.border-left-white {
+    //White (##FFFFFF)
+    @include border-left(#FFFFFF);
+}

@@ -1,0 +1,53 @@
+@import '../../variables/variables';
+// border-bottom utility classes for specific sides
+@mixin border-bottom($color) {
+    border-bottom: .1rem solid $color; 
+}
+
+
+.border-bottom-primary {
+    //Classic Blue
+    @include border-bottom(#0074D9);
+}
+
+.border-bottom-dark {
+    //black
+    @include border-bottom(black);
+}
+
+.border-bottom-alert {
+    //Crimson Red (#DC143C)
+    @include border-bottom(#DC143C);
+}
+.border-bottom-leaf {
+    //Forest Green (#228B22)
+    @include border-bottom(#228B22);
+}
+.border-bottom-orange {
+    //Sunset Orange (#FF4500)
+    @include border-bottom(#FF4500);
+}
+.border-bottom-yellow {
+    //Golden Yellow (#FFD700)
+    @include border-bottom(#FFD700,);
+}
+.border-bottom-gray {
+    //Slate Gray (#708090)
+    @include border-bottom(#708090);
+}
+.border-bottom-purple {
+    //Lavender Purple (#967BB6)
+    @include border-bottom(#967BB6);
+}
+.border-bottom-choco {
+    //Chocolate Brown (#D2691E)
+    @include border-bottom(#D2691E);
+}
+.border-bottom-pink {
+    //Hot Pink (#FF69B4)
+    @include border-bottom(#FF69B4);
+}
+.border-bottom-white {
+    //White (##FFFFFF)
+    @include border-bottom(#FFFFFF);
+}

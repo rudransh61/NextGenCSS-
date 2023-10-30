@@ -1,0 +1,34 @@
+@import '../variables/variables';
+
+// Mixin for generating grid columns
+@mixin make-columns($columns) {
+  width: percentage($columns / $grid-columns);
+  margin-right: $gutter-width;
+  float: left;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// Mixin for clearing floats
+@mixin clearfix() {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+// Define the grid container
+.grid-container {
+  margin: 0 auto;
+  padding: 0 $gutter-width / 2;
+  &:after {
+    @include clearfix;
+  }
+}
+
+// Create utility classes for grid columns
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    @include make-columns($i);
+  }
+}
