@@ -1,6 +1,9 @@
 //all variables 
 @import 'variables/variables.scss';
 
+//fonts
+@import 'fonts/fonts.scss';
+
 // basic setup
 @import 'base/base.scss';
 
@@ -11,4 +14,5 @@
 @import 'elements/elements';
 
 //grid
-@import './grid/grid'
+@import './grid/grid';
+

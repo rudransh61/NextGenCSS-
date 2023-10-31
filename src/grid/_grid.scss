@@ -1,34 +1,24 @@
 @import '../variables/variables';
+@use 'sass:math';
 
-// Mixin for generating grid columns
-@mixin make-columns($columns) {
-  width: percentage($columns / $grid-columns);
-  margin-right: $gutter-width;
-  float: left;
-  &:last-child {
-    margin-right: 0;
-  }
+.object{
+  width:100%;
+  max-width:75rem;
+  margin:0 auto;
+  padding:0 1.25rem;
+  box-sizing: border-box;
 }
 
-// Mixin for clearing floats
-@mixin clearfix() {
-  content: '';
-  display: table;
-  clear: both;
+.row{
+  display:flex;
+  flex-flow: row wrap;
 }
 
-// Define the grid container
-.grid-container {
-  margin: 0 auto;
-  padding: 0 $gutter-width / 2;
-  &:after {
-    @include clearfix;
-  }
-}
-
-// Create utility classes for grid columns
+$num-grid : 0;
 @for $i from 1 through $grid-columns {
   .col-#{$i} {
-    @include make-columns($i);
+    box-sizing: border-box;
+    flex-grow:0;
+    width : 100%/$grid-columns rem;
   }
 }
