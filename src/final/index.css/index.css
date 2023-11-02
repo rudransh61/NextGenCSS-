@@ -66,9 +66,9 @@ textarea:not([rows]) {
 button {
   cursor: pointer;
   outline: 0;
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #FFFFFF;
+  background-color: #0074D9;
+  border-color: #0074D9;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -77,11 +77,11 @@ button {
   padding: 6px 12px;
   font-size: 16px;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
   button:hover {
-    color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca; }
+    color: #FFFFFF;
+    background-color: #000000;
+    border-color: #000000; }
 
 .button-curve {
   outline: none;
@@ -92,8 +92,12 @@ button {
   border-radius: 8px;
   border: none;
   transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-  background: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
-  color: #fff; }
+  background: #0074D9;
+  color: #FFFFFF; }
+  .button-curve:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-color: #000000; }
 
 .bg-primary {
   background-color: #0074D9; }
@@ -132,7 +136,7 @@ button {
   border-right: 0.1rem solid #0074D9; }
 
 .border-right-dark {
-  border-right: 0.1rem solid black; }
+  border-right: 0.1rem solid #000000; }
 
 .border-right-alert {
   border-right: 0.1rem solid #DC143C; }
@@ -165,7 +169,7 @@ button {
   border-left: 0.1rem solid #0074D9; }
 
 .border-left-dark {
-  border-left: 0.1rem solid black; }
+  border-left: 0.1rem solid #000000; }
 
 .border-left-alert {
   border-left: 0.1rem solid #DC143C; }
@@ -198,7 +202,7 @@ button {
   border-top: 0.1rem solid #0074D9; }
 
 .border-top-dark {
-  border-top: 0.1rem solid black; }
+  border-top: 0.1rem solid #000000; }
 
 .border-top-alert {
   border-top: 0.1rem solid #DC143C; }
@@ -231,7 +235,7 @@ button {
   border-bottom: 0.1rem solid #0074D9; }
 
 .border-bottom-dark {
-  border-bottom: 0.1rem solid black; }
+  border-bottom: 0.1rem solid #000000; }
 
 .border-bottom-alert {
   border-bottom: 0.1rem solid #DC143C; }
@@ -264,7 +268,7 @@ button {
   border: 0.1rem solid #0074D9; }
 
 .border-dark {
-  border: 0.1rem solid black; }
+  border: 0.1rem solid #000000; }
 
 .border-alert {
   border: 0.1rem solid #DC143C; }

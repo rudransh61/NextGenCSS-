@@ -11,47 +11,47 @@
 
 .border-primary {
     //Classic Blue
-    @include border(#0074D9);
+    @include border($primary);
 }
 
 .border-dark {
     //black
-    @include border(black);
+    @include border($dark);
 }
 
 .border-alert {
     //Crimson Red (#DC143C)
-    @include border(#DC143C);
+    @include border($alert);
 }
 .border-leaf {
     //Forest Green (#228B22)
-    @include border(#228B22);
+    @include border($leaf);
 }
 .border-orange {
     //Sunset Orange (#FF4500)
-    @include border(#FF4500);
+    @include border($orange);
 }
 .border-yellow {
     //Golden Yellow (#FFD700)
-    @include border(#FFD700,);
+    @include border($yellow);
 }
 .border-gray {
     //Slate Gray (#708090)
-    @include border(#708090);
+    @include border($gray);
 }
 .border-purple {
     //Lavender Purple (#967BB6)
-    @include border(#967BB6);
+    @include border($purple);
 }
 .border-choco {
     //Chocolate Brown (#D2691E)
-    @include border(#D2691E);
+    @include border($choco);
 }
 .border-pink {
     //Hot Pink (#FF69B4)
-    @include border(#FF69B4);
+    @include border($pink);
 }
 .border-white {
     //White (##FFFFFF)
-    @include border(#FFFFFF);
+    @include border($white);
 }
