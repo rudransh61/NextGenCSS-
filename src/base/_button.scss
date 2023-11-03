@@ -1,12 +1,12 @@
-@import '../variables/variables';
+// @import '../variables/variables';
 
 //rectangular button
 button {
   cursor: pointer;
   outline: 0;
-  color: $white;
-  background-color: $primary;
-  border-color: $primary;
+  color: $colors("white");
+  background-color: $colors("primary");
+  border-color: $colors("primary");
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -18,9 +18,9 @@ button {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   &:hover {
-    color: $white;
-    background-color: $dark;
-    border-color: $dark;
+    color: $colors("white");
+    background-color: $colors("dark");
+    border-color: $colors ("dark");
   }
 }
 
@@ -36,12 +36,12 @@ button {
   // padding: 14px 24px;
   border: none;
   transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-  background: $primary;
-  color: $white;
+  background: $colors("primary");
+  color: $colors("white");
 
   &:hover {
-    color: $white;
-    background-color: $dark;
-    border-color: $dark;
+    color: $colors("white");
+    background-color: $colors ("dark");
+    border-color: $colors("dark");
   }
 }
