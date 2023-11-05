@@ -1,18 +1,14 @@
-@use "sass:map";
-
-$colors : ( 
-    "primary" :"#0074D9",
-    "dark" : "#000000",
-    "alert": "#DC143C",
-    "leaf" : "#228B22",
-    "orange" : "#FF4500" ,
-    "yellow" : "#FFD700",
-    "gray" : "#708090",
-    "purple":"#967BB6",
-    "choco" :"#D2691E",
-    "pink" : "#FF69B4",
-    "white" : "#FFFFFF"
-);
+$primary :#0074D9;
+$dark : #000000;
+$alert: #DC143C;
+$leaf : #228B22;
+$orange : #FF4500 ;
+$yellow : #FFD700;
+$gray : #708090;
+$purple:#967BB6;
+$choco :#D2691E;
+$pink : #FF69B4;
+$white : #FFFFFF;
 
 // @debug map-get($colors,"primary");
 // @debug map-get($colors,"dark");

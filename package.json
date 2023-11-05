@@ -18,6 +18,14 @@
   "author": "Rudransh Bhardwaj",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "es": "^0.8.0",
+    "sass-map": "^0.3.4"
   }
 }

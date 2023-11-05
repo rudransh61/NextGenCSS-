@@ -99,37 +99,37 @@ button {
     background-color: #000000;
     border-color: #000000; }
 
-.bg-primary {
+.background-primary {
   background-color: #0074D9; }
 
-.bg-dark {
-  background-color: black; }
+.background-dark {
+  background-color: #000000; }
 
-.bg-alert {
+.background-alert {
   background-color: #DC143C; }
 
-.bg-leaf {
+.background-leaf {
   background-color: #228B22; }
 
-.bg-orange {
+.background-orange {
   background-color: #FF4500; }
 
-.bg-yellow {
+.background-yellow {
   background-color: #FFD700; }
 
-.bg-gray {
+.background-gray {
   background-color: #708090; }
 
-.bg-purple {
+.background-purple {
   background-color: #967BB6; }
 
-.bg-choco {
+.background-choco {
   background-color: #D2691E; }
 
-.bg-pink {
+.background-pink {
   background-color: #FF69B4; }
 
-.bg-white {
+.background-white {
   background-color: #FFFFFF; }
 
 .border-right-primary {
@@ -165,38 +165,38 @@ button {
 .border-right-white {
   border-right: 0.1rem solid #FFFFFF; }
 
-.border-left-primary {
-  border-left: 0.1rem solid #0074D9; }
+.border-bottom-primary {
+  border-bottom: 0.1rem solid #0074D9; }
 
-.border-left-dark {
-  border-left: 0.1rem solid #000000; }
+.border-bottom-dark {
+  border-bottom: 0.1rem solid #000000; }
 
-.border-left-alert {
-  border-left: 0.1rem solid #DC143C; }
+.border-bottom-alert {
+  border-bottom: 0.1rem solid #DC143C; }
 
-.border-left-leaf {
-  border-left: 0.1rem solid #228B22; }
+.border-bottom-leaf {
+  border-bottom: 0.1rem solid #228B22; }
 
-.border-left-orange {
-  border-left: 0.1rem solid #FF4500; }
+.border-bottom-orange {
+  border-bottom: 0.1rem solid #FF4500; }
 
-.border-left-yellow {
-  border-left: 0.1rem solid #FFD700; }
+.border-bottom-yellow {
+  border-bottom: 0.1rem solid #FFD700; }
 
-.border-left-gray {
-  border-left: 0.1rem solid #708090; }
+.border-bottom-gray {
+  border-bottom: 0.1rem solid #708090; }
 
-.border-left-purple {
-  border-left: 0.1rem solid #967BB6; }
+.border-bottom-purple {
+  border-bottom: 0.1rem solid #967BB6; }
 
-.border-left-choco {
-  border-left: 0.1rem solid #D2691E; }
+.border-bottom-choco {
+  border-bottom: 0.1rem solid #D2691E; }
 
-.border-left-pink {
-  border-left: 0.1rem solid #FF69B4; }
+.border-bottom-pink {
+  border-bottom: 0.1rem solid #FF69B4; }
 
-.border-left-white {
-  border-left: 0.1rem solid #FFFFFF; }
+.border-bottom-white {
+  border-bottom: 0.1rem solid #FFFFFF; }
 
 .border-top-primary {
   border-top: 0.1rem solid #0074D9; }
@@ -325,6 +325,10 @@ h6 {
 
 text {
   font-family: "Poppins", sans-serif; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
 
 .pd-0 {
   padding: 0rem; }

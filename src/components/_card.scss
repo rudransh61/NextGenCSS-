@@ -1,4 +1,25 @@
-@import '../variables/variables';
+// @import '../variables/variables';
 
 //card
 
+.card{
+    display : block;
+    padding: $card-padding;
+    // border : $card-border-thickness solid #ddd;
+    // box-shadow : $card-border-shadow;
+
+
+    .card-title{
+        font-size: $card-font-size;
+        padding-bottom : $card-padding;
+        font-weight: bold;
+    }
+    
+    .card-body{
+        font-size : $card-font-size;
+
+        a{
+            text-decoration : underline ;
+        }
+    }
+}

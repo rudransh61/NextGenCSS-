@@ -1,0 +1,7 @@
+{
+	"preset": "airbnb",
+	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+	"validateIndentation": "\t",
+	"esnext": true,
+	"excludeFiles": ["node_modules/**" ,".git*"]
+}
