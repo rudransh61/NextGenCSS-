@@ -6,14 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/index.scss -o src/final/index.css",
-    "scss-watch": "node-sass --watch assets/scss -o assets/css"
+    "scss-watch": "node-sass --watch src/index.scss -o src/final/index.css/index.css"
   },
   "keywords": [
     "css",
-    "css",
+    "scss",
     "framework",
     "uiux",
-    "framework"
+    "library"
   ],
   "author": "Rudransh Bhardwaj",
   "license": "ISC",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "es": "^0.8.0",
-    "sass-map": "^0.3.4"
+    "sass-map": "^0.3.4",
+    "scss": "^0.2.4"
   }
 }

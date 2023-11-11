@@ -1,14 +1,41 @@
-$primary :#0074D9;
-$dark : #000000;
+
+$primary: #0074D9;
+$dark: #000000;
 $alert: #DC143C;
-$leaf : #228B22;
-$orange : #FF4500 ;
-$yellow : #FFD700;
-$gray : #708090;
-$purple:#967BB6;
-$choco :#D2691E;
-$pink : #FF69B4;
-$white : #FFFFFF;
+$leaf: #228B22;
+$orange: #FF4500;
+$yellow: #FFD700;
+$gray: #708090;
+$purple: #967BB6;
+$choco: #D2691E;
+$pink: #FF69B4;
+$white: #FFFFFF;
+
+$colors:$primary,$dark,$alert,$leaf,$orange,$yellow,$gray,$purple, $choco, $pink, $white;
+
+
+$color-names : 'primary','dark','alert','leaf','orange','yellow','gray','purple','choco','pink','white';
+
+
+@function Get-Color($color){
+    @return nth($colors,Index($color-names,$color));
+}
+
+
+
+@function Index($list, $element) {
+    @for $i from 1 through length($list) {
+      @if nth($list, $i) == $element {
+        @return $i;
+      }
+    }
+    @return null; // Return null if the element is not found in the list
+  }
+
+
+
+
+
 
 // @debug map-get($colors,"primary");
 // @debug map-get($colors,"dark");

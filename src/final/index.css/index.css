@@ -1,8 +1,19 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
-/* Box sizing rules */
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
+@use "sass:math";
+@use "sass:map";
+.font-serif {
+  font-family: serif; }
+
+.font-sans {
+  font-family: sans-serif; }
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif; }
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -63,6 +74,15 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex; }
 
+.font-serif {
+  font-family: serif; }
+
+.font-sans {
+  font-family: sans-serif; }
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif; }
+
 button {
   cursor: pointer;
   outline: 0;
@@ -98,39 +118,6 @@ button {
     color: #FFFFFF;
     background-color: #000000;
     border-color: #000000; }
-
-.background-primary {
-  background-color: #0074D9; }
-
-.background-dark {
-  background-color: #000000; }
-
-.background-alert {
-  background-color: #DC143C; }
-
-.background-leaf {
-  background-color: #228B22; }
-
-.background-orange {
-  background-color: #FF4500; }
-
-.background-yellow {
-  background-color: #FFD700; }
-
-.background-gray {
-  background-color: #708090; }
-
-.background-purple {
-  background-color: #967BB6; }
-
-.background-choco {
-  background-color: #D2691E; }
-
-.background-pink {
-  background-color: #FF69B4; }
-
-.background-white {
-  background-color: #FFFFFF; }
 
 .border-right-primary {
   border-right: 0.1rem solid #0074D9; }
@@ -517,7 +504,6 @@ input[type="checkbox"] {
 input[type="checkbox"]:hover {
   color: rgba(145, 145, 145, 0.63); }
 
-@use 'sass:math';
 .object {
   width: 100%;
   max-width: 75rem;

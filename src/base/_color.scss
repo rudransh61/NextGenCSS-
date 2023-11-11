@@ -6,54 +6,11 @@
 // Syntax :- bg-{color}
 // compiled as :- background-color : {color};
 @mixin background($color) {
-    background-color: $color; 
+    background-color: map-get($colors, $color); 
 }
 
-
-.background-primary {
-    //Classic Blue
-    @include background($primary);
-}
-
-.background-dark {
-    //black
-    @include background($dark);
-}
-
-.background-alert {
-    //Crimson Red (#DC143C)
-    @include background($alert);
-}
-.background-leaf {
-    //Forest Green (#228B22)
-    @include background($leaf);
-}
-.background-orange {
-    //Sunset Orange (#FF4500)
-    @include background($orange);
-}
-.background-yellow {
-    //Golden Yellow (#FFD700)
-    @include background($yellow);
-}
-.background-gray {
-    //Slate Gray (#708090)
-    @include background($gray);
-}
-.background-purple {
-    //Lavender Purple (#967BB6)
-    @include background($purple);
-}
-.background-choco {
-    //Chocolate Brown (#D2691E)
-    @include background($choco);
-}
-.background-pink {
-    //Hot Pink (#FF69B4)
-    @include background($pink);
-}
-.background-white {
-    //White (##FFFFFF)
-    @include background($white);
-}
-
+@each $key, $value in $colors {
+    .bg-#{$key} {
+      background-color: $value;
+    }
+  }    
