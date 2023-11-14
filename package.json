@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/index.scss -o src/final/index.css",
-    "scss-watch": "node-sass --watch src/index.scss -o src/final/index.css/index.css"
+    "scss-watch": "node-sass --watch src/index.scss -o src/final/index.css/index.css",
+    "next-gen-css" : "node gulpfile.js > ./src/index.css"
   },
   "keywords": [
     "css",
