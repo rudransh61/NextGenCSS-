@@ -4,51 +4,9 @@
     border-top: .1rem solid $color; 
 }
 
-
-.border-top-primary {
-    //Classic Blue
-    @include border-top($primary);
-}
-
-.border-top-dark {
-    //black
-    @include border-top($dark);
-}
-
-.border-top-alert {
-    //Crimson Red (#DC143C)
-    @include border-top($alert);
-}
-.border-top-leaf {
-    //Forest Green (#228B22)
-    @include border-top($leaf);
-}
-.border-top-orange {
-    //Sunset Orange (#FF4500)
-    @include border-top($orange);
-}
-.border-top-yellow {
-    //Golden Yellow (#FFD700)
-    @include border-top($yellow);
-}
-.border-top-gray {
-    //Slate Gray (#708090)
-    @include border-top($gray);
-}
-.border-top-purple {
-    //Lavender Purple (#967BB6)
-    @include border-top($purple);
-}
-.border-top-choco {
-    //Chocolate Brown (#D2691E)
-    @include border-top($choco);
-}
-.border-top-pink {
-    //Hot Pink (#FF69B4)
-    @include border-top($pink);
-}
-.border-top-white {
-    //White (##FFFFFF)
-    @include border-top($white);
-}
-
+@for $i from 1 through length($colors) {
+    .bt-#{nth($color-names,$i)}{
+      @include border-top(nth($colors,$i));
+  
+    }
+  }

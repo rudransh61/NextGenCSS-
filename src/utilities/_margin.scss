@@ -1,7 +1,7 @@
 @import '../variables/variables';
 
 
-//Margin Syntax :- pd-{some number}
+//Margin Syntax :- mg-{some number}
 // Compiled as :- margin : {some number};
 
 @mixin margin-utility($num) {

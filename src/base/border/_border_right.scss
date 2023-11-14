@@ -4,51 +4,10 @@
   border-right: .1rem solid $color; 
 }
 
+@for $i from 1 through length($colors) {
+  .br-#{nth($color-names,$i)}{
+    @include border-right(nth($colors,$i));
 
-.border-right-primary {
-  //Classic Blue
-  @include border-right($primary);
-}
-
-.border-right-dark {
-  //black
-  @include border-right($dark);
-}
-
-.border-right-alert {
-  //Crimson Red (#DC143C)
-  @include border-right($alert);
-}
-.border-right-leaf {
-  //Forest Green (#228B22)
-  @include border-right($leaf);
-}
-.border-right-orange {
-  //Sunset Orange (#FF4500)
-  @include border-right($orange);
-}
-.border-right-yellow {
-  //Golden Yellow (#FFD700)
-  @include border-right($yellow);
-}
-.border-right-gray {
-  //Slate Gray (#708090)
-  @include border-right($gray);
-}
-.border-right-purple {
-  //Lavender Purple (#967BB6)
-  @include border-right($purple);
-}
-.border-right-choco {
-  //Chocolate Brown (#D2691E)
-  @include border-right($choco);
-}
-.border-right-pink {
-  //Hot Pink (#FF69B4)
-  @include border-right($pink);
-}
-.border-right-white {
-  //White (##FFFFFF)
-  @include border-right($white);
+  }
 }
 

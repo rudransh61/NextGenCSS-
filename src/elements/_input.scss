@@ -14,13 +14,13 @@ input {
 input[type="checkbox"] {
     width: 0.9rem;
     height: 0.9rem;
-    background-color: #007bff;
-    border: 0.5rem solid rgba(0, 0, 0, 0.2);
+    background-color: Get-Color('primary');
+    border: 0.5rem solid Get-Color('dark');
     /* Thick and light border */
-    border-radius: 1.1rem;
+    border-radius: 1rem;
     /* Curvy border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.625 Get-Color('dark');
 }
 input[type="checkbox"]:hover {
-    color: rgba(145, 145, 145, 0.63);
+    color: Get-Color('gray');
 }

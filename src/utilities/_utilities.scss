@@ -6,3 +6,7 @@
 
 //import size utility class
 @import './size';
+
+//importing files to handle display property of object
+@import './display';
+@import './_flex-box.scss';

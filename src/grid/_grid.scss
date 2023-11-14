@@ -1,8 +1,6 @@
 @import '../variables/variables';
 
 .object{
-  width:100%;
-  max-width:75rem;
   margin:0 auto;
   padding:0 1.25rem;
   box-sizing: border-box;
@@ -18,6 +16,6 @@ $num-grid : 0;
   .col-#{$i} {
     box-sizing: border-box;
     flex-grow:0;
-    width : 100%/$grid-columns rem;
+    width : 100% rem;
   }
 }

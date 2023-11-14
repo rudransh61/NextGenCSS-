@@ -6,11 +6,12 @@
 // Syntax :- bg-{color}
 // compiled as :- background-color : {color};
 @mixin background($color) {
-    background-color: map-get($colors, $color); 
+    background-color: $color; 
 }
 
-@each $key, $value in $colors {
-    .bg-#{$key} {
-      background-color: $value;
-    }
-  }    
+@for $i from 1 through length($colors) {
+  .bg-#{nth($color-names,$i)}{
+    @include background(nth($colors,$i));
+
+  }
+}

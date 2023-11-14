@@ -1,54 +1,13 @@
 // @import '../../variables/variables';
 // border-bottom utility classes for specific sides
-@mixin border-bottom($color) {
-    border-bottom: .1rem solid $color; 
+@mixin border-left($color) {
+    border-left: .1rem solid $color; 
 }
 
 
-.border-bottom-primary {
-    //Classic Blue
-    @include border-bottom($primary);
-}
-
-.border-bottom-dark {
-    //black
-    @include border-bottom($dark);
-}
-
-.border-bottom-alert {
-    //Crimson Red (#DC143C)
-    @include border-bottom($alert);
-}
-.border-bottom-leaf {
-    //Forest Green (#228B22)
-    @include border-bottom($leaf);
-}
-.border-bottom-orange {
-    //Sunset Orange (#FF4500)
-    @include border-bottom($orange);
-}
-.border-bottom-yellow {
-    //Golden Yellow (#FFD700)
-    @include border-bottom($yellow);
-}
-.border-bottom-gray {
-    //Slate Gray (#708090)
-    @include border-bottom($gray);
-}
-.border-bottom-purple {
-    //Lavender Purple (#967BB6)
-    @include border-bottom($purple);
-}
-.border-bottom-choco {
-    //Chocolate Brown (#D2691E)
-    @include border-bottom($choco);
-}
-.border-bottom-pink {
-    //Hot Pink (#FF69B4)
-    @include border-bottom($pink);
-}
-.border-bottom-white {
-    //White (##FFFFFF)
-    @include border-bottom($white);
-}
-
+@for $i from 1 through length($colors) {
+    .bl-#{nth($color-names,$i)}{
+      @include border-left(nth($colors,$i));
+  
+    }
+  }
