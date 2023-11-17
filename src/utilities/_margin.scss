@@ -86,6 +86,33 @@
 
 
 
+//margin horizontal
+@mixin margin-horizontal-utility($num) {
+  .mg-x-#{$num} {
+    margin-right: #{$num*$base-unit-padding}rem;
+    margin-left: #{$num*$base-unit-padding}rem;
+  }
+}
+@include margin-horizontal-utility(0);
+@include margin-horizontal-utility(1);
+@include margin-horizontal-utility(2);
+@include margin-horizontal-utility(3);
+@include margin-horizontal-utility(4);
+
+//margin vertical
+@mixin margin-vertical-utility($num) {
+  .mg-y-#{$num} {
+    margin-top: #{$num*$base-unit-padding}rem;
+    margin-bottom: #{$num*$base-unit-padding}rem;
+  }
+}
+@include margin-vertical-utility(0);
+@include margin-vertical-utility(1);
+@include margin-vertical-utility(2);
+@include margin-vertical-utility(3);
+@include margin-vertical-utility(4);
+
+
 
 
 

@@ -84,8 +84,31 @@
 
 
 
+//padding horizontal
+@mixin padding-horizontal-utility($num) {
+  .pd-x-#{$num} {
+    padding-right: #{$num*$base-unit-padding}rem;
+    padding-left: #{$num*$base-unit-padding}rem;
+  }
+}
+@include padding-horizontal-utility(0);
+@include padding-horizontal-utility(1);
+@include padding-horizontal-utility(2);
+@include padding-horizontal-utility(3);
+@include padding-horizontal-utility(4);
 
-
+//padding vertical
+@mixin padding-vertical-utility($num) {
+  .pd-y-#{$num} {
+    padding-top: #{$num*$base-unit-padding}rem;
+    padding-bottom: #{$num*$base-unit-padding}rem;
+  }
+}
+@include padding-vertical-utility(0);
+@include padding-vertical-utility(1);
+@include padding-vertical-utility(2);
+@include padding-vertical-utility(3);
+@include padding-vertical-utility(4);
 
 
 

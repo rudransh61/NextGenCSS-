@@ -1,0 +1,13 @@
+@mixin box($mx) {
+    margin-right : $mx;
+    margin-left : $mx;
+  }
+  
+.box{
+    @include box(2rem);
+}
+
+.box-flex{
+    @include box(2rem);
+    @extend .flex;
+}
