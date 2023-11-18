@@ -1,9 +1,17 @@
 # Table of contents
 
-* [CoderDocs-BS5-v3.0](README.md)
-  * [assets](CoderDocs-BS5-v3.0/assets/README.md)
-    * [plugins](CoderDocs-BS5-v3.0/assets/plugins/README.md)
-      * [gumshoe](CoderDocs-BS5-v3.0/assets/plugins/gumshoe/README.md)
-        * [.github](CoderDocs-BS5-v3.0/assets/plugins/gumshoe/.github/README.md)
-          * [Bugs, Questions, and Feature Requests](CoderDocs-BS5-v3.0/assets/plugins/gumshoe/.github/contributing.md)
-          * [issue\_template](CoderDocs-BS5-v3.0/assets/plugins/gumshoe/.github/issue\_template.md)
+* [NextGenCSS🔥](README.md)
+  * [Why NextGenCSS ?](nextgen/why/README.md)
+    * [How to Contribute ?](nextgen/why/contribute.md)
+
+## Installation
+
+* [Set Up](installation/set-up.md)
+* [React](installation/react.md)
+* [Vue](installation/vue.md)
+* [Angular](installation/angular.md)
+* [Svelte](installation/svelte.md)
+
+## Quick Start
+
+* [Get Started](quick-start/get-started.md)
