@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass src/index.scss -o src/final/index.css",
     "scss-watch": "node-sass --watch src/index.scss -o src/final/index.css/index.css",
-    "next-gen-css" : "node gulpfile.js > ./src/index.css"
+    "next-gen-css": "node gulpfile.js > ./src/index.css"
   },
   "keywords": [
     "css",
@@ -31,6 +31,7 @@
     "es": "^0.8.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
+    "lodash": "^4.17.12",
     "sass-map": "^0.3.4",
     "scss": "^0.2.4",
     "uglifycss": "^0.0.29"
