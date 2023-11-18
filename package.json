@@ -31,7 +31,7 @@
     "es": "^0.8.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
-    "lodash": "^4.17.12",
+    "lodash": "^4.17.21",
     "sass-map": "^0.3.4",
     "scss": "^0.2.4",
     "uglifycss": "^0.0.29"
