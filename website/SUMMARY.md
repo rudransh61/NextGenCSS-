@@ -1,7 +1,7 @@
 # Table of contents
 
 * [NextGenCSS🔥](README.md)
-  * [Why NextGenCSS ?](nextgen/why/README.md)
+  * [Why NextGenCSS🔥 ?](nextgen/why/README.md)
     * [How to Contribute ?](nextgen/why/contribute.md)
 
 ## Installation
