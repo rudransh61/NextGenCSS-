@@ -72,31 +72,24 @@ See `CONTRIBUTING.md` for ways to get started.
 
   
 
-Install my-project with npm
+Install my-project with git
+```bash
+
+git clone https://github.com/rudransh61/NextGenCSS-.git
+
+``` 
 
   
 
 ```bash
 
-npm  install  my-project
-
-cd  my-project
+cd  src
 
 ```
 
-##  Run Locally
-
+##  Run Example File Locally
   
-
-Clone the project
-
-  
-
-```bash
-
-git  clone  https://link-to-project
-
-```
+Open the ```index.html``` file in ``` ./example``` directory
 
   
 
@@ -106,42 +99,19 @@ Install dependencies
 
 ```bash
 
-npm install --save-dev node-sass
 
 ```
 
-  
+# Main CSS file to Include
 
-Run the example project
-
-  
-
-```bash
-
-npm  install
-
-```
-
-  
-
-Start the server
-
-  
-
-```bash
-
-npm  run  start
-
-```
-
-  
+``` .\src\index.css  ``` file .
   
 
 ##  Support
 
   
 
-For support, email aarti19830@gmail.com or join our Slack channel.
+For support, contribute with us .
 
   
   
@@ -152,7 +122,18 @@ For support, email aarti19830@gmail.com or join our Slack channel.
 
 ```html
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/rudransh61/NextGenCSS-/master/src/index.css">
+</head>
+<body>
+    <h1>Namaste 🙏</h1>
+</body>
+</html>
 
 ```
 
@@ -161,7 +142,7 @@ For support, email aarti19830@gmail.com or join our Slack channel.
 <!-- Copy-paste in your Readme.md file -->
 
 <a href = "https://github.com/rudransh61/NextGenCSS-/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = rudransh61/NextGenCSS-"/>
+  <img src = "https://contrib.rocks/image?repo=rudransh61/NextGenCSS-"/>
 </a>
 
 
