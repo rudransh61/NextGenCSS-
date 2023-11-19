@@ -22,3 +22,12 @@ layout:
 
 # NextGenCSS🔥
 
+Hi ,
+
+I am Rudransh&#x20;
+
+A young developer and physics and maths enthusiast from India !
+
+I am creating a new Front-End Framework called NextGenCSS&#x20;
+
+If you want to know more about it click [here ](nextgen/why/)to see why ?
