@@ -128,7 +128,7 @@ For support, contribute with us .
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/rudransh61/NextGenCSS-/master/src/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
 </head>
 <body>
     <h1>Namaste 🙏</h1>
