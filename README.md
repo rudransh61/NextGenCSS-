@@ -41,7 +41,7 @@ This is a fast easy CSS framework for your next project . It will provide a bunc
 
 Learn this CSS library of next generation .
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://nextgencss.gitbook.io/untitled/)
 
   
   
