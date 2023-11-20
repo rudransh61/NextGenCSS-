@@ -1,13 +1,14 @@
-@mixin box($mx) {
-    margin-right : $mx;
-    margin-left : $mx;
-  }
-  
-.box{
-    @include box(2rem);
+@mixin box() {
+    justify-content: center;
+    align-items: center; 
+    display : block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-.box-flex{
-    @include box(2rem);
+.box {
     @extend .flex;
+    @include box();
 }

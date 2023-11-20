@@ -91,7 +91,8 @@ cd  src
   
 Open the ```index.html``` file in ``` ./example``` directory
 
-  
+Or ,
+You can see example project directly from this [codepen](https://codepen.io/rudransh61/pen/bGzLZzY) link 
 
 Install dependencies
 

@@ -649,26 +649,42 @@ a {
 .grid-item {
   grid: 1 / span 1; }
 
-.flex {
+.flex, .box {
   display: flex; }
-  .flex .flex-item {
+  .flex .flex-item, .box .flex-item {
     flex: 1; }
-  .flex .flex-row {
+  .flex .flex-row, .box .flex-row {
     flex-direction: row; }
-  .flex .flex-col {
+  .flex .flex-col, .box .flex-col {
     flex-direction: column; }
-  .flex .flex-wrap {
+  .flex .flex-wrap, .box .flex-wrap {
     flex-wrap: wrap; }
-  .flex .flex-start {
+  .flex .flex-start, .box .flex-start {
     justify-content: flex-start; }
-  .flex .flex-end {
+  .flex .flex-end, .box .flex-end {
     justify-content: flex-end; }
-  .flex .flex-center {
+  .flex .flex-center, .box .flex-center {
     justify-content: center; }
-  .flex .flex-stretch {
+  .flex .flex-stretch, .box .flex-stretch {
     justify-content: stretch; }
-  .flex .flex-space {
+  .flex .flex-space, .box .flex-space {
     justify-content: space-around; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; }
+
+.left {
+  float: left;
+  width: 18.75rem;
+  padding: 0.625rem; }
+
+.right {
+  float: right;
+  width: 18.75rem;
+  padding: 0.625rem; }
 
 input {
   display: inline-block;
@@ -759,3 +775,24 @@ input[type="checkbox"]:hover {
   box-sizing: border-box;
   flex-grow: 0;
   width: 100% rem; }
+
+.card {
+  display: block;
+  padding: 0.75rem; }
+  .card .card-title {
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
+    font-weight: bold; }
+  .card .card-body {
+    font-size: 1rem; }
+    .card .card-body a {
+      text-decoration: underline; }
+
+.box {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center; }
