@@ -1,2 +1,35 @@
+---
+description: Set-up your first Project !!! 🎉
+---
+
 # Set Up
+
+
+
+## Set-Up using CDN
+
+To set up using the CDN file include&#x20;
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
+```
+
+This line in your HTML file in `<head>` tag
+
+**Demo Code for Quick Start 👇**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
+</head>
+<body>
+    <h1>Namaste 🙏</h1>
+</body>
+</html>
+```
 
