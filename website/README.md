@@ -2,7 +2,7 @@
 description: >-
   Introducing a cutting-edge🔥 CSS framework for lightning-fast frontend
   development of NextGen websites
-cover: .gitbook/assets/Screenshot 2023-11-18 180242.png
+cover: .gitbook/assets/Screenshot 2023-11-18 180242 (2).png
 coverY: 0
 layout:
   cover:
@@ -21,6 +21,8 @@ layout:
 ---
 
 # NextGenCSS🔥
+
+<figure><img src=".gitbook/assets/logo.png" alt="" width="250"><figcaption></figcaption></figure>
 
 Hi ,
 
