@@ -1,10 +1,9 @@
-@use "sass:math";
-@use "sass:map";
+
 //all variables 
 @import 'variables/variables.scss';
 
 //fonts
-@import 'fonts/fonts.scss';
+@import 'fonts/_fonts.scss';
 
 // basic setup
 @import 'base/base.scss';
