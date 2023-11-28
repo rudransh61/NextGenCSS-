@@ -1,7 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:ital@1&display=swap");
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:ital@1&display=swap");
 .font-serif {
   font-family: serif; }
 
@@ -433,11 +435,28 @@ h6 {
   font-size: 0.75rem; }
 
 text {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Crimson Text", serif; }
 
 a {
   text-decoration: none;
   cursor: pointer; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: circle; }
+
+li {
+  display: inline-block;
+  margin-right: 0.625rem; }
+
+.link::after {
+  color: #708090; }
+
+hr {
+  padding: 0rem;
+  border-top: 0.0625rem solid #000000; }
 
 .pd-0 {
   padding: 0rem; }
@@ -822,6 +841,7 @@ a {
       text-decoration: underline; }
 
 .box {
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: block;

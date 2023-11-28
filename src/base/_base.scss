@@ -67,7 +67,27 @@ a{
   cursor:pointer;
 }
 
-// hr{
-//   height: 0;
-//   color:$dark;
-// }
+
+ol{
+	list-style: decimal;
+}
+
+ul{
+	list-style: circle;
+}
+
+li{
+	display: inline-block;
+	margin-right: 0.625rem;
+}
+
+.link::after{
+	color:Get-Color('gray');
+}
+
+
+hr{
+	padding : 0rem;
+	border-top: 0.0625rem solid Get-Color('dark');	
+}
+

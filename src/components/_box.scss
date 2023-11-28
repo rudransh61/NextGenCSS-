@@ -1,5 +1,6 @@
 @mixin box() {
-    justify-content: center;
+	width : 100%;
+	justify-content: center;
     align-items: center; 
     display : block;
     margin: auto;
