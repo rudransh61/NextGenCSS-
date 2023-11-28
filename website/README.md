@@ -1,7 +1,8 @@
 ---
 description: >-
   Introducing a cutting-edge🔥 CSS framework for lightning-fast frontend
-  development of NextGen websites
+  development of NextGen websites with excellent classes for native HTML tags
+  ...
 cover: .gitbook/assets/Screenshot 2023-11-18 180242 (2).png
 coverY: 0
 layout:
