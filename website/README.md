@@ -22,7 +22,7 @@ layout:
 
 # NextGenCSS🔥
 
-<figure><img src=".gitbook/assets/logo.png" alt="" width="250"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/logo.png" alt="NEXT GE CSS 🔥" width="250"><figcaption></figcaption></figure>
 
 Hi ,
 
