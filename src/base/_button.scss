@@ -15,11 +15,17 @@ button {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: .25rem;
+
+  &:hover {
+    color: Get-Color('white');
+    background-color: Get-Color('gray');
+    border-color: Get-Color('gray');
+  }
 }
 
 // curve edge
 
-.button-curve {
+.btn-curve {
   outline: none;
   cursor: pointer;
   font-size: 1rem;
@@ -30,4 +36,61 @@ button {
   border: none;
   background: Get-Color('primary');
   color: Get-Color('white');
+
+  &:hover {
+    color: Get-Color('white');
+    background-color: Get-Color('gray');
+    border-color: Get-Color('gray');
+  }
+}
+
+.btn-bootstrap {
+
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: Get-Color('primary');
+  border-color: Get-Color('primary');
+
+  &:hover {
+    color: Get-Color('white');
+    background-color: Get-Color('gray');
+    border-color: Get-Color('gray');
+  }
+
+}
+
+.btn-circle{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: Get-Color('leaf');
+  height: 48px;
+  :hover{
+      background-color: Get-Color('gray');
+  }
 }
