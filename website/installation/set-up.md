@@ -10,7 +10,7 @@ description: Set-up your first Project !!! 🎉
 
 To set up using the CDN file include&#x20;
 
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
 ```
 
@@ -18,7 +18,7 @@ This line in your HTML file in `<head>` tag
 
 **Demo Code for Quick Start 👇**
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
