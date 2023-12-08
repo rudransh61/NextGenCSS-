@@ -42,7 +42,7 @@
 
 //margin bottom
 @mixin margin-bottom-utility($num) {
-  .mg-top-#{$num} {
+  .mg-bottom-#{$num} {
     margin-bottom: #{$num*$base-unit-margin}px;
   }
 }
@@ -57,7 +57,7 @@
 
 //margin right
 @mixin margin-right-utility($num) {
-  .mg-top-#{$num} {
+  .mg-right-#{$num} {
     margin-right: #{$num*$base-unit-margin}px;
   }
 }
@@ -71,7 +71,7 @@
 
 //margin left
 @mixin margin-left-utility($num) {
-  .mg-top-#{$num} {
+  .mg-left-#{$num} {
     margin-left: #{$num*$base-unit-margin}px;
   }
 }
