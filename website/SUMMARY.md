@@ -15,7 +15,4 @@
 ## Quick Start
 
 * [Get Started](quick-start/get-started.md)
-
-***
-
-* [Basic Layout](basic-layout.md)
+* [Breakpoints](quick-start/breakpoints.md)
