@@ -502,7 +502,7 @@ li {
   display: inline-block;
   margin-right: 0.625rem; }
 
-.link::after {
+.link:hover {
   color: #708090; }
 
 hr {
