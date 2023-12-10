@@ -4,7 +4,14 @@
 
 .card{
     display : block;
+    gap : 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     padding: $card-padding;
+
+    width : 100%;
+    max-width : 40%;
+
+    overflow: hidden;
     // border : $card-border-thickness solid #ddd;
     // box-shadow : $card-border-shadow;
 

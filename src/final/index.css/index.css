@@ -107,6 +107,29 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex; }
 
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 0px) {
+  body {
+    font-size: 18px; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 20px; } }
+
+@media screen and (min-width: 720px) {
+  body {
+    font-size: 22px; } }
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 24px; } }
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 22px; } }
+
 .font-serif {
   font-family: serif; }
 
@@ -423,41 +446,6 @@ button {
 
 .b-white {
   border: 0.1rem solid #FFFFFF; }
-
-body {
-  font-size: 16px; }
-
-@media screen and (min-width: 320px) {
-  body {
-    font-size: 17px; } }
-
-@media screen and (min-width: 480px) {
-  body {
-    font-size: 18px; } }
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 20px; } }
-
-@media screen and (min-width: 992px) {
-  body {
-    font-size: 22px; } }
-
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 24px; } }
-
-@media screen and (min-width: 1440px) {
-  body {
-    font-size: 26px; } }
-
-@media screen and (min-width: 1600px) {
-  body {
-    font-size: 28px; } }
-
-@media screen and (min-width: 1920px) {
-  body {
-    font-size: 30px; } }
 
 html {
   font-size: 16px; }
@@ -881,7 +869,12 @@ hr {
 
 .card {
   display: block;
-  padding: 0.75rem; }
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 40%;
+  overflow: hidden; }
   .card .card-title {
     font-size: 1rem;
     padding-bottom: 0.75rem;

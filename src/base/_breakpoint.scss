@@ -1,60 +1,44 @@
 // Styles for default (no media query)
 body {
-    font-size: 16px;
-  }
-  
-  // Media query for xx-small
-  @media screen and (min-width: $xxs) {
-    body {
-      font-size: 17px;
-    }
-  }
-  
-  // Media query for x-small
+  font-size: 16px;
+}
+
+@mixin xs {
   @media screen and (min-width: $xs) {
     body {
       font-size: 18px;
     }
   }
-  
-  // Media query for small
+}
+
+@mixin sm {
   @media screen and (min-width: $sm) {
     body {
       font-size: 20px;
     }
   }
-  
-  // Media query for medium
+}
+
+@mixin md {
   @media screen and (min-width: $md) {
     body {
       font-size: 22px;
     }
   }
-  
-  // Media query for large
+}
+
+@mixin lg {
   @media screen and (min-width: $lg) {
     body {
       font-size: 24px;
     }
   }
-  
-  // Media query for x-large
+}
+
+@mixin xl {
   @media screen and (min-width: $xl) {
     body {
-      font-size: 26px;
+      font-size: 22px;
     }
   }
-  
-  // Media query for xx-large
-  @media screen and (min-width: $xxl) {
-    body {
-      font-size: 28px;
-    }
-  }
-  
-  // Media query for xxx-large
-  @media screen and (min-width: $xxxl) {
-    body {
-      font-size: 30px;
-    }
-  }
+}

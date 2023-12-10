@@ -1,21 +1,20 @@
-@import '../variables/variables';
+@use 'sass:math';
 
 .object{
-  margin:0 auto;
-  padding:0 1.25rem;
-  box-sizing: border-box;
+  @extend .box;
 }
 
 .row{
-  display:flex;
-  flex-flow: row wrap;
+  @extend .flex;
+  flex-flow : row wrap;
 }
 
-$num-grid : 0;
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    box-sizing: border-box;
-    flex-grow:0;
-    width : 100% rem;
+@include xs{
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xs{
+      box-sizing : border-box;
+      flex-grow : 0;
+      width : $i*100%/$grid-columns;
+    }
   }
 }
