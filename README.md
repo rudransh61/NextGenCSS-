@@ -138,6 +138,18 @@ For support, contribute with us .
 
 ```
 
+## Examples of websites you can create 
+
+- Design simple and beautiful websites FAST !!
+
+![example1](example1.png)
+
+- Responsive also
+
+
+![example2](example2.png)
+
+
 
 ## Thanks to our Contributors !!!!!
 <!-- Copy-paste in your Readme.md file -->

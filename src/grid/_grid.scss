@@ -1,20 +1,68 @@
-@use 'sass:math';
 
-.object{
-  @extend .box;
+// Mixin to generate grid container styles
+@mixin container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.row{
-  @extend .flex;
-  flex-flow : row wrap;
+// Mixin to generate column styles
+@mixin column($span, $columns: $grid-columns) {
+  width: percentage($span / $columns);
+  float: left;
+  margin-right: $gutter-width;
+
+  // Responsive styles
+  @media screen and (max-width: $sm) {
+    width: auto;
+    float: none;
+    margin-right: 0;
+    margin-bottom: $gutter-width;
+  }
 }
 
-@include xs{
-  @for $i from 1 through $grid-columns {
-    .col-#{$i}-xs{
-      box-sizing : border-box;
-      flex-grow : 0;
-      width : $i*100%/$grid-columns;
+// Mixin to clear floats
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Create grid container class
+.container {
+  @include container;
+  @include clearfix; // Clear floats inside the container
+}
+
+// Create column classes using a loop
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    @include column($i);
+  }
+}
+
+// Example usage
+.grid {
+  @include container;
+}
+
+.grid-item {
+  @include clearfix; // Clear floats inside the content container
+
+  .col-4 {
+    @include column(4);
+  }
+
+  .col-8 {
+    @include column(8);
+  }
+
+  // Responsive adjustments
+  @media screen and (max-width: $md) {
+    .col-4, .col-8 {
+      width: 100%; 
     }
   }
 }
