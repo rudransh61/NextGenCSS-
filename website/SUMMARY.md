@@ -16,3 +16,8 @@
 
 * [Get Started](quick-start/get-started.md)
 * [Breakpoints](quick-start/breakpoints.md)
+* [Buttons](quick-start/buttons.md)
+
+## Releases and Changelog
+
+* [0.0 🔥🔥 1st Release](releases-and-changelog/0.0-1st-release.md)
