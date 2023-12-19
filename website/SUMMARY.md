@@ -16,7 +16,9 @@
 
 * [Get Started](quick-start/get-started.md)
 * [Breakpoints](quick-start/breakpoints.md)
+* [Colors](quick-start/colors.md)
 * [Buttons](quick-start/buttons.md)
+* [BackGround Color](quick-start/background-color.md)
 
 ## Releases and Changelog
 
