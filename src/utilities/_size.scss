@@ -1,9 +1,9 @@
 @import '../variables/variables';
 
-@mixin scale-utility($scale-factor){
-    .size-#{$scale-factor} {
-        transform: scale($scale-factor);
-      }
+@mixin scale-utility($scale-factor) {
+  .size-#{$scale-factor} {
+    transform: scale($scale-factor);
+  }
 }
 
 /* Utility classes for scaling size */
@@ -12,3 +12,32 @@
 @include scale-utility(2);
 @include scale-utility(3);
 @include scale-utility(4);
+
+// for decimal
+.size-01 {
+  transform: scale(0.1);
+}
+.size-02 {
+  transform: scale(0.2);
+}
+.size-03 {
+  transform: scale(0.3);
+}
+.size-04 {
+  transform: scale(0.4);
+}
+.size-05 {
+  transform: scale(0.5);
+}
+.size-06 {
+  transform: scale(0.6);
+}
+.size-07 {
+  transform: scale(0.7);
+}
+.size-08 {
+  transform: scale(0.8);
+}
+.size-09 {
+  transform: scale(0.9);
+}

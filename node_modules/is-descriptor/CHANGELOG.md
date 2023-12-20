@@ -62,7 +62,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - run update, lint [`754cc73`](https://github.com/inspect-js/is-descriptor/commit/754cc7382bd439f8e8b91775479c59c7c996cd47)
 - update deps [`2b58af6`](https://github.com/inspect-js/is-descriptor/commit/2b58af6426d0700607419b096766829aff27f642)
 
-## [v1.0.0](https://github.com/inspect-js/is-descriptor/compare/v0.1.6...v1.0.0) - 2017-02-25
+## [v1.0.0](https://github.com/inspect-js/is-descriptor/compare/v0.1.7...v1.0.0) - 2017-02-25
+
+## [v0.1.7](https://github.com/inspect-js/is-descriptor/compare/v0.1.6...v0.1.7) - 2023-10-26
+
+### Merged
+
+- Update dependencies [`#5`](https://github.com/inspect-js/is-descriptor/pull/5)
+
+### Commits
+
+- [eslint] actually use eslint [`8bcf028`](https://github.com/inspect-js/is-descriptor/commit/8bcf0288c53c80297e6109f7632dab9b7b7fb5c5)
+- [meta] update package.json, gitignore from main [`544cdfe`](https://github.com/inspect-js/is-descriptor/commit/544cdfe60f5a4db8aa1b02de93b326271fa82ec1)
+- [readme] update readme from main [`1130f79`](https://github.com/inspect-js/is-descriptor/commit/1130f79112bd1d36ca5b0806a4ad14ae9427e0e9)
+- [Tests] switch to tape [`3f8f094`](https://github.com/inspect-js/is-descriptor/commit/3f8f0947049e4f2d631f88f0374e2b4a4e058577)
+- [Docs] remove verb [`92ee1bf`](https://github.com/inspect-js/is-descriptor/commit/92ee1bfcc56ba2cd30503c87af8e8cd795fdca51)
+- [Tests] migrate from travis to github actions [`8da3a3c`](https://github.com/inspect-js/is-descriptor/commit/8da3a3c38d50b4e9e18865efd25c6d35f98852b6)
+- run update, lint [`754cc73`](https://github.com/inspect-js/is-descriptor/commit/754cc7382bd439f8e8b91775479c59c7c996cd47)
+- [Fix] a descriptor with `set` and not `get` is still an accessor descriptor [`269fb53`](https://github.com/inspect-js/is-descriptor/commit/269fb5374659a8c07aac88993b13d94197e9cbed)
+- [patch] switch from `files` to `exports` [`41b2d61`](https://github.com/inspect-js/is-descriptor/commit/41b2d6152438119120b8d24ff98ebfb79cb19007)
+- [Fix] allow any non-primitive; arrays and functions are objects too [`9fd1ac8`](https://github.com/inspect-js/is-descriptor/commit/9fd1ac80cd42600510dc76de74da9a3834c4358d)
+- update deps [`2b58af6`](https://github.com/inspect-js/is-descriptor/commit/2b58af6426d0700607419b096766829aff27f642)
+- [Deps] update `is-accessor-descriptor`, `is-data-descriptor` [`f4dbc73`](https://github.com/inspect-js/is-descriptor/commit/f4dbc7327e9df005d3d6130af2ea612426a45081)
+- v0.x line: v1 and v0 are the same, so, branch v0 from 1.x [`91be723`](https://github.com/inspect-js/is-descriptor/commit/91be72399c3066950d2414a6d2f091e1074625cd)
+- [Tests] make a test dir [`9eaa17c`](https://github.com/inspect-js/is-descriptor/commit/9eaa17c3cbcd545d9409ab8d83dcd8bd0c42e739)
 
 ## [v0.1.6](https://github.com/inspect-js/is-descriptor/compare/v0.1.5...v0.1.6) - 2017-07-22
 

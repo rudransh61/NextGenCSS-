@@ -109,6 +109,22 @@ textarea:not([rows]) {
 body {
   font-size: 16px; }
 
+@media screen and (min-width: 0px) {
+  body {
+    font-size: 18px; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 20px; } }
+
+@media screen and (min-width: 720px) {
+  body {
+    font-size: 22px; } }
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 24px; } }
+
 .font-serif {
   font-family: serif; }
 
@@ -721,6 +737,33 @@ hr {
 
 .size-4 {
   transform: scale(4); }
+
+.size-01 {
+  transform: scale(0.1); }
+
+.size-02 {
+  transform: scale(0.2); }
+
+.size-03 {
+  transform: scale(0.3); }
+
+.size-04 {
+  transform: scale(0.4); }
+
+.size-05 {
+  transform: scale(0.5); }
+
+.size-06 {
+  transform: scale(0.6); }
+
+.size-07 {
+  transform: scale(0.7); }
+
+.size-08 {
+  transform: scale(0.8); }
+
+.size-09 {
+  transform: scale(0.9); }
 
 .inline-flex {
   display: inline-flex; }

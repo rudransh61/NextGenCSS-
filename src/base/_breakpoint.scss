@@ -3,37 +3,31 @@ body {
   font-size: 16px;
 }
 
-@mixin xs {
   @media screen and (min-width: $xs) {
     body {
       font-size: 18px;
     }
   }
-}
 
-@mixin sm {
   @media screen and (min-width: $sm) {
     body {
       font-size: 20px;
     }
   }
-}
 
-@mixin md {
+
   @media screen and (min-width: $md) {
     body {
       font-size: 22px;
     }
   }
-}
 
-@mixin lg {
   @media screen and (min-width: $lg) {
     body {
       font-size: 24px;
     }
   }
-}
+
 
 @mixin xl {
   @media screen and (min-width: $xl) {
