@@ -19,6 +19,7 @@
 * [Colors](quick-start/colors.md)
 * [Buttons](quick-start/buttons.md)
 * [BackGround Color](quick-start/background-color.md)
+* [Border](quick-start/border.md)
 
 ## Releases and Changelog
 
