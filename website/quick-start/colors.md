@@ -4,7 +4,7 @@ description: Colors in NextGenCSS
 
 # Colors
 
-There are 11 color built in NextGenCSS
+_There are 11 color built in NextGenCSS_
 
 <pre class="language-scss"><code class="lang-scss"><strong>$primary: #0074D9; // blue
 </strong>$dark: #000000;    // black

@@ -8,7 +8,7 @@ description: Change your background color
 
 ## Background Color
 
-To set **BackGround Color** use **`.bg-{...}`** class
+_To set **BackGround Color** use_ **`.bg-{...}`** _class_
 
 ### Syntax
 

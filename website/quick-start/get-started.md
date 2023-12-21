@@ -6,7 +6,7 @@ description: >-
 
 # Get Started
 
-_"It is not made for replacing existing library , It is made to make websites and UIs faster "_
+_<mark style="color:red;">"It is not made for replacing existing library , It is made to make websites and UIs faster "</mark>_
 
 ## How to Start ?
 

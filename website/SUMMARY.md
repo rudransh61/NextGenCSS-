@@ -1,6 +1,6 @@
 # Table of contents
 
-* [NextGenCSS🔥](README.md)
+* [🔥 NextGenCSS🔥](README.md)
   * [Why NextGenCSS🔥 ?](nextgen/why/README.md)
     * [How to Contribute ?](nextgen/why/contribute.md)
 
@@ -12,7 +12,7 @@
 * [Angular](installation/angular.md)
 * [Svelte](installation/svelte.md)
 
-## Quick Start
+## 🌟 Quick Start
 
 * [Get Started](quick-start/get-started.md)
 * [Breakpoints](quick-start/breakpoints.md)
@@ -20,6 +20,11 @@
 * [Buttons](quick-start/buttons.md)
 * [BackGround Color](quick-start/background-color.md)
 * [Border](quick-start/border.md)
+
+## 🧩 Components
+
+* [Box](components/box.md)
+* [Card](components/card.md)
 
 ## Releases and Changelog
 

@@ -21,7 +21,7 @@ layout:
     visible: true
 ---
 
-# NextGenCSS🔥
+# 🔥 NextGenCSS🔥
 
 <figure><img src=".gitbook/assets/logo.png" alt="NEXT GE CSS 🔥" width="250"><figcaption></figcaption></figure>
 

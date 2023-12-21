@@ -8,9 +8,9 @@ description: Border of your HTML element
 
 ## Border
 
-To give the border to your HTML element&#x20;
+_To give the border to your HTML element_&#x20;
 
-There are majorly **5** types of border with [colors](colors.md)
+_There are majorly **5** types of border with_ [_colors_](colors.md)
 
 
 

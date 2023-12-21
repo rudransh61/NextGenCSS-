@@ -10,9 +10,9 @@ description: Responsiveness
 
 
 
-Responsive design size are categorized into 5 different categories&#x20;
+_Responsive design size are categorized into 5 different categories_&#x20;
 
-xs , sm , md , lg , xl
+**`xs`, `sm`, `md`, `lg`, `xl`**
 
 
 

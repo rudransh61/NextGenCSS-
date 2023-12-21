@@ -8,7 +8,7 @@ description: Buttons in NextGenCSS
 
 ## Buttons
 
-Buttons classes are of **4** kinds
+_Buttons classes are of **4** kinds_
 
 
 
