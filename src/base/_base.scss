@@ -3,6 +3,8 @@
 //import reset css
 @import './reset';
 
+// optimizations for NextGen
+@import './optimizations';
 
 //import breakpoints
 @import './breakpoint';
@@ -31,6 +33,9 @@ html {
 
     //font
     font-family: $default-font;
+
+    // lazy load (default)
+    @extend .lazy-load;
 
 }
 

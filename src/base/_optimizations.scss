@@ -1,0 +1,14 @@
+
+
+// some optimizations
+
+
+// lazy load content 
+.lazy-load{
+    content-visibility: auto;
+}
+
+.no-lazy-load{
+    content-visibility: visible;
+}
+
