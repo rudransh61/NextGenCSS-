@@ -19,7 +19,8 @@
 
 This is a fast easy CSS framework for your next project . It will provide a bunch of features to fast your development process and make writing CSS fast !!!
 
-**currently under development
+## !!! Version 0.0 released
+
 
   
 
@@ -91,17 +92,10 @@ cd  src
   
 Open the ```index.html``` file in ``` ./example``` directory
 
-Or ,
-You can see example project directly from this [codepen](https://codepen.io/rudransh61/pen/bGzLZzY) link 
+ - You can see example project directly from this [codepen](https://codepen.io/rudransh61/pen/bGzLZzY) link 
 
-Install dependencies
+ - You can also use replit templates [template](https://replit.com/@Rudransh61/NextGenCSS-Starter-Template) link
 
-  
-
-```bash
-
-
-```
 
 # Main CSS file to Include
 
@@ -113,6 +107,7 @@ Install dependencies
   
 
 For support, contribute with us .
+Or sponsor if u want
 
   
   
@@ -129,7 +124,7 @@ For support, contribute with us .
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <h1>Namaste 🙏</h1>

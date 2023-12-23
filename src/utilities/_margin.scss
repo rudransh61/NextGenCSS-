@@ -89,8 +89,8 @@
 //margin horizontal
 @mixin margin-horizontal-utility($num) {
   .mg-x-#{$num} {
-    margin-right: #{$num*$base-unit-padding}rem;
-    margin-left: #{$num*$base-unit-padding}rem;
+    margin-right: #{$num*$base-unit-margin}rem;
+    margin-left: #{$num*$base-unit-margin}rem;
   }
 }
 @include margin-horizontal-utility(0);
@@ -102,8 +102,8 @@
 //margin vertical
 @mixin margin-vertical-utility($num) {
   .mg-y-#{$num} {
-    margin-top: #{$num*$base-unit-padding}rem;
-    margin-bottom: #{$num*$base-unit-padding}rem;
+    margin-top: #{$num*$base-unit-margin}rem;
+    margin-bottom: #{$num*$base-unit-margin}rem;
   }
 }
 @include margin-vertical-utility(0);
