@@ -26,12 +26,20 @@
 
 ## ⚒ Utilities
 
+* [Display](utilities/display.md)
 * [Align](utilities/align.md)
 * [Center](utilities/center.md)
 * [Flex](utilities/flex.md)
 * [Left](utilities/left.md)
 * [Right](utilities/right.md)
+* [Padding](utilities/padding.md)
 * [Margin](utilities/margin.md)
+* [Grid](utilities/grid.md)
+* [Scale](utilities/scale.md)
+
+## forms
+
+* [Input Box](forms/input-box.md)
 
 ## ☺ Releases and Changelog
 
