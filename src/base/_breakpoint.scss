@@ -2,37 +2,23 @@
 body {
   font-size: 16px;
 }
-
-  @media screen and (min-width: $xs) {
-    body {
-      font-size: 18px;
-    }
+// Mobile styles
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px; // Adjust as needed
   }
+}
 
-  @media screen and (min-width: $sm) {
-    body {
-      font-size: 20px;
-    }
+// Tablet styles
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 18px; // Adjust as needed
   }
+}
 
-
-  @media screen and (min-width: $md) {
-    body {
-      font-size: 22px;
-    }
-  }
-
-  @media screen and (min-width: $lg) {
-    body {
-      font-size: 24px;
-    }
-  }
-
-
-@mixin xl {
-  @media screen and (min-width: $xl) {
-    body {
-      font-size: 22px;
-    }
+// Desktop styles
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 20px; // Adjust as needed
   }
 }
