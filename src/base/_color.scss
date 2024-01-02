@@ -6,7 +6,7 @@
 // Syntax :- bg-{color}
 // compiled as :- background-color : {color};
 @mixin background($color) {
-    background-color: $color; 
+    background-color: $color !important; 
 }
 
 @for $i from 1 through length($colors) {

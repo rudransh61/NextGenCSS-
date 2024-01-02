@@ -247,37 +247,37 @@ button {
     background-color: #708090; }
 
 .bg-primary {
-  background-color: #0074D9; }
+  background-color: #0074D9 !important; }
 
 .bg-dark {
-  background-color: #000000; }
+  background-color: #000000 !important; }
 
 .bg-alert {
-  background-color: #DC143C; }
+  background-color: #DC143C !important; }
 
 .bg-leaf {
-  background-color: #228B22; }
+  background-color: #228B22 !important; }
 
 .bg-orange {
-  background-color: #FF4500; }
+  background-color: #FF4500 !important; }
 
 .bg-yellow {
-  background-color: #FFD700; }
+  background-color: #FFD700 !important; }
 
 .bg-gray {
-  background-color: #708090; }
+  background-color: #708090 !important; }
 
 .bg-purple {
-  background-color: #967BB6; }
+  background-color: #967BB6 !important; }
 
 .bg-choco {
-  background-color: #D2691E; }
+  background-color: #D2691E !important; }
 
 .bg-pink {
-  background-color: #FF69B4; }
+  background-color: #FF69B4 !important; }
 
 .bg-white {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF !important; }
 
 .br-primary {
   border-right: 0.1rem solid #0074D9; }
@@ -1043,7 +1043,6 @@ hr {
   font-size: 18px; }
 
 .menu li:hover {
-  background-color: #0074D9;
   border-radius: 5px;
   transition: 0.3s ease; }
 
@@ -1055,7 +1054,6 @@ hr {
   position: relative; }
 
 .dropdown {
-  background-color: #0074D9;
   padding: 1em 0;
   position: absolute;
   /*WITH RESPECT TO PARENT*/
@@ -1070,9 +1068,6 @@ hr {
   padding: 0.5em 1em;
   width: 8em;
   text-align: center; }
-
-.dropdown li:hover {
-  background-color: #0074D9; }
 
 .services:hover .dropdown {
   display: block; }
@@ -1091,14 +1086,12 @@ input[type=checkbox] {
   .menu {
     display: none;
     position: absolute;
-    background-color: #0074D9;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0; }
   .menu li:hover {
     display: inline-block;
-    background-color: #0074D9;
     transition: 0.3s ease; }
   .menu li + li {
     margin-top: 12px; }
@@ -1109,6 +1102,4 @@ input[type=checkbox] {
   .dropdown {
     left: 50%;
     top: 30px;
-    transform: translateX(35%); }
-  .dropdown li:hover {
-    background-color: #0074D9; } }
+    transform: translateX(35%); } }
