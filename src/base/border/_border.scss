@@ -1,18 +1,18 @@
 // @import '../../variables/variables';
-@import './_border_right.scss';
-@import './_border_left.scss';
-@import './_border_top.scss';
-@import './_border_bottom.scss';
-// Border utility classes for specific sides
-// @import '../../variables/variables';
-// border utility classes for specific sides
+// Imports individual border utility files for specific sides.
+@import "./_border_right.scss";
+@import "./_border_left.scss";
+@import "./_border_top.scss";
+@import "./_border_bottom.scss";
+
+// Border utility classes for specific sides using specified colors.
 @mixin border($color) {
-    border: .1rem solid $color; 
+  border: 0.1rem solid $color;
 }
 
 @for $i from 1 through length($colors) {
-    .b-#{nth($color-names,$i)}{
-      @include border(nth($colors,$i));
-  
-    }
+  // Generates classes for borders with individual color names.
+  .b-#{nth($color-names,$i)} {
+    @include border(nth($colors, $i));
   }
+}

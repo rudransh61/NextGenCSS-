@@ -1,115 +1,107 @@
-@import '../variables/variables';
+// Importing variables file
 
+@import "../variables/variables";
 
-//padding syntax :- pd-{some number}
-// Compiled as :- padding : {some number};
+// Padding syntax: pd-{some number} compiled as: padding: {some number}
 
+// Padding utility mixin
 @mixin padding-utility($num) {
-    .pd-#{$num} {
-      padding: #{$num*$base-unit-padding}rem;
-    }
-  }
-  
-  @include padding-utility(0);
-  @include padding-utility(1);
-  @include padding-utility(2);
-  @include padding-utility(3);
-  @include padding-utility(4);
-
-
-
-
-
-
-// Syntax :- pd-{direction}-{some number}
-// Compiled as :- padding-{direction} : {some number};
-
-
-// padding top
-@mixin padding-top-utility($num) {
-  .pd-top-#{$num} {
-    padding-top: #{$num*$base-unit-padding}rem;
+  .pd-#{$num} {
+    padding: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding utility for different values
+@include padding-utility(0);
+@include padding-utility(1);
+@include padding-utility(2);
+@include padding-utility(3);
+@include padding-utility(4);
+
+// Syntax: pd-{direction}-{some number} compiled as: padding-{direction}: {some number}
+
+// Padding top utility
+@mixin padding-top-utility($num) {
+  .pd-top-#{$num} {
+    padding-top: #{$num * $base-unit-padding}rem;
+  }
+}
+
+// Including padding top utility for different values
 @include padding-top-utility(0);
 @include padding-top-utility(1);
 @include padding-top-utility(2);
 @include padding-top-utility(3);
 @include padding-top-utility(4);
 
-
-
-
-//padding bottom
+// Padding bottom utility
 @mixin padding-bottom-utility($num) {
   .pd-bottom-#{$num} {
-    padding-bottom: #{$num*$base-unit-padding}rem;
+    padding-bottom: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding bottom utility for different values
 @include padding-bottom-utility(0);
 @include padding-bottom-utility(1);
 @include padding-bottom-utility(2);
 @include padding-bottom-utility(3);
 @include padding-bottom-utility(4);
 
-
-
-
-//padding right
+// Padding right utility
 @mixin padding-right-utility($num) {
   .pd-right-#{$num} {
-    padding-right: #{$num*$base-unit-padding}rem;
+    padding-right: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding right utility for different values
 @include padding-right-utility(0);
 @include padding-right-utility(1);
 @include padding-right-utility(2);
 @include padding-right-utility(3);
 @include padding-right-utility(4);
 
-
-
-//padding left
+// Padding left utility
 @mixin padding-left-utility($num) {
   .pd-left-#{$num} {
-    padding-left: #{$num*$base-unit-padding}rem;
+    padding-left: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding left utility for different values
 @include padding-left-utility(0);
 @include padding-left-utility(1);
 @include padding-left-utility(2);
 @include padding-left-utility(3);
 @include padding-left-utility(4);
 
-
-
-
-//padding horizontal
+// Padding horizontal utility
 @mixin padding-horizontal-utility($num) {
   .pd-x-#{$num} {
-    padding-right: #{$num*$base-unit-padding}rem;
-    padding-left: #{$num*$base-unit-padding}rem;
+    padding-right: #{$num * $base-unit-padding}rem;
+    padding-left: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding horizontal utility for different values
 @include padding-horizontal-utility(0);
 @include padding-horizontal-utility(1);
 @include padding-horizontal-utility(2);
 @include padding-horizontal-utility(3);
 @include padding-horizontal-utility(4);
 
-//padding vertical
+// Padding vertical utility
 @mixin padding-vertical-utility($num) {
   .pd-y-#{$num} {
-    padding-top: #{$num*$base-unit-padding}rem;
-    padding-bottom: #{$num*$base-unit-padding}rem;
+    padding-top: #{$num * $base-unit-padding}rem;
+    padding-bottom: #{$num * $base-unit-padding}rem;
   }
 }
+
+// Including padding vertical utility for different values
 @include padding-vertical-utility(0);
 @include padding-vertical-utility(1);
 @include padding-vertical-utility(2);
 @include padding-vertical-utility(3);
 @include padding-vertical-utility(4);
-
-
-
-

@@ -1,12 +1,13 @@
 // @import '../variables/variables';
 
-//rectangular button
+// Button styles
+// Default button style
 button {
   cursor: pointer;
   outline: 0;
-  color: Get-Color('white');
-  background-color: Get-Color('primary');
-  border-color: Get-Color('primary');
+  color: Get-Color("white");
+  background-color: Get-Color("primary");
+  border-color: Get-Color("primary");
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -14,17 +15,16 @@ button {
   border: 0.0625rem solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
   &:hover {
-    color: Get-Color('white');
-    background-color: Get-Color('gray');
-    border-color: Get-Color('gray');
+    color: Get-Color("white");
+    background-color: Get-Color("gray");
+    border-color: Get-Color("gray");
   }
 }
 
-// curve edge
-
+// Curve edge button style
 .btn-curve {
   outline: none;
   cursor: pointer;
@@ -32,20 +32,19 @@ button {
   line-height: 1.25rem;
   font-weight: $bold-font;
   border-radius: 0.5rem;
-  // padding: 14px 24px;
   border: none;
-  background: Get-Color('primary');
-  color: Get-Color('white');
+  background: Get-Color("primary");
+  color: Get-Color("white");
 
   &:hover {
-    color: Get-Color('white');
-    background-color: Get-Color('gray');
-    border-color: Get-Color('gray');
+    color: Get-Color("white");
+    background-color: Get-Color("gray");
+    border-color: Get-Color("gray");
   }
 }
 
+// Bootstrap-like button style
 .btn-bootstrap {
-
   cursor: pointer;
   outline: 0;
   display: inline-block;
@@ -56,29 +55,29 @@ button {
   border: 1px solid transparent;
   padding: 6px 12px;
   font-size: 1rem;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  color: Get-Color('primary');
-  border-color: Get-Color('primary');
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: Get-Color("primary");
+  border-color: Get-Color("primary");
 
   &:hover {
-    color: Get-Color('white');
-    background-color: Get-Color('gray');
-    border-color: Get-Color('gray');
+    color: Get-Color("white");
+    background-color: Get-Color("gray");
+    border-color: Get-Color("gray");
   }
-
 }
 
-.btn-circle{
-  
+// Circular button style
+.btn-circle {
   display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
   line-height: 1;
   border-radius: 500px;
-  transition-property: background-color,border-color,color,box-shadow,filter;
-  transition-duration: .3s;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
   border: 1px solid transparent;
   letter-spacing: 2px;
   min-width: 160px;
@@ -88,9 +87,10 @@ button {
   text-align: center;
   padding: 16px 14px 18px;
   color: #fff;
-  background-color: Get-Color('leaf');
+  background-color: Get-Color("leaf");
   height: 48px;
-  :hover{
-      background-color: Get-Color('gray');
+
+  &:hover {
+    background-color: Get-Color("gray");
   }
 }

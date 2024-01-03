@@ -1,13 +1,13 @@
 // @import '../../variables/variables';
-// border-right utility classes for specific sides
+
+// Creates utility classes for the right border using specific colors.
 @mixin border-right($color) {
-  border-right: .1rem solid $color; 
+  border-right: 0.1rem solid $color;
 }
 
 @for $i from 1 through length($colors) {
-  .br-#{nth($color-names,$i)}{
-    @include border-right(nth($colors,$i));
-
+  // Generates classes for the right border with individual color names.
+  .br-#{nth($color-names,$i)} {
+    @include border-right(nth($colors, $i));
   }
 }
-
