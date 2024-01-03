@@ -1,4 +1,3 @@
-
 // Mixin to generate grid container styles
 @mixin container {
   max-width: $container-width;
@@ -12,7 +11,7 @@
   float: left;
   margin-right: $gutter-width;
 
-  // Responsive styles
+  // Responsive styles for small screens
   @media screen and (max-width: $sm) {
     width: auto;
     float: none;
@@ -43,14 +42,15 @@
   }
 }
 
-// Example usage
+// Example usage for a grid layout
 .grid {
-  @include container;
+  @include container; // Apply container styles
 }
 
 .grid-item {
   @include clearfix; // Clear floats inside the content container
 
+  // Apply column styles for specific grid sizes
   .col-4 {
     @include column(4);
   }
@@ -59,10 +59,11 @@
     @include column(8);
   }
 
-  // Responsive adjustments
+  // Responsive adjustments for medium screens
   @media screen and (max-width: $md) {
-    .col-4, .col-8 {
-      width: 100%; 
+    .col-4,
+    .col-8 {
+      width: 100%; // Take up full width on medium screens
     }
   }
 }

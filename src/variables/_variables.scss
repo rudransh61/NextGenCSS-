@@ -1,45 +1,37 @@
-//colors
-@import './colors';
+// Import colors
+@import "./colors";
 
-// default
-$default-padding : 0.1rem;
-$default-margin : 0.1rem;
+// Default values for padding and margin
+$default-padding: 0.1rem;
+$default-margin: 0.1rem;
 
+// Fonts configuration
+$default-font: "Poppins", sans-serif;
+$text-font: "Crimson Text", serif;
+$heading-font: "Poppins", sans-serif;
+$bold-font: 600;
 
-//fonts
-$default-font : 'Poppins',
-sans-serif;
-$text-font :'Crimson Text', serif;
-$heading-font : 'Poppins',
-sans-serif;
-$bold-font : 600;
+// Units configuration
+$base-unit-padding: 1;
+$base-unit-margin: 1;
 
-
-//units
-$base-unit-padding : 1;
-$base-unit-margin : 1;
-
-//grid
+// Grid configuration
 $grid-columns: 12;
-$gutter-width : 20px;
+$gutter-width: 20px;
 $container-width: 1000px;
 
-//card
-$card-padding :0.75rem;
-$card-margin : 0.75rem;
-$card-border-thickness : 0 0.2rem 0.2rem 0;
-$card-border-radius : 1.25rem;
-$card-border-shadow : 0.0625rem 0.1875rem 0.3125rem rgba(0,0,0,0.1);
-$card-font-size : 1rem;
+// Card styling parameters
+$card-padding: 0.75rem;
+$card-margin: 0.75rem;
+$card-border-thickness: 0 0.2rem 0.2rem 0;
+$card-border-radius: 1.25rem;
+$card-border-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.1);
+$card-font-size: 1rem;
 
-
-
-
-
-//breakpoints
+// Breakpoints definition
 // Define your breakpoints
-$xs : 0px;
-$sm : 480px;
-$md : 720px;
-$lg : 960px;
-$xl : 1200px;
+$xs: 0px;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;

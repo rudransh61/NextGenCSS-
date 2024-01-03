@@ -1,13 +1,13 @@
 // @import '../../variables/variables';
-// border-bottom utility classes for specific sides
+
+// Creates utility classes for the left border with specific colors.
 @mixin border-left($color) {
-    border-left: .1rem solid $color; 
+  border-left: 0.1rem solid $color;
 }
 
-
 @for $i from 1 through length($colors) {
-    .bl-#{nth($color-names,$i)}{
-      @include border-left(nth($colors,$i));
-  
-    }
+  // Generates classes for the left border using color names.
+  .bl-#{nth($color-names,$i)} {
+    @include border-left(nth($colors, $i));
   }
+}

@@ -1,101 +1,96 @@
 // @import '../variables/variables.scss';
 
 //import reset css
-@import './reset';
+@import "./reset";
 
 // optimizations for NextGen
-@import './optimizations';
+@import "./optimizations";
 
 //import breakpoints
-@import './breakpoint';
+@import "./breakpoint";
 
 //fonts
-@import '../fonts/fonts.scss';
+@import "../fonts/fonts.scss";
 
 //importing buttons
-@import './button';
+@import "./button";
 
-//import colors 
-@import './color';
+//import colors
+@import "./color";
 
 //import border
-@import './border/border';
+@import "./border/border";
 
-
+/* Set the base font size for the root element. */
 html {
-    font-size: 16px; // root element size
+  font-size: 16px; // root element size
 }
 
-*{
-    //base
-    margin:$default-margin;
-    padding:$default-padding;
+/* Base styles for all elements. */
+* {
+  //base
+  margin: $default-margin;
+  padding: $default-padding;
 
-    //font
-    font-family: $default-font;
+  //font
+  font-family: $default-font;
 
-    // lazy load (default)
-    @extend .lazy-load;
-
-
+  // lazy load (default)
+  @extend .lazy-load;
 }
 
-// css for all h tags
-// Define font-size utility classes for heading tags
+/* Define font-size utility classes for heading tags. */
 h1 {
-      font-size: 2rem; 
-    }
+  font-size: 2rem;
+}
 h2 {
-      font-size: 1.5rem; 
-    }
+  font-size: 1.5rem;
+}
 h3 {
-      font-size: 1.25rem; 
-    }
+  font-size: 1.25rem;
+}
 h4 {
-      font-size: 1rem; 
-    }
+  font-size: 1rem;
+}
 h5 {
-      font-size: 0.875rem; 
-    }
+  font-size: 0.875rem;
+}
 h6 {
-      font-size: 0.75rem;
-    }
-  
-  
+  font-size: 0.75rem;
+}
 
-
-
+/* Font family for text. */
 text {
-    font-family: $text-font;
+  font-family: $text-font;
 }
 
-
-a{
+/* Styles for anchor tags. */
+a {
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-
-ol{
-	list-style: decimal;
+/* List styles for ordered and unordered lists. */
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: circle;
 }
 
-ul{
-	list-style: circle;
+/* Styles for list items. */
+li {
+  display: inline-block;
+  margin-right: 0.625rem;
 }
 
-li{
-	display: inline-block;
-	margin-right: 0.625rem;
+/* Styles for hyperlink hover. */
+.link:hover {
+  color: Get-Color("gray");
 }
 
-.link:hover{
-	color:Get-Color('gray');
+/* Styles for horizontal ruler. */
+hr {
+  padding: 0rem;
+  border-top: 0.0625rem solid Get-Color("dark");
 }
-
-
-hr{
-	padding : 0rem;
-	border-top: 0.0625rem solid Get-Color('dark');	
-}
-

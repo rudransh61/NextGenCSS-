@@ -1,17 +1,16 @@
-// import variables
+// Import variables
 // @import '../variables/variables';
 
-
-// font color
-// Syntax :- font-{color}
-// compiled as :- font-color : {color};
+// Font color mixin
+// Syntax: font-{color}
+// Compiled as: font-color: {color};
 @mixin font($color) {
-    color: $color; 
+  color: $color;
 }
 
+// Loop to generate font color classes
 @for $i from 1 through length($colors) {
-  .font-#{nth($color-names,$i)}{
-    @include font(nth($colors,$i));
-
+  .font-#{nth($color-names,$i)} {
+    @include font(nth($colors, $i));
   }
 }

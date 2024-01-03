@@ -1,17 +1,18 @@
 // import variables
 // @import '../variables/variables';
 
-
-// background color
+// Background color
 // Syntax :- bg-{color}
-// compiled as :- background-color : {color};
+// Compiled as :- background-color : {color};
+
+// Background mixin to apply background color
 @mixin background($color) {
-    background-color: $color !important; 
+  background-color: $color !important;
 }
 
+// Loop to generate background utility classes
 @for $i from 1 through length($colors) {
-  .bg-#{nth($color-names,$i)}{
-    @include background(nth($colors,$i));
-
+  .bg-#{nth($color-names,$i)} {
+    @include background(nth($colors, $i));
   }
 }
