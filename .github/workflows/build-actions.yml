@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: cd srd
+      - run: cd src
       - run: echo "Converting SCSS to CSS"
       - run: npm run scss
       - run: echo "Converting CSS to minified CSS , now it is ready for production"
