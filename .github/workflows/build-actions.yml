@@ -5,11 +5,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: cd src
-      - run: echo "Converting SCSS to CSS"
-      - run: npm run scss
-      - run: echo "Converting CSS to minified CSS , now it is ready for production"
-      - run: npm run next-gen-css
+      - run: echo "build.sh file is going to run the build"
+      - run: bash build.sh
+      - run: echo "Finishing the build"
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: List files in the repository
