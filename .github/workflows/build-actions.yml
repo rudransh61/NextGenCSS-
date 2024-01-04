@@ -7,6 +7,7 @@ jobs:
     steps:
       - run: echo "build.sh file is going to run the build"
       - run : cd ../../../
+      - run : ls 
       - run: bash build.sh
       - run: echo "Finishing the build"
       - name: Check out repository code
