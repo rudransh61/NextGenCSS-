@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "build.sh file is going to run the build"
-      - run: ./build.sh
+      - run: build.sh
       - run: echo "Finishing the build"
       - name: Check out repository code
         uses: actions/checkout@v4

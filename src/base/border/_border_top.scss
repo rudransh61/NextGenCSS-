@@ -1,9 +1,5 @@
 // @import '../../variables/variables';
 // Imports individual border utility files for specific sides.
-@import "./_border_right.scss";
-@import "./_border_left.scss";
-@import "./_border_top.scss";
-@import "./_border_bottom.scss";
 
 // Border utility classes for specific sides using specified colors.
 @mixin border($color) {
