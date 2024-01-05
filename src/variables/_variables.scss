@@ -16,9 +16,9 @@ $base-unit-padding: 1;
 $base-unit-margin: 1;
 
 // Grid configuration
-$grid-columns: 12;
-$gutter-width: 20px;
-$container-width: 1000px;
+// Configuration variables
+$columns: 12; // Number of columns in the grid
+$gap: 1rem; // Column gap
 
 // Card styling parameters
 $card-padding: 0.75rem;

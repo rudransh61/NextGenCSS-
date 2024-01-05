@@ -1,14 +1,27 @@
+
 // @import '../../variables/variables';
 // Imports individual border utility files for specific sides.
 
 // Border utility classes for specific sides using specified colors.
-@mixin border($color) {
-  border: 0.1rem solid $color;
+@mixin border-top($color) {
+  border-top: 0.1rem solid $color;
 }
 
 @for $i from 1 through length($colors) {
   // Generates classes for borders with individual color names.
-  .b-#{nth($color-names,$i)} {
-    @include border(nth($colors, $i));
+  .bt-curve-#{nth($color-names,$i)} {
+    @include border-top(nth($colors, $i));
+  }
+}
+
+@mixin border-curve-top($color) {
+  @include border-top($color);
+  border-radius: 1rem;
+}
+
+@for $i from 1 through length($colors) {
+  // Creates classes for bottom curve border using color names.
+  .bt-curve-#{nth($color-names,$i)} {
+    @include border-curve-top(nth($colors, $i));
   }
 }

@@ -11,3 +11,15 @@
     @include border-bottom(nth($colors, $i));
   }
 }
+
+@mixin border-curve-bottom($color) {
+  @include border-bottom($color);
+  border-radius: 1rem;
+}
+
+@for $i from 1 through length($colors) {
+  // Creates classes for bottom curve border using color names.
+  .bb-curve-#{nth($color-names,$i)} {
+    @include border-curve-bottom(nth($colors, $i));
+  }
+}

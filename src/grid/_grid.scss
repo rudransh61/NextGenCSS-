@@ -1,69 +1,46 @@
-// Mixin to generate grid container styles
-@mixin container {
-  max-width: $container-width;
+
+
+// Container
+.container {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1140px; // Adjust as needed
+  padding-left: $gap / 2;
+  padding-right: $gap / 2;
 }
 
-// Mixin to generate column styles
-@mixin column($span, $columns: $grid-columns) {
-  width: percentage($span / $columns);
+// Columns
+.column {
   float: left;
-  margin-right: $gutter-width;
+  margin: 0 $gap / 2;
 
-  // Responsive styles for small screens
-  @media screen and (max-width: $sm) {
-    width: auto;
-    float: none;
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
     margin-right: 0;
-    margin-bottom: $gutter-width;
   }
 }
 
-// Mixin to clear floats
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+// Responsive classes
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  .column {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-// Create grid container class
-.container {
-  @include container;
-  @include clearfix; // Clear floats inside the container
-}
-
-// Create column classes using a loop
-@for $i from 1 through $grid-columns {
+// Helper classes for column widths
+@for $i from 1 through $columns {
   .col-#{$i} {
-    @include column($i);
-  }
-}
-
-// Example usage for a grid layout
-.grid {
-  @include container; // Apply container styles
-}
-
-.grid-item {
-  @include clearfix; // Clear floats inside the content container
-
-  // Apply column styles for specific grid sizes
-  .col-4 {
-    @include column(4);
-  }
-
-  .col-8 {
-    @include column(8);
-  }
-
-  // Responsive adjustments for medium screens
-  @media screen and (max-width: $md) {
-    .col-4,
-    .col-8 {
-      width: 100%; // Take up full width on medium screens
-    }
+    width: percentage($i / $columns);
   }
 }
