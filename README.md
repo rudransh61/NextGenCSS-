@@ -45,7 +45,11 @@ Learn this CSS library of next generation .
 [Documentation](https://nextgencss.gitbook.io/untitled/)
 
   
-  
+** v0.1 released introducing new features :-
+  - Curve border classes
+  - Some templates for copy paste
+  - Navbar Component
+  # NOTE:- The documentation for v0.1 is not updated yet , we will update it as fast as possible
 
 ##  Contributing
 
