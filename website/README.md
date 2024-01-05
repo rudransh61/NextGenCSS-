@@ -27,10 +27,10 @@ layout:
 
 Hi ,
 
-I am Rudransh&#x20;
+I am Rudransh
 
 A young developer and physics and maths enthusiast from India !
 
-I am creating a new Front-End Framework called NextGenCSS&#x20;
+I am creating a new Front-End Framework called NextGenCSS
 
-If you want to know more about it click [here ](nextgen/why/)to see why ?
+If you want to know more about it click [here ](readme/why/)to see why ?
