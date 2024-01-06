@@ -15,7 +15,7 @@
 }
 
 @mixin border-curve-top($color) {
-  @include border-top($color);
+  @extend .bt-#{$color} ;
   border-radius: 1rem;
 }
 

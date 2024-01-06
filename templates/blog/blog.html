@@ -1,39 +1,86 @@
-<nav class="navbar bg-leaf">
-    <div class="logo">Blog Name</div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--Hamburger for navbar-->
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-        </div>
-    </ul>
-</nav>
-<div class="grid">
-    <div class="grid-item box">
-        <div class="left ">
-            <div class="box">
-                <h1 class="">Home Page</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Template in NextGenCSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css" media="print"
+        onload="this.media='all'">
+</head>
+
+<body>
+    <div class="mg-x-3">
+        <nav class="navbar bg-leaf mg-b-2">
+            <div class="logo">Blog Name</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--Hamburger for navbar-->
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="grid mg-y-2">
+            <div class="grid-item box">
+                <div class="left ">
+                    <div class="box">
+                        <h1 class="">Home Page</h1>
+                    </div>
+
+                    <text>This is a small description of this home page</text>
+
+                    <form>
+                        <input placeholder="Subscribe to the NewsTeller" />
+                        <button type="submit" class="btn bg-leaf" href="#">Button</button>
+                    </form>
+                </div>
+
+                <div class="right">
+                    <img src="https://avatars.githubusercontent.com/u/115872354?v=4" alt="img" class="size-0.6" style="margin-left: 3rem;">
+                    <p class="flex" style="margin-left: 6rem;">This is a text</p>
+                </div>
             </div>
 
-            <text>This is a small description of this home page</text>
-
-            <form>
-                <input placeholder="Subscribe to the NewsTeller" />
-                <button type="submit" class="btn bg-leaf" href="#">Button</button>
-            </form>
         </div>
 
-        <div class="right">
-            <img src="https://avatars.githubusercontent.com/u/115872354?v=4" alt="img" class="right">
-            This is a image
+        <hr class="mg-x-4">
+
+        <div class="container">
+            <div class="col-3 mg-y-3  b-primary b-curve-primary" style="border-radius: 1rem;">
+                <img src="https://avatars.githubusercontent.com/u/115872354?v=4" class="" >
+                <h3 class="card-title">Post 1</h3>
+                <p class="card-body">Title or description</p>
+            </div>
+
+            <div class="col-3 mg-y-3  b-primary b-curve-primary" style="border-radius: 1rem;">
+                <img src="https://avatars.githubusercontent.com/u/115872354?v=4" class="" >
+                <h3 class="card-title">Post 2</h3>
+                <p class="card-body">Title or description</p>
+            </div>
+
+            <div class="col-3 mg-y-3  b-primary b-curve-primary" style="border-radius: 1rem;">
+                <img src="https://avatars.githubusercontent.com/u/115872354?v=4" class="" >
+                <h3 class="card-title">Post 3</h3>
+                <p class="card-body">Title or description</p>
+            </div>
+
+            <div class="col-3 mg-y-3  b-primary b-curve-primary" style="border-radius: 1rem;">
+                <img src="https://avatars.githubusercontent.com/u/115872354?v=4" class="" >
+                <h3 class="card-title">Post 4</h3>
+                <p class="card-body">Title or description</p>
+            </div>
+
         </div>
+
     </div>
+</body>
 
-</div>
+</html>

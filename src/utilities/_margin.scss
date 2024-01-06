@@ -7,7 +7,7 @@
 // Margin utility mixin
 @mixin margin-utility($num) {
   .mg-#{$num} {
-    margin: #{$num * $base-unit-margin}px;
+    margin: #{$num * $base-unit-margin}rem;
   }
 }
 
@@ -23,7 +23,7 @@
 // Margin top utility
 @mixin margin-top-utility($num) {
   .mg-top-#{$num} {
-    margin-top: #{$num * $base-unit-margin}px;
+    margin-top: #{$num * $base-unit-margin}rem;
   }
 }
 
@@ -37,7 +37,7 @@
 // Margin bottom utility
 @mixin margin-bottom-utility($num) {
   .mg-bottom-#{$num} {
-    margin-bottom: #{$num * $base-unit-margin}px;
+    margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
 
@@ -51,7 +51,7 @@
 // Margin right utility
 @mixin margin-right-utility($num) {
   .mg-right-#{$num} {
-    margin-right: #{$num * $base-unit-margin}px;
+    margin-right: #{$num * $base-unit-margin}rem;
   }
 }
 
@@ -65,7 +65,7 @@
 // Margin left utility
 @mixin margin-left-utility($num) {
   .mg-left-#{$num} {
-    margin-left: #{$num * $base-unit-margin}px;
+    margin-left: #{$num * $base-unit-margin}rem;
   }
 }
 
