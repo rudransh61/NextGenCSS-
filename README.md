@@ -150,7 +150,7 @@ Or sponsor if u want
 
 
 ## VIDEO
-<video src='./video_example.mp4' width=180/>
+./video_example.mp4
 
 
 ## Thanks to our Contributors !!!!!
