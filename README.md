@@ -150,7 +150,7 @@ Or sponsor if u want
 
 
 ## VIDEO
-[![Demo](video_example.mp4)](video_example.mp4)
+<video src='./video_example.mp4' width=180/>
 
 
 ## Thanks to our Contributors !!!!!
