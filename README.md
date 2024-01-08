@@ -150,7 +150,11 @@ Or sponsor if u want
 
 
 ## VIDEO
-./video_example.mp4
+
+
+https://github.com/rudransh61/NextGenCSS-/assets/115872354/08cf0c1a-3afa-4269-b8c1-8d1fc48e5900
+
+
 
 
 ## Thanks to our Contributors !!!!!
