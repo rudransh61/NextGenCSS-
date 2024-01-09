@@ -1,4 +1,6 @@
-
+// Configuration variables
+$columns: 12; // Number of columns in the grid
+$gap: 1rem;   // Column gap
 
 // Container
 .container {
@@ -26,12 +28,14 @@
 // Responsive classes
 @media screen and (max-width: 768px) {
   .container {
+    // display:block;
     max-width: 100%;
     padding-left: $gap;
     padding-right: $gap;
   }
 
   .column {
+    display: block;
     width: 100%;
     margin-left: 0;
     margin-right: 0;

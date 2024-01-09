@@ -13,7 +13,7 @@
 }
 
 @mixin border-curve-left($color) {
-  @extend .bl-#{$color} ;
+  border-left: 0.1rem solid $color;
   border-radius: 1rem;
 }
 

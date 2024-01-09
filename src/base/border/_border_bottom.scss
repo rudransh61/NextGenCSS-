@@ -13,7 +13,7 @@
 }
 
 @mixin border-curve-bottom($color) {
-  @extend .bb-#{$color} ;
+  border-bottom: 0.1rem solid $color;
   border-radius: 1rem;
 }
 
