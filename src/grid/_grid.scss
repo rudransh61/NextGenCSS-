@@ -9,6 +9,13 @@ $gap: 1rem;   // Column gap
   max-width: 1140px; // Adjust as needed
   padding-left: $gap / 2;
   padding-right: $gap / 2;
+
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding-left: $gap;
+    padding-right: $gap;
+  }
 }
 
 // Columns
@@ -23,18 +30,10 @@ $gap: 1rem;   // Column gap
   &:last-child {
     margin-right: 0;
   }
-}
 
-// Responsive classes
-@media screen and (max-width: 768px) {
-  .container {
-    // display:block;
-    max-width: 100%;
-    padding-left: $gap;
-    padding-right: $gap;
-  }
-
-  .column {
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    float: none;
     display: block;
     width: 100%;
     margin-left: 0;
@@ -46,5 +45,14 @@ $gap: 1rem;   // Column gap
 @for $i from 1 through $columns {
   .col-#{$i} {
     width: percentage($i / $columns);
+  }
+}
+
+// Responsive adjustments for helper classes
+@media screen and (max-width: 768px) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: 100%;
+    }
   }
 }

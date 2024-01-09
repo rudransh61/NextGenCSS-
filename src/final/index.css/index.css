@@ -748,6 +748,11 @@ hr {
   max-width: 1140px;
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 .column {
   float: left;
@@ -756,17 +761,13 @@ hr {
     margin-left: 0; }
   .column:last-child {
     margin-right: 0; }
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-  .column {
-    display: block;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    .column {
+      float: none;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .col-1 {
   width: 8.33333%; }
@@ -803,6 +804,32 @@ hr {
 
 .col-12 {
   width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .col-1 {
+    width: 100%; }
+  .col-2 {
+    width: 100%; }
+  .col-3 {
+    width: 100%; }
+  .col-4 {
+    width: 100%; }
+  .col-5 {
+    width: 100%; }
+  .col-6 {
+    width: 100%; }
+  .col-7 {
+    width: 100%; }
+  .col-8 {
+    width: 100%; }
+  .col-9 {
+    width: 100%; }
+  .col-10 {
+    width: 100%; }
+  .col-11 {
+    width: 100%; }
+  .col-12 {
+    width: 100%; } }
 
 .card {
   display: block;
