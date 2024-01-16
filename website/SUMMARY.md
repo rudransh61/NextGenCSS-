@@ -12,6 +12,7 @@
 ## 🌟 Quick Start
 
 * [Get Started](quick-start/get-started.md)
+* [Optimizations](quick-start/optimizations.md)
 * [Breakpoints](quick-start/breakpoints.md)
 * [Colors](quick-start/colors.md)
 * [Buttons](quick-start/buttons.md)
