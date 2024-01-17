@@ -6,11 +6,11 @@ description: Grid in NextGenCSS🔥
 
 This responsive grid system is designed to help you create flexible and responsive layouts in your web project.
 
-## `.grid` Container
+## `.container`Container
 
-Use .grid class to make a `.grid` Container
+Use .grid class to make a `.container`Container
 
-Use column classes `.col-{..number}` to define the width of your grid items. Columns are based on a 12-column layout.
+Use `.column` classes `.col-{..number}` to define the width of your grid items. Columns are based on a 12-column layout , And `.column` for element in new column.
 
 Classes for column
 
@@ -30,53 +30,36 @@ Classes for column
 ## Example
 
 ```html
-<div class="grid">
-  <div class="grid-item">
-    <div class="col-4">
-      <div class="box">
-        <p>Column 1</p>
+<div class="container">
+    <div class="column b-dark">
+      <div class="card">
+        <h3 class="card-title">Hello</h3>
+        <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-
-    <div class="col-4">
-      <div class="box">
-        <p>Column 2</p>
+    <div class="column b-dark">
+      <div class="card">
+        <h3 class="card-title">Hello</h3>
+        <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-
-    <div class="col-4">
-      <div class="box">
-        <p>Column 3</p>
+    <div class="column b-dark">
+      <div class="card">
+        <h3 class="card-title">Hello</h3>
+        <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-  </div>
-
-  <div class="grid-item">
-    <div class="col-12 col-md-6">
-      <div class="box">
-        <p>Full width on small screens, 6 columns on medium screens</p>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6">
-      <div class="box">
-        <p>Full width on small screens, 6 columns on medium screens</p>
+    <div class="column b-dark">
+      <div class="card">
+        <h3 class="card-title">Hello</h3>
+        <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   </div>
+
 ```
 
+<figure><img src="../.gitbook/assets/Screenshot 2024-01-17 165104.png" alt=""><figcaption></figcaption></figure>
 
-
-Also with inbuild clearfix&#x20;
-
-```scss
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-```
+<figure><img src="../.gitbook/assets/Screenshot 2024-01-17 165206.png" alt=""><figcaption></figcaption></figure>
 

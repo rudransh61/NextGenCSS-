@@ -24,6 +24,8 @@
 
 * [Box](components/box.md)
 * [Card](components/card.md)
+* [Footer](components/footer.md)
+* [NavBar](components/navbar.md)
 
 ## ⚒ Utilities
 
