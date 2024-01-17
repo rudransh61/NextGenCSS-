@@ -988,6 +988,7 @@ footer {
     font-size: 13px;
     margin-bottom: 0; }
 
+/* Mixin to set background color based on attribute */
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -1024,6 +1025,7 @@ footer {
   -webkit-transition: .4s;
   transition: .4s; }
 
+/* Use the mixin to set background color */
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -1035,69 +1037,3 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
-
-input:checked + .slider[bg-color="primary"] {
-  background-color: primary; }
-
-input:checked + .slider[bg-color="dark"] {
-  background-color: dark; }
-
-input:checked + .slider[bg-color="alert"] {
-  background-color: alert; }
-
-input:checked + .slider[bg-color="leaf"] {
-  background-color: leaf; }
-
-input:checked + .slider[bg-color="orange"] {
-  background-color: orange; }
-
-input:checked + .slider[bg-color="yellow"] {
-  background-color: yellow; }
-
-input:checked + .slider[bg-color="gray"] {
-  background-color: gray; }
-
-input:checked + .slider[bg-color="purple"] {
-  background-color: purple; }
-
-input:checked + .slider[bg-color="choco"] {
-  background-color: choco; }
-
-input:checked + .slider[bg-color="pink"] {
-  background-color: pink; }
-
-input:checked + .slider[bg-color="white"] {
-  background-color: white; }
-
-input:focus + .slider[bg-color="primary"] {
-  background-color: #0074d9; }
-
-input:focus + .slider[bg-color="dark"] {
-  background-color: #000000; }
-
-input:focus + .slider[bg-color="alert"] {
-  background-color: #dc143c; }
-
-input:focus + .slider[bg-color="leaf"] {
-  background-color: #228b22; }
-
-input:focus + .slider[bg-color="orange"] {
-  background-color: #ff4500; }
-
-input:focus + .slider[bg-color="yellow"] {
-  background-color: #ffd700; }
-
-input:focus + .slider[bg-color="gray"] {
-  background-color: #708090; }
-
-input:focus + .slider[bg-color="purple"] {
-  background-color: #967bb6; }
-
-input:focus + .slider[bg-color="choco"] {
-  background-color: #d2691e; }
-
-input:focus + .slider[bg-color="pink"] {
-  background-color: #ff69b4; }
-
-input:focus + .slider[bg-color="white"] {
-  background-color: #ffffff; }

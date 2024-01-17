@@ -12,20 +12,21 @@
     <div class="mg-x-3">
         <nav class="navbar bg-leaf mg-b-2">
             <div class="logo">Blog Name</div>
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label> <!--Hamburger for navbar-->
-
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                </div>
-            </ul>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <!--Hamburger for navbar-->
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label> 
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
         </nav>
         <div class="grid mg-y-2">
             <div class="grid-item box">
@@ -39,7 +40,10 @@
                     <form>
                         <input placeholder="Subscribe to the NewsTeller" />
                         <button type="submit" class="btn bg-leaf" href="#">Button</button>
-                        <button type="checkbox">Check</button>
+                        <div class="switch">
+                            <input type="checkbox" id="customSwitch" bg-color="blue">
+                            <label class="slider round" for="customSwitch"></label>
+                        </div>                         
                     </form>
                 </div>
 

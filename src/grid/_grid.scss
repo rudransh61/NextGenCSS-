@@ -23,14 +23,6 @@ $gap: 1rem;   // Column gap
   float: left;
   margin: 0 $gap / 2;
 
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-
   // Responsive adjustments
   @media screen and (max-width: 768px) {
     float: none;
