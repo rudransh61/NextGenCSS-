@@ -22,3 +22,14 @@ input[type="checkbox"] {
 input[type="checkbox"]:hover {
   color: Get-Color("gray");
 }
+
+.neumorphic-input {
+  background-color: #e0e0e0; /* Light background color */
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff; /* Neumorphic inset shadow */
+  &:hover{
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff; /* Slightly larger shadow on hover */
+  }
+}

@@ -251,6 +251,19 @@ button {
   .btn-circle:hover {
     background-color: #708090; }
 
+.neumorphic-button {
+  background-color: #e0e0e0;
+  /* Light background color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff;
+  /* Neumorphic shadow */ }
+  .neumorphic-button:hover {
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
+    /* Slightly larger shadow on hover */ }
+
 .bg-primary {
   background-color: #0074d9 !important; }
 
@@ -361,6 +374,12 @@ button {
   border: 0.1rem solid #ffffff;
   border-radius: 1rem; }
 
+.neumorphic-border {
+  border: 1px solid #cbced1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff; }
+
 /* Set the base font size for the root element. */
 html {
   font-size: 16px; }
@@ -419,6 +438,21 @@ li {
 hr {
   padding: 0rem;
   border-top: 0.0625rem solid #000000; }
+
+/*make Neumorphism*/
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  /* Background color */ }
+
+.neumorphic-heading {
+  font-size: 24px;
+  margin-bottom: 10px; }
+
+.neumorphic-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px; }
 
 .pd-0 {
   padding: 0rem; }
@@ -757,10 +791,6 @@ hr {
 .column {
   float: left;
   margin: 0 0.5rem; }
-  .column:first-child {
-    margin-left: 0; }
-  .column:last-child {
-    margin-right: 0; }
   @media screen and (max-width: 768px) {
     .column {
       float: none;
@@ -847,6 +877,17 @@ hr {
     font-size: 1rem; }
     .card .card-body a {
       text-decoration: underline; }
+
+.neumorphic-card {
+  background-color: #e0e0e0;
+  /* Light background color */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+  /* Neumorphic shadow */ }
+  .neumorphic-card:hover {
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
+    /* Slightly larger shadow on hover */ }
 
 .box {
   width: 100%;
@@ -1037,3 +1078,50 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
+
+.neumorphic-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+  .neumorphic-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .neumorphic-toggle-label {
+    position: absolute;
+    cursor: pointer;
+    width: 100%; }
+
+input {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  cursor: pointer; }
+
+input[type="checkbox"] {
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #0074d9;
+  border: 0.5rem solid #000000;
+  /* Thick and light border */
+  border-radius: 1rem;
+  /* Curvy border */
+  box-shadow: 0 0 0.625 #000000; }
+
+input[type="checkbox"]:hover {
+  color: #708090; }
+
+.neumorphic-input {
+  background-color: #e0e0e0;
+  /* Light background color */
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff;
+  /* Neumorphic inset shadow */ }
+  .neumorphic-input:hover {
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
+    /* Slightly larger shadow on hover */ }

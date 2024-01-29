@@ -24,3 +24,11 @@
     @include border-curve(nth($colors, $i));
   }
 }
+
+// Border Style
+.neumorphic-border {
+  border: 1px solid #cbced1; // Neumorphic border color
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff; // Neumorphic shadow
+}

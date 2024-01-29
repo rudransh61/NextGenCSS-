@@ -94,3 +94,24 @@ hr {
   padding: 0rem;
   border-top: 0.0625rem solid Get-Color("dark");
 }
+
+
+/*make Neumorphism*/
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc; /* Background color */
+}
+
+// Heading Style
+.neumorphic-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+// Paragraph Style
+.neumorphic-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
