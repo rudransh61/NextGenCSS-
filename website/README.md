@@ -33,6 +33,8 @@ Introducing a new fast easy to learn CSS framework for your traditional HTML fil
 
 🤝 small but growing community&#x20;
 
+🖼 now moving towards [Neumorphic ](https://en.wikipedia.org/wiki/Neumorphism)styles
+
 
 
 ## What it includes ? and Why should I use it ?
