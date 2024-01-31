@@ -10,14 +10,15 @@ $purple: #967bb6;
 $choco: #d2691e;
 $pink: #ff69b4;
 $white: #ffffff;
+$neugray : #f0f0f0;
 
 // List of colors
 $colors: $primary, $dark, $alert, $leaf, $orange, $yellow, $gray, $purple,
-  $choco, $pink, $white;
+  $choco, $pink, $white, $neugray;
 
 // Names for colors
 $color-names: "primary", "dark", "alert", "leaf", "orange", "yellow", "gray",
-  "purple", "choco", "pink", "white";
+  "purple", "choco", "pink", "white" , "neugray";
 // Updated Get-Color function
 @function Get-Color($color) {
   $color-index: Index($color-names, $color);

@@ -25,10 +25,22 @@
   }
 }
 
-// Border Style
-.neumorphic-border {
-  border: 1px solid #cbced1; // Neumorphic border color
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff; // Neumorphic shadow
+// Usage example for a neumorphic border
+
+@for $i from 1 through length($colors) {
+  $color: nth($colors, $i);
+  $color-name: nth($color-names, $i);
+
+  // Define base styles for neumorphic div
+  .neumorphic-border-#{$color-name} {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid $color;
+    box-shadow: 5px 5px 10px lighten($color, 20%), -5px -5px 10px lighten($color, 40%);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 8px 8px 12px lighten($color, 20%), -8px -8px 12px lighten($color, 40%);
+    }
+  }
 }

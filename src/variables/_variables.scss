@@ -35,3 +35,27 @@ $sm: 480px;
 $md: 720px;
 $lg: 960px;
 $xl: 1200px;
+
+// all Neumorphic variables
+$neumorphic-font-family: 'Arial', sans-serif;
+$neumorphic-font-size: 16px;
+$neumorphic-line-height: 1.5;
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+
+// Base styles for spacing
+$base-spacing-unit: 8px;
+
+// Base styles for borders
+$base-border-radius: 4px;
+$base-border-width: 1px;
+$base-border-color: #ddd;
+
+// Base styles for shadows
+$base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Base styles for transitions
+$base-transition-duration: 0.3s;
+$base-transition-ease: ease-in-out;

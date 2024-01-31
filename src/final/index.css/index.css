@@ -45,6 +45,9 @@
 .font-white {
   color: #ffffff; }
 
+.font-neugray {
+  color: #f0f0f0; }
+
 *,
 *::before,
 *::after {
@@ -174,6 +177,9 @@ body {
 .font-white {
   color: #ffffff; }
 
+.font-neugray {
+  color: #f0f0f0; }
+
 button {
   cursor: pointer;
   outline: 0;
@@ -251,18 +257,173 @@ button {
   .btn-circle:hover {
     background-color: #708090; }
 
-.neumorphic-button {
-  background-color: #e0e0e0;
-  /* Light background color */
-  border: none;
+.neumorphic-button-primary {
+  display: inline-block;
   padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff;
-  /* Neumorphic shadow */ }
-  .neumorphic-button:hover {
-    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
-    /* Slightly larger shadow on hover */ }
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #0074d9;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #40a6ff, -5px -5px 10px #a6d6ff;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-primary:hover {
+    background-color: #0059a6;
+    box-shadow: 8px 8px 12px #40a6ff, -8px -8px 12px #a6d6ff; }
+
+.neumorphic-button-dark {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #333333, -5px -5px 10px #666666;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-dark:hover {
+    background-color: black;
+    box-shadow: 8px 8px 12px #333333, -8px -8px 12px #666666; }
+
+.neumorphic-button-alert {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #dc143c;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #f16581, -5px -5px 10px #fac3ce;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-alert:hover {
+    background-color: #ad102f;
+    box-shadow: 8px 8px 12px #f16581, -8px -8px 12px #fac3ce; }
+
+.neumorphic-button-leaf {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #228b22;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #42d142, -5px -5px 10px #94e594;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-leaf:hover {
+    background-color: #186218;
+    box-shadow: 8px 8px 12px #42d142, -8px -8px 12px #94e594; }
+
+.neumorphic-button-orange {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #ff8f66, -5px -5px 10px #ffdacc;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-orange:hover {
+    background-color: #cc3700;
+    box-shadow: 8px 8px 12px #ff8f66, -8px -8px 12px #ffdacc; }
+
+.neumorphic-button-yellow {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #ffe766, -5px -5px 10px #fff7cc;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-yellow:hover {
+    background-color: #ccac00;
+    box-shadow: 8px 8px 12px #ffe766, -8px -8px 12px #fff7cc; }
+
+.neumorphic-button-gray {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #708090;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #a9b3bd, -5px -5px 10px #e3e6e9;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-gray:hover {
+    background-color: #5a6773;
+    box-shadow: 8px 8px 12px #a9b3bd, -8px -8px 12px #e3e6e9; }
+
+.neumorphic-button-purple {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #967bb6;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #cabdda, -5px -5px 10px #fefeff;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-purple:hover {
+    background-color: #7c5aa4;
+    box-shadow: 8px 8px 12px #cabdda, -8px -8px 12px #fefeff; }
+
+.neumorphic-button-choco {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #d2691e;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #eaa16c, -5px -5px 10px #f7dac5;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-choco:hover {
+    background-color: #a55318;
+    box-shadow: 8px 8px 12px #eaa16c, -8px -8px 12px #f7dac5; }
+
+.neumorphic-button-pink {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ff69b4;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #ffcfe7, -5px -5px 10px white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-pink:hover {
+    background-color: #ff369b;
+    box-shadow: 8px 8px 12px #ffcfe7, -8px -8px 12px white; }
+
+.neumorphic-button-white {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-white:hover {
+    background-color: #e6e6e6;
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
+
+.neumorphic-button-neugray {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+  .neumorphic-button-neugray:hover {
+    background-color: #d7d7d7;
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
 
 .bg-primary {
   background-color: #0074d9 !important; }
@@ -297,6 +458,9 @@ button {
 .bg-white {
   background-color: #ffffff !important; }
 
+.bg-neugray {
+  background-color: #f0f0f0 !important; }
+
 .b-primary {
   border: 0.1rem solid #0074d9; }
 
@@ -329,6 +493,9 @@ button {
 
 .b-white {
   border: 0.1rem solid #ffffff; }
+
+.b-neugray {
+  border: 0.1rem solid #f0f0f0; }
 
 .b-curve-primary {
   border: 0.1rem solid #0074d9;
@@ -374,11 +541,117 @@ button {
   border: 0.1rem solid #ffffff;
   border-radius: 1rem; }
 
-.neumorphic-border {
-  border: 1px solid #cbced1;
-  padding: 10px;
+.b-curve-neugray {
+  border: 0.1rem solid #f0f0f0;
+  border-radius: 1rem; }
+
+.neumorphic-border-primary {
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff; }
+  padding: 15px;
+  border: 2px solid #0074d9;
+  box-shadow: 5px 5px 10px #40a6ff, -5px -5px 10px #a6d6ff;
+  transition: all 0.3s ease; }
+  .neumorphic-border-primary:hover {
+    box-shadow: 8px 8px 12px #40a6ff, -8px -8px 12px #a6d6ff; }
+
+.neumorphic-border-dark {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 10px #333333, -5px -5px 10px #666666;
+  transition: all 0.3s ease; }
+  .neumorphic-border-dark:hover {
+    box-shadow: 8px 8px 12px #333333, -8px -8px 12px #666666; }
+
+.neumorphic-border-alert {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #dc143c;
+  box-shadow: 5px 5px 10px #f16581, -5px -5px 10px #fac3ce;
+  transition: all 0.3s ease; }
+  .neumorphic-border-alert:hover {
+    box-shadow: 8px 8px 12px #f16581, -8px -8px 12px #fac3ce; }
+
+.neumorphic-border-leaf {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #228b22;
+  box-shadow: 5px 5px 10px #42d142, -5px -5px 10px #94e594;
+  transition: all 0.3s ease; }
+  .neumorphic-border-leaf:hover {
+    box-shadow: 8px 8px 12px #42d142, -8px -8px 12px #94e594; }
+
+.neumorphic-border-orange {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #ff4500;
+  box-shadow: 5px 5px 10px #ff8f66, -5px -5px 10px #ffdacc;
+  transition: all 0.3s ease; }
+  .neumorphic-border-orange:hover {
+    box-shadow: 8px 8px 12px #ff8f66, -8px -8px 12px #ffdacc; }
+
+.neumorphic-border-yellow {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #ffd700;
+  box-shadow: 5px 5px 10px #ffe766, -5px -5px 10px #fff7cc;
+  transition: all 0.3s ease; }
+  .neumorphic-border-yellow:hover {
+    box-shadow: 8px 8px 12px #ffe766, -8px -8px 12px #fff7cc; }
+
+.neumorphic-border-gray {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #708090;
+  box-shadow: 5px 5px 10px #a9b3bd, -5px -5px 10px #e3e6e9;
+  transition: all 0.3s ease; }
+  .neumorphic-border-gray:hover {
+    box-shadow: 8px 8px 12px #a9b3bd, -8px -8px 12px #e3e6e9; }
+
+.neumorphic-border-purple {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #967bb6;
+  box-shadow: 5px 5px 10px #cabdda, -5px -5px 10px #fefeff;
+  transition: all 0.3s ease; }
+  .neumorphic-border-purple:hover {
+    box-shadow: 8px 8px 12px #cabdda, -8px -8px 12px #fefeff; }
+
+.neumorphic-border-choco {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #d2691e;
+  box-shadow: 5px 5px 10px #eaa16c, -5px -5px 10px #f7dac5;
+  transition: all 0.3s ease; }
+  .neumorphic-border-choco:hover {
+    box-shadow: 8px 8px 12px #eaa16c, -8px -8px 12px #f7dac5; }
+
+.neumorphic-border-pink {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #ff69b4;
+  box-shadow: 5px 5px 10px #ffcfe7, -5px -5px 10px white;
+  transition: all 0.3s ease; }
+  .neumorphic-border-pink:hover {
+    box-shadow: 8px 8px 12px #ffcfe7, -8px -8px 12px white; }
+
+.neumorphic-border-white {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+  transition: all 0.3s ease; }
+  .neumorphic-border-white:hover {
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
+
+.neumorphic-border-neugray {
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #f0f0f0;
+  box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+  transition: all 0.3s ease; }
+  .neumorphic-border-neugray:hover {
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
 
 /* Set the base font size for the root element. */
 html {
@@ -440,19 +713,144 @@ hr {
   border-top: 0.0625rem solid #000000; }
 
 /*make Neumorphism*/
-/* Global Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0;
-  /* Background color */ }
-
-.neumorphic-heading {
-  font-size: 24px;
-  margin-bottom: 10px; }
-
-.neumorphic-paragraph {
-  font-size: 16px;
-  margin-bottom: 20px; }
+.neumorphic {
+  /* Global Styles */ }
+  .neumorphic body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5; }
+  .neumorphic body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+    /* Background color */ }
+  .neumorphic h1,
+  .neumorphic h2,
+  .neumorphic h3,
+  .neumorphic h4,
+  .neumorphic h5,
+  .neumorphic h6 {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease; }
+    .neumorphic h1:hover,
+    .neumorphic h2:hover,
+    .neumorphic h3:hover,
+    .neumorphic h4:hover,
+    .neumorphic h5:hover,
+    .neumorphic h6:hover {
+      background-color: #d7d7d7; }
+    .neumorphic h1:hover,
+    .neumorphic h2:hover,
+    .neumorphic h3:hover,
+    .neumorphic h4:hover,
+    .neumorphic h5:hover,
+    .neumorphic h6:hover {
+      box-shadow: 8px 8px 12px #c9c9c9, -8px -8px 12px #ffffff; }
+  .neumorphic p {
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease; }
+    .neumorphic p:hover {
+      box-shadow: 8px 8px 12px #c9c9c9, -8px -8px 12px #ffffff; }
+  .neumorphic .neumorphic-div-primary {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0074d9;
+    box-shadow: 8px 8px 12px #40a6ff, -8px -8px 12px #a6d6ff;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-primary:hover {
+      box-shadow: 12px 12px 16px #40a6ff, -12px -12px 16px #a6d6ff; }
+  .neumorphic .neumorphic-div-dark {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 8px 8px 12px #333333, -8px -8px 12px #666666;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-dark:hover {
+      box-shadow: 12px 12px 16px #333333, -12px -12px 16px #666666; }
+  .neumorphic .neumorphic-div-alert {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #dc143c;
+    box-shadow: 8px 8px 12px #f16581, -8px -8px 12px #fac3ce;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-alert:hover {
+      box-shadow: 12px 12px 16px #f16581, -12px -12px 16px #fac3ce; }
+  .neumorphic .neumorphic-div-leaf {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #228b22;
+    box-shadow: 8px 8px 12px #42d142, -8px -8px 12px #94e594;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-leaf:hover {
+      box-shadow: 12px 12px 16px #42d142, -12px -12px 16px #94e594; }
+  .neumorphic .neumorphic-div-orange {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ff4500;
+    box-shadow: 8px 8px 12px #ff8f66, -8px -8px 12px #ffdacc;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-orange:hover {
+      box-shadow: 12px 12px 16px #ff8f66, -12px -12px 16px #ffdacc; }
+  .neumorphic .neumorphic-div-yellow {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffd700;
+    box-shadow: 8px 8px 12px #ffe766, -8px -8px 12px #fff7cc;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-yellow:hover {
+      box-shadow: 12px 12px 16px #ffe766, -12px -12px 16px #fff7cc; }
+  .neumorphic .neumorphic-div-gray {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #708090;
+    box-shadow: 8px 8px 12px #a9b3bd, -8px -8px 12px #e3e6e9;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-gray:hover {
+      box-shadow: 12px 12px 16px #a9b3bd, -12px -12px 16px #e3e6e9; }
+  .neumorphic .neumorphic-div-purple {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #967bb6;
+    box-shadow: 8px 8px 12px #cabdda, -8px -8px 12px #fefeff;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-purple:hover {
+      box-shadow: 12px 12px 16px #cabdda, -12px -12px 16px #fefeff; }
+  .neumorphic .neumorphic-div-choco {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #d2691e;
+    box-shadow: 8px 8px 12px #eaa16c, -8px -8px 12px #f7dac5;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-choco:hover {
+      box-shadow: 12px 12px 16px #eaa16c, -12px -12px 16px #f7dac5; }
+  .neumorphic .neumorphic-div-pink {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ff69b4;
+    box-shadow: 8px 8px 12px #ffcfe7, -8px -8px 12px white;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-pink:hover {
+      box-shadow: 12px 12px 16px #ffcfe7, -12px -12px 16px white; }
+  .neumorphic .neumorphic-div-white {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-white:hover {
+      box-shadow: 12px 12px 16px white, -12px -12px 16px white; }
+  .neumorphic .neumorphic-div-neugray {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 8px 8px 12px white, -8px -8px 12px white;
+    transition: all 0.3s ease; }
+    .neumorphic .neumorphic-div-neugray:hover {
+      box-shadow: 12px 12px 16px white, -12px -12px 16px white; }
 
 .pd-0 {
   padding: 0rem; }
@@ -898,6 +1296,10 @@ body {
   .box .center-box {
     justify-content: center;
     align-items: center; }
+  .box .full-width-box {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
 
 .navbar {
   display: flex;

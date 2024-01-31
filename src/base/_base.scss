@@ -43,18 +43,23 @@ html {
 h1 {
   font-size: 2rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 1rem;
 }
+
 h5 {
   font-size: 0.875rem;
 }
+
 h6 {
   font-size: 0.75rem;
 }
@@ -74,6 +79,7 @@ a {
 ol {
   list-style: decimal;
 }
+
 ul {
   list-style: circle;
 }
@@ -98,20 +104,81 @@ hr {
 
 /*make Neumorphism*/
 
-/* Global Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fcfcfc; /* Background color */
-}
 
-// Heading Style
-.neumorphic-heading {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
-// Paragraph Style
-.neumorphic-paragraph {
-  font-size: 16px;
-  margin-bottom: 20px;
+.neumorphic {
+  body {
+    font-family: $neumorphic-font-family;
+    font-size: $neumorphic-font-size;
+    line-height: $neumorphic-line-height;
+  }
+
+
+  @mixin background-shade($shade-color, $hover-shade-color: darken($shade-color, 10%)) {
+    background-color: $shade-color;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $hover-shade-color;
+    }
+  }
+
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+    /* Background color */
+  }
+
+
+  // Apply neumorphic style to specific headings
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include background-shade(#f0f0f0); // Replace with your desired base color
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 8px 8px 12px #c9c9c9, -8px -8px 12px #ffffff;
+    }
+  }
+
+  // Apply neumorphic style to paragraphs
+  p {
+    // @include background-shade(#f0f0f0); // Replace with your desired base color
+    border-radius: 10px;
+    padding: 15px;
+    // box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 8px 8px 12px #c9c9c9, -8px -8px 12px #ffffff;
+    }
+  }
+
+  // Usage example for a neumorphic div
+
+  @for $i from 1 through length($colors) {
+    $color: nth($colors, $i);
+    $color-name: nth($color-names, $i);
+
+    // Define base styles for neumorphic div
+    .neumorphic-div-#{$color-name} {
+      border-radius: 10px;
+      padding: 20px;
+      background-color: $color;
+      box-shadow: 8px 8px 12px lighten($color, 20%), -8px -8px 12px lighten($color, 40%);
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 12px 12px 16px lighten($color, 20%), -12px -12px 16px lighten($color, 40%);
+      }
+    }
+  }
 }
