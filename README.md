@@ -18,6 +18,9 @@
 
 This is a fast easy CSS framework for your next project . It will provide a bunch of features to fast your development process and make writing CSS fast !!!
 
+![](https://github.com/rudransh61/NextGenCSS-/blob/master/neumorphicstyle.gif)
+![](https://github.com/rudransh61/NextGenCSS-/blob/master/video_example.gif)
+
 ![meme](./img1.jpg)
 
 ## !!! Version 0.1 released
