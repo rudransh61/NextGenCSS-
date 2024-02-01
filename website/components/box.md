@@ -8,20 +8,16 @@ description: Box in NextGenCSS🔥
 
 _This class creates a basic, responsive container with consistent styling for content blocks. It's ideal for structuring content sections and aligning elements within them._
 
-
-
-Use this component by adding `.box` class in element....&#x20;
+Use this component by adding `.box` class in element....
 
 The `center-box` class aligns content within that container.
 
-
-
-
+The `full-width-box` class will make the width of box full&#x20;
 
 ## Examples
 
 ```html
-<div class="box"> 
+<div class="box full-width-box"> 
    <div class="center-box"> 
      <h2>This heading is centered both horizontally and vertically</h2>
   </div>

@@ -25,6 +25,7 @@
 * [Card](components/card.md)
 * [Footer](components/footer.md)
 * [NavBar](components/navbar.md)
+* [Switch](components/switch.md)
 
 ## ⚒ Utilities
 
