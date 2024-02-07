@@ -18,6 +18,7 @@
 * [BackGround Color](quick-start/background-color.md)
 * [Border](quick-start/border.md)
 * [Font](quick-start/font.md)
+* [Icons](quick-start/icons.md)
 
 ## 🧩 Components
 
