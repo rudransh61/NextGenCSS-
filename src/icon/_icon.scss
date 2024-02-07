@@ -1,0 +1,50 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+// Define mixins for generating icon styles
+@mixin icon($font-family: 'Font Awesome', $font-size: 1rem, $color: inherit) {
+    font-family: $font-family; // Specify the font family for the icons
+    font-size: $font-size;     // Set the font size
+    color: $color;             // Set the color
+  }
+  
+  @mixin size($width, $height: null) {
+    width: $width;
+    @if $height {
+      height: $height;
+    }
+  }
+  
+  // Define a placeholder selector for icon classes
+  %icon {
+    @include icon; // Include the icon mixin to generate icon styles
+  }
+  
+  // Placeholder for size classes
+  %size {
+    @include size(20px); // Provide a default width value when including the size mixin
+  }
+  
+  // Utility classes for shapes
+  .square {
+    border-radius: 0;
+  }
+  
+  .circle {
+    border-radius: 50%;
+  }
+  
+  // Additional utility classes
+  .float-left {
+    float: left;
+  }
+  
+  .float-right {
+    float: right;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
