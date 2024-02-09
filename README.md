@@ -48,7 +48,9 @@ Learn this CSS library of next generation .
 
 [Documentation](https://nextgencss.gitbook.io/untitled/)
 
-  
+Learn this in 4 minutes , check wiki page for Beginners's Guide
+[wiki](https://github.com/rudransh61/NextGenCSS-/wiki/Learn-it-in-4-minutes-...)
+
 ** v0.1 released introducing new features :-
   - Curve border classes
   - Some templates for copy paste
