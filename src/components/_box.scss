@@ -10,12 +10,12 @@
 // Box Class
 .box {
   @include box();
-
+  // utility to center content inside box
   .center-box {
     justify-content: center;
     align-items: center;
   }
-
+  // utility to make box width 100%
   .full-width-box {
     width: 100%;
     max-width: 1200px;

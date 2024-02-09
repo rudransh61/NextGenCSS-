@@ -969,17 +969,6 @@ hr {
     .card .card-body a {
       text-decoration: underline; }
 
-.neumorphic-card {
-  background-color: #e0e0e0;
-  /* Light background color */
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
-  /* Neumorphic shadow */ }
-  .neumorphic-card:hover {
-    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
-    /* Slightly larger shadow on hover */ }
-
 .box {
   width: 100%;
   max-width: 1200px;
@@ -1124,69 +1113,64 @@ footer {
     font-size: 13px;
     margin-bottom: 0; }
 
-/* Mixin to set background color based on attribute */
+/* Remove this switch when in use */
+.component-title {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 30px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #888;
+  text-align: center; }
+
 /* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px; }
+.switch-container {
+  width: 100%;
+  max-width: 14rem;
+  height: 5rem;
+  position: relative; }
 
 /* Hide default HTML checkbox */
-.switch input {
+.checkbox {
   opacity: 0;
   width: 0;
-  height: 0; }
+  height: 0;
+  position: absolute; }
+
+.switch {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  position: relative;
+  /* Added */ }
 
 /* The slider */
 .slider {
+  width: 27px;
+  height: 27px;
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  left: calc(50% - 27px/2 - 10px);
+  top: calc(50% - 27px/2);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
+  cursor: pointer; }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s; }
+/* Apply styles from checkbox or container to switch or switch box */
+.switch-container .checkbox:checked + .switch {
+  background-color: #34C759; }
 
-/* Use the mixin to set background color */
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px); }
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px; }
-
-.slider.round:before {
-  border-radius: 50%; }
-
-.neumorphic-toggle {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px; }
-  .neumorphic-toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0; }
-  .neumorphic-toggle-label {
-    position: absolute;
-    cursor: pointer;
-    width: 100%; }
+.switch-container .checkbox:checked + .switch .slider {
+  left: calc(50% - 27px/2 + 10px);
+  top: calc(50% - 27px/2); }
 
 input {
   display: inline-block;
@@ -1546,3 +1530,28 @@ input[type="checkbox"]:hover {
   .neumorphic-button-neugray:hover {
     background-color: #d7d7d7;
     box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
+
+.neumorphic-card {
+  background-color: #e0e0e0;
+  /* Light background color */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+  /* Neumorphic shadow */ }
+  .neumorphic-card:hover {
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
+    /* Slightly larger shadow on hover */ }
+
+.neumorphic-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+  .neumorphic-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .neumorphic-toggle-label {
+    position: absolute;
+    cursor: pointer;
+    width: 100%; }

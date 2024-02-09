@@ -1,0 +1,10 @@
+
+.neumorphic-card {
+    background-color: #e0e0e0; /* Light background color */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff; /* Neumorphic shadow */
+    &:hover{
+      box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff; /* Slightly larger shadow on hover */
+    }
+  }

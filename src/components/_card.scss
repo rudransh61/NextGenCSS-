@@ -1,5 +1,4 @@
 // Card Styles
-// @import '../variables/variables';
 .card {
   display: block;
   gap: 1rem;
@@ -8,31 +7,18 @@
   width: 100%;
   max-width: 40%;
   overflow: hidden;
-
-  // border: $card-border-thickness solid #ddd;
-  // box-shadow: $card-border-shadow;
-
+  // add title to card
   .card-title {
     font-size: $card-font-size;
     padding-bottom: $card-padding;
     font-weight: bold;
   }
-
+  // add this to the body of your card
   .card-body {
     font-size: $card-font-size;
 
     a {
       text-decoration: underline;
     }
-  }
-}
-
-.neumorphic-card {
-  background-color: #e0e0e0; /* Light background color */
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff; /* Neumorphic shadow */
-  &:hover{
-    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff; /* Slightly larger shadow on hover */
   }
 }
