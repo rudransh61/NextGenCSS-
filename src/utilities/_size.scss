@@ -42,3 +42,14 @@
 .size-09 {
   transform: scale(0.9);
 }
+
+
+
+// Box sizing Utilities
+.box-border{
+  box-sizing: border-box;
+}
+
+.box-content{
+  box-sizing: content-box;
+}

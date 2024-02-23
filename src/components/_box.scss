@@ -1,7 +1,7 @@
 // Box Mixin
-@mixin box() {
+@mixin box($maxWidth: $xl) {
   width: 100%;
-  max-width: $xl;
+  max-width: $maxWidth;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -9,17 +9,38 @@
 
 // Box Class
 .box {
-  @include box();
-  // utility to center content inside box
+  @include box(); // Use the default max-width ($xl)
+
+  // Utility to center content inside box
   .center-box {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-  // utility to make box width 100%
+
+  // Utility to make box width 100%
   .full-width-box {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
-}
 
+  // Media queries for responsive design
+  @media (max-width: 767px) {
+    .mv {
+      @include box(767px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .tv {
+      @include box(991px);
+    }
+  }
+
+  @media (max-width: 1536px) {
+    .dv {
+      @include box(1536px);
+    }
+  }
+}

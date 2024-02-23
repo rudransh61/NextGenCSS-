@@ -21,4 +21,36 @@
   display: inline-block;
 }
 
-// Grid container utility
+// Hidden
+.hide{
+  display : none;
+}
+
+//Table
+.table{
+  display : table;
+}
+
+.inline-table{
+  display:inline-table;
+}
+
+.table-col{
+  display : table-column;
+}
+
+.table-footer{
+  display: table-footer-group;
+}
+
+.table-header{
+  display: table-header-group;
+}
+
+.flow-root{
+  display : flow-root;
+}
+
+.list-items{
+ display: list-item; 
+}
