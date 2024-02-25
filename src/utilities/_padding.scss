@@ -1,12 +1,12 @@
 // Importing variables file
 
-@import "../variables/variables";
+// @import "../variables/variables";
 
 // Padding syntax: pd-{some number} compiled as: padding: {some number}
 
 // Padding utility mixin
 @mixin padding-utility($num) {
-  .pd-#{$num} {
+  .#{Syntax(padding)}-#{$num} {
     padding: #{$num * $base-unit-padding}rem;
   }
 }
@@ -22,7 +22,7 @@
 
 // Padding top utility
 @mixin padding-top-utility($num) {
-  .pd-top-#{$num} {
+  .#{Syntax(padding)}-top-#{$num} {
     padding-top: #{$num * $base-unit-padding}rem;
   }
 }
@@ -36,7 +36,7 @@
 
 // Padding bottom utility
 @mixin padding-bottom-utility($num) {
-  .pd-bottom-#{$num} {
+  .#{Syntax(padding)}-bottom-#{$num} {
     padding-bottom: #{$num * $base-unit-padding}rem;
   }
 }
@@ -50,7 +50,7 @@
 
 // Padding right utility
 @mixin padding-right-utility($num) {
-  .pd-right-#{$num} {
+  .#{Syntax(padding)}-right-#{$num} {
     padding-right: #{$num * $base-unit-padding}rem;
   }
 }
@@ -64,7 +64,7 @@
 
 // Padding left utility
 @mixin padding-left-utility($num) {
-  .pd-left-#{$num} {
+  .#{Syntax(padding)}-left-#{$num} {
     padding-left: #{$num * $base-unit-padding}rem;
   }
 }
@@ -78,7 +78,7 @@
 
 // Padding horizontal utility
 @mixin padding-horizontal-utility($num) {
-  .pd-x-#{$num} {
+  .#{Syntax(padding)}-x-#{$num} {
     padding-right: #{$num * $base-unit-padding}rem;
     padding-left: #{$num * $base-unit-padding}rem;
   }
@@ -93,7 +93,7 @@
 
 // Padding vertical utility
 @mixin padding-vertical-utility($num) {
-  .pd-y-#{$num} {
+  .#{Syntax(padding)}-y-#{$num} {
     padding-top: #{$num * $base-unit-padding}rem;
     padding-bottom: #{$num * $base-unit-padding}rem;
   }

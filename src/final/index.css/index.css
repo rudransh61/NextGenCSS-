@@ -49,6 +49,62 @@
 .font-neugray {
   color: #f0f0f0; }
 
+/* Set the base font size for the root element. */
+html {
+  font-size: 16px; }
+
+/* Base styles for all elements. */
+* {
+  margin: 0.1rem;
+  padding: 0.1rem;
+  font-family: "Poppins", sans-serif; }
+
+/* Define font-size utility classes for heading tags. */
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.875rem; }
+
+h6 {
+  font-size: 0.75rem; }
+
+/* Font family for text. */
+text {
+  font-family: "Crimson Text", serif; }
+
+/* Styles for anchor tags. */
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+/* List styles for ordered and unordered lists. */
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: circle; }
+
+/* Styles for list items. */
+li {
+  display: inline-block;
+  margin-right: 0.625rem; }
+
+/* Styles for hyperlink hover. */
+/* Styles for horizontal ruler. */
+hr {
+  padding: 0rem;
+  border-top: 0.0625rem solid #000000; }
+
 *,
 *::before,
 *::after {
@@ -184,7 +240,6 @@ body {
 button {
   cursor: pointer;
   outline: 0;
-  color: #ffffff;
   background-color: #0074d9;
   border-color: #0074d9;
   display: inline-block;
@@ -195,10 +250,6 @@ button {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem; }
-  button:hover {
-    color: #ffffff;
-    background-color: #708090;
-    border-color: #708090; }
 
 .btn-curve {
   outline: none;
@@ -208,12 +259,7 @@ button {
   font-weight: 600;
   border-radius: 0.5rem;
   border: none;
-  background: #0074d9;
-  color: #ffffff; }
-  .btn-curve:hover {
-    color: #ffffff;
-    background-color: #708090;
-    border-color: #708090; }
+  background: #0074d9; }
 
 .btn-bootstrap {
   cursor: pointer;
@@ -230,17 +276,12 @@ button {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   color: #0074d9;
   border-color: #0074d9; }
-  .btn-bootstrap:hover {
-    color: #ffffff;
-    background-color: #708090;
-    border-color: #708090; }
 
 .btn-circle {
   display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
-  line-height: 1;
   border-radius: 500px;
   transition-property: background-color, border-color, color, box-shadow, filter;
   transition-duration: 0.3s;
@@ -255,8 +296,6 @@ button {
   color: #fff;
   background-color: #228b22;
   height: 48px; }
-  .btn-circle:hover {
-    background-color: #708090; }
 
 .bg-primary {
   background-color: #0074d9 !important; }
@@ -378,172 +417,113 @@ button {
   border: 0.1rem solid #f0f0f0;
   border-radius: 1rem; }
 
-.neumorphic-border-primary {
+.neumorphic-b-primary {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #0074d9;
   box-shadow: 5px 5px 10px #40a6ff, -5px -5px 10px #a6d6ff;
   transition: all 0.3s ease; }
-  .neumorphic-border-primary:hover {
+  .neumorphic-b-primary:hover {
     box-shadow: 8px 8px 12px #40a6ff, -8px -8px 12px #a6d6ff; }
 
-.neumorphic-border-dark {
+.neumorphic-b-dark {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #000000;
   box-shadow: 5px 5px 10px #333333, -5px -5px 10px #666666;
   transition: all 0.3s ease; }
-  .neumorphic-border-dark:hover {
+  .neumorphic-b-dark:hover {
     box-shadow: 8px 8px 12px #333333, -8px -8px 12px #666666; }
 
-.neumorphic-border-alert {
+.neumorphic-b-alert {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #dc143c;
   box-shadow: 5px 5px 10px #f16581, -5px -5px 10px #fac3ce;
   transition: all 0.3s ease; }
-  .neumorphic-border-alert:hover {
+  .neumorphic-b-alert:hover {
     box-shadow: 8px 8px 12px #f16581, -8px -8px 12px #fac3ce; }
 
-.neumorphic-border-leaf {
+.neumorphic-b-leaf {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #228b22;
   box-shadow: 5px 5px 10px #42d142, -5px -5px 10px #94e594;
   transition: all 0.3s ease; }
-  .neumorphic-border-leaf:hover {
+  .neumorphic-b-leaf:hover {
     box-shadow: 8px 8px 12px #42d142, -8px -8px 12px #94e594; }
 
-.neumorphic-border-orange {
+.neumorphic-b-orange {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #ff4500;
   box-shadow: 5px 5px 10px #ff8f66, -5px -5px 10px #ffdacc;
   transition: all 0.3s ease; }
-  .neumorphic-border-orange:hover {
+  .neumorphic-b-orange:hover {
     box-shadow: 8px 8px 12px #ff8f66, -8px -8px 12px #ffdacc; }
 
-.neumorphic-border-yellow {
+.neumorphic-b-yellow {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #ffd700;
   box-shadow: 5px 5px 10px #ffe766, -5px -5px 10px #fff7cc;
   transition: all 0.3s ease; }
-  .neumorphic-border-yellow:hover {
+  .neumorphic-b-yellow:hover {
     box-shadow: 8px 8px 12px #ffe766, -8px -8px 12px #fff7cc; }
 
-.neumorphic-border-gray {
+.neumorphic-b-gray {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #708090;
   box-shadow: 5px 5px 10px #a9b3bd, -5px -5px 10px #e3e6e9;
   transition: all 0.3s ease; }
-  .neumorphic-border-gray:hover {
+  .neumorphic-b-gray:hover {
     box-shadow: 8px 8px 12px #a9b3bd, -8px -8px 12px #e3e6e9; }
 
-.neumorphic-border-purple {
+.neumorphic-b-purple {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #967bb6;
   box-shadow: 5px 5px 10px #cabdda, -5px -5px 10px #fefeff;
   transition: all 0.3s ease; }
-  .neumorphic-border-purple:hover {
+  .neumorphic-b-purple:hover {
     box-shadow: 8px 8px 12px #cabdda, -8px -8px 12px #fefeff; }
 
-.neumorphic-border-choco {
+.neumorphic-b-choco {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #d2691e;
   box-shadow: 5px 5px 10px #eaa16c, -5px -5px 10px #f7dac5;
   transition: all 0.3s ease; }
-  .neumorphic-border-choco:hover {
+  .neumorphic-b-choco:hover {
     box-shadow: 8px 8px 12px #eaa16c, -8px -8px 12px #f7dac5; }
 
-.neumorphic-border-pink {
+.neumorphic-b-pink {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #ff69b4;
   box-shadow: 5px 5px 10px #ffcfe7, -5px -5px 10px white;
   transition: all 0.3s ease; }
-  .neumorphic-border-pink:hover {
+  .neumorphic-b-pink:hover {
     box-shadow: 8px 8px 12px #ffcfe7, -8px -8px 12px white; }
 
-.neumorphic-border-white {
+.neumorphic-b-white {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #ffffff;
   box-shadow: 5px 5px 10px white, -5px -5px 10px white;
   transition: all 0.3s ease; }
-  .neumorphic-border-white:hover {
+  .neumorphic-b-white:hover {
     box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
 
-.neumorphic-border-neugray {
+.neumorphic-b-neugray {
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #f0f0f0;
   box-shadow: 5px 5px 10px white, -5px -5px 10px white;
   transition: all 0.3s ease; }
-  .neumorphic-border-neugray:hover {
+  .neumorphic-b-neugray:hover {
     box-shadow: 8px 8px 12px white, -8px -8px 12px white; }
-
-/* Set the base font size for the root element. */
-html {
-  font-size: 16px; }
-
-/* Base styles for all elements. */
-* {
-  margin: 0.1rem;
-  padding: 0.1rem;
-  font-family: "Poppins", sans-serif; }
-
-/* Define font-size utility classes for heading tags. */
-h1 {
-  font-size: 2rem; }
-
-h2 {
-  font-size: 1.5rem; }
-
-h3 {
-  font-size: 1.25rem; }
-
-h4 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 0.875rem; }
-
-h6 {
-  font-size: 0.75rem; }
-
-/* Font family for text. */
-text {
-  font-family: "Crimson Text", serif; }
-
-/* Styles for anchor tags. */
-a {
-  text-decoration: none;
-  cursor: pointer; }
-
-/* List styles for ordered and unordered lists. */
-ol {
-  list-style: decimal; }
-
-ul {
-  list-style: circle; }
-
-/* Styles for list items. */
-li {
-  display: inline-block;
-  margin-right: 0.625rem; }
-
-/* Styles for hyperlink hover. */
-.link:hover {
-  color: #708090; }
-
-/* Styles for horizontal ruler. */
-hr {
-  padding: 0rem;
-  border-top: 0.0625rem solid #000000; }
 
 .pd-0 {
   padding: 0rem; }
@@ -1108,11 +1088,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #0074d9;
-  color: #ffffff; }
-
-.nav-links a {
-  color: #ffffff; }
+  background-color: #0074d9; }
 
 /* Logo Styles / Font Size */
 .logo {
@@ -1191,9 +1167,7 @@ input[type="checkbox"] {
     /* Your Styles */ } }
 
 footer {
-  padding: 40px 0;
-  background-color: #ffffff;
-  color: #708090; }
+  padding: 40px 0; }
   footer ul {
     padding: 0;
     list-style: none;
@@ -1227,7 +1201,6 @@ footer {
       footer .social > a:hover {
         opacity: 0.9; }
   footer .copyright {
-    color: #708090;
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
@@ -1309,9 +1282,6 @@ input[type="checkbox"] {
   border-radius: 1rem;
   /* Curvy border */
   box-shadow: 0 0 0.625 #000000; }
-
-input[type="checkbox"]:hover {
-  color: #708090; }
 
 .neumorphic-input {
   background-color: #e0e0e0;

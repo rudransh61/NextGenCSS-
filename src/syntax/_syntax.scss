@@ -1,0 +1,58 @@
+// Hello , Welcome to NextGenCSS 
+// Enjoy your own CSS utilities 
+// You can Edit the syntax as you want
+// The Guide that "How to change CSS utilities name as your teams's need is available on README". 
+
+// Example :- If I have to change the name of the padding utility in all the classes
+// I will change the key in the map named 'syntax' in this file
+// From : 
+// $syntax : (
+//     ...other code
+//     padding : "my-padding"
+//     ...other code
+// ) 
+// And then run the shell file 'build.sh' in root folder
+// You will get an updated 'index.css' file in 'src' folder
+// You can copy that file and use in your project as it is the minified version of 'index.css' in 'src/final/index.css' folder
+// NOTE : Don't forget to run 'build.sh' file
+
+
+// syntax
+
+$syntax : (
+    //Utilities
+    padding : "pd",
+    margin : "mg",
+    background : "bg",
+    border : "b",
+    neumorphic : "neumorphic",
+    center : "center",
+    container : "box",
+    font : "font",
+
+    //Elements
+    button : "btn",
+
+
+    //Components
+    card : "card",
+
+
+
+
+
+
+
+
+    //directions
+    right : "right",
+    left : "left",
+    top : "top",
+    bottom : "bottom"
+);
+
+
+
+
+//import the function to get Syntax
+@import '_getsyntax.scss';

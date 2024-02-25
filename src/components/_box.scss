@@ -8,18 +8,18 @@
 }
 
 // Box Class
-.box {
+.#{Syntax(container)} {
   @include box(); // Use the default max-width ($xl)
 
   // Utility to center content inside box
-  .center-box {
+  .center-#{Syntax(container)} {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   // Utility to make box width 100%
-  .full-width-box {
+  .full-width-#{Syntax(container)} {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;

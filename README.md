@@ -6,7 +6,7 @@
 <div align="center">
   <img src="./logo.png" width="200"/>
   <h1>NextGenCSS🔥</h1>
-  <p>Make your websites fast with this CSS framework.</p>
+  <p>A flexible and fast CSS framework with your custom utility names...</p>
 
   [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
   [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
@@ -15,6 +15,8 @@
   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 </div>
 
+You can change the utility name as you want in a simple click for team....
+# Now no need to learn any name of classes and check documentation
 
 This is a fast easy CSS framework for your next project . It will provide a bunch of features to fast your development process and make writing CSS fast !!!
 
@@ -78,6 +80,32 @@ See `CONTRIBUTING.md` for ways to get started.
 
   
   
+## How to Use it ?
+
+Firstly , Use it if you want to create custom syntax for you team's CSS classes , or want your own names in a CSS library
+
+To use it Install the project (For installation check below).
+
+Install all dependencies
+
+Then change the file `/src/syntax/_syntax.scss` and change the name of your wish like
+
+```scss
+$syntax : (
+  ...other code
+  padding : "my-padding",
+  ..other code
+); 
+
+```
+
+And then Run `build.sh` file in root folder
+```shell
+$ build.sh
+```
+
+Now you can copy the file `/src/index.css`
+and use it in your project
 
 ##  Installation
 

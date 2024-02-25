@@ -4,6 +4,9 @@
 //all variables 
 @import 'variables/variables.scss';
 
+//syntax
+@import './syntax/syntax';
+
 //fonts
 @import 'fonts/_fonts.scss';
 
@@ -32,4 +35,5 @@
 @import './table/table';
 
 //neumorphisms
-@import './neumorphism/neumorphism'
+@import './neumorphism/neumorphism';
+

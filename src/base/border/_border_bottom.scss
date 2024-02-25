@@ -7,7 +7,7 @@
 
 @for $i from 1 through length($colors) {
   // Creates classes for bottom border using color names.
-  .bb-#{nth($color-names,$i)} {
+  .#{Syntax(border)}-#{Syntax(bottom)}-#{nth($color-names,$i)} {
     @include border-bottom(nth($colors, $i));
   }
 }
@@ -19,7 +19,7 @@
 
 @for $i from 1 through length($colors) {
   // Creates classes for bottom curve border using color names.
-  .bb-curve-#{nth($color-names,$i)} {
+  .#{Syntax(border)}-#{Syntax(bottom)}-curve-#{nth($color-names,$i)} {
     @include border-curve-bottom(nth($colors, $i));
   }
 }

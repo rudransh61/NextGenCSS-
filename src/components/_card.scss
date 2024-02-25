@@ -1,5 +1,5 @@
 // Card Styles
-.card {
+.#{Syntax(card)} {
   display: block;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -8,13 +8,13 @@
   max-width: 40%;
   overflow: hidden;
   // add title to card
-  .card-title {
+  .#{Syntax(card)}-title {
     font-size: $card-font-size;
     padding-bottom: $card-padding;
     font-weight: bold;
   }
   // add this to the body of your card
-  .card-body {
+  .#{Syntax(card)}-body {
     font-size: $card-font-size;
 
     a {

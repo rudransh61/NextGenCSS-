@@ -1,25 +1,4 @@
-// @import '../variables/variables.scss';
 
-//import reset css
-@import "./reset";
-
-// optimizations for NextGen
-@import "./optimizations";
-
-//import breakpoints
-@import "./breakpoint";
-
-//fonts
-@import "../fonts/fonts.scss";
-
-//importing buttons
-@import "./button";
-
-//import colors
-@import "./color";
-
-//import border
-@import "./border/border";
 
 /* Set the base font size for the root element. */
 html {
@@ -101,3 +80,29 @@ hr {
   border-top: 0.0625rem solid Get-Color("dark");
 }
 
+
+
+
+
+// @import '../variables/variables.scss';
+
+//import reset css
+@import "./reset";
+
+// optimizations for NextGen
+@import "./optimizations";
+
+//import breakpoints
+@import "./breakpoint";
+
+//fonts
+@import "../fonts/fonts.scss";
+
+//importing buttons
+@import "./button";
+
+//import colors
+@import "./color";
+
+//import border
+@import "./border/border";

@@ -9,7 +9,7 @@
 
 // Loop to generate background utility classes
 @for $i from 1 through length($colors) {
-  .bg-#{nth($color-names,$i)} {
+  .#{Syntax(background)}-#{nth($color-names,$i)} {
     @include background(nth($colors, $i));
   }
 }

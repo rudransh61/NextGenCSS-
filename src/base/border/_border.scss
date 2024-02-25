@@ -8,7 +8,7 @@
 
 @for $i from 1 through length($colors) {
   // Generates classes for borders with individual color names.
-  .b-#{nth($color-names,$i)} {
+  .#{Syntax(border)}-#{nth($color-names,$i)} {
     @include border(nth($colors, $i));
   }
 }
@@ -20,7 +20,7 @@
 
 @for $i from 1 through length($colors) {
   // Creates classes for bottom curve border using color names.
-  .b-curve-#{nth($color-names,$i)} {
+  .#{Syntax(border)}-curve-#{nth($color-names,$i)} {
     @include border-curve(nth($colors, $i));
   }
 }
@@ -32,7 +32,7 @@
   $color-name: nth($color-names, $i);
 
   // Define base styles for neumorphic div
-  .neumorphic-border-#{$color-name} {
+  .#{Syntax(neumorphic)}-#{Syntax(border)}-#{$color-name} {
     border-radius: 10px;
     padding: 15px;
     border: 2px solid $color;

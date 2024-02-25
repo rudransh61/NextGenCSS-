@@ -25,7 +25,7 @@ button {
 }
 
 // Curve edge button style
-.btn-curve {
+.#{Syntax(button)}-curve {
   outline: none;
   cursor: pointer;
   font-size: 1rem;
@@ -44,7 +44,7 @@ button {
 }
 
 // Bootstrap-like button style
-.btn-bootstrap {
+.#{Syntax(button)}-bootstrap {
   cursor: pointer;
   outline: 0;
   display: inline-block;
@@ -69,12 +69,11 @@ button {
 }
 
 // Circular button style
-.btn-circle {
+.#{Syntax(button)}-circle {
   display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
-  line-height: 1;
   border-radius: 500px;
   transition-property: background-color, border-color, color, box-shadow, filter;
   transition-duration: 0.3s;

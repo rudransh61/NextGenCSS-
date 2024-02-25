@@ -6,7 +6,7 @@ var uglifycss = require('uglifycss');
 
 var uglified = uglifycss.processFiles(
     ['./src/final/index.css/index.css' ], // this is the path of file
-    {expandVars: true }  // expand variables
+    {expandVars: false }  // expand variables
 );
 
 console.log(uglified);

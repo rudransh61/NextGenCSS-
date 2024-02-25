@@ -6,7 +6,7 @@
 
 // Margin utility mixin
 @mixin margin-utility($num) {
-  .mg-#{$num} {
+  .#{Syntax(margin)}-#{$num} {
     margin: #{$num * $base-unit-margin}rem;
   }
 }
@@ -22,7 +22,7 @@
 
 // Margin top utility
 @mixin margin-top-utility($num) {
-  .mg-top-#{$num} {
+  .#{Syntax(margin)}-top-#{$num} {
     margin-top: #{$num * $base-unit-margin}rem;
   }
 }
@@ -36,7 +36,7 @@
 
 // Margin bottom utility
 @mixin margin-bottom-utility($num) {
-  .mg-bottom-#{$num} {
+  .#{Syntax(margin)}-bottom-#{$num} {
     margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
@@ -50,7 +50,7 @@
 
 // Margin right utility
 @mixin margin-right-utility($num) {
-  .mg-right-#{$num} {
+  .#{Syntax(margin)}-right-#{$num} {
     margin-right: #{$num * $base-unit-margin}rem;
   }
 }
@@ -64,7 +64,7 @@
 
 // Margin left utility
 @mixin margin-left-utility($num) {
-  .mg-left-#{$num} {
+  .#{Syntax(margin)}-left-#{$num} {
     margin-left: #{$num * $base-unit-margin}rem;
   }
 }
@@ -78,7 +78,7 @@
 
 // Margin horizontal utility
 @mixin margin-horizontal-utility($num) {
-  .mg-x-#{$num} {
+  .#{Syntax(margin)}-x-#{$num} {
     margin-right: #{$num * $base-unit-margin}rem;
     margin-left: #{$num * $base-unit-margin}rem;
   }
@@ -93,7 +93,7 @@
 
 // Margin vertical utility
 @mixin margin-vertical-utility($num) {
-  .mg-y-#{$num} {
+  .#{Syntax(margin)}-y-#{$num} {
     margin-top: #{$num * $base-unit-margin}rem;
     margin-bottom: #{$num * $base-unit-margin}rem;
   }

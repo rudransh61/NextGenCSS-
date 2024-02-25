@@ -10,7 +10,7 @@
 
 // Loop to generate font color classes
 @for $i from 1 through length($colors) {
-  .font-#{nth($color-names,$i)} {
+  .#{Syntax(font)}-#{nth($color-names,$i)} {
     @include font(nth($colors, $i));
   }
 }
