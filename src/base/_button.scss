@@ -93,3 +93,16 @@ button {
     background-color: Get-Color("gray");
   }
 }
+
+
+// Button styles for secondary actions
+.#{Syntax(button)}-secondary {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+// Button styles for danger actions
+.#{Syntax(button)}-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}

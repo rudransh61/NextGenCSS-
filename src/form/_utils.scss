@@ -1,0 +1,91 @@
+// Form utility classes
+
+// Form container
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  // Input styles
+  .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  // Checkbox styles
+  .checkbox {
+    margin-right: 5px;
+  }
+  
+  // Radio button styles
+  .radio {
+    margin-right: 5px;
+  }
+  
+  // Select styles
+  .select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  // Textarea styles
+  .textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  // Error message styles
+  .error-message {
+    color: #e74c3c;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  // Success message styles
+  .success-message {
+    color: #2ecc71;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  // Additional utility classes for buttons
+  
+  // Secondary button
+  .button-secondary {
+    background-color: #95a5a6;
+    color: #fff;
+  }
+  
+  // Danger button
+  .button-danger {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  // Large button
+  .button-large {
+    padding: 12px;
+  }
+  
+  // Small button
+  .button-small {
+    padding: 8px;
+  }
+  
+  // Rounded button
+  .button-rounded {
+    border-radius: 20px;
+  }
+  

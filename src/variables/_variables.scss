@@ -59,3 +59,22 @@ $base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 // Base styles for transitions
 $base-transition-duration: 0.3s;
 $base-transition-ease: ease-in-out;
+
+
+
+// Define font families
+$font-families: (
+  arial: ('Arial', sans-serif),
+  helvetica: ('Helvetica', sans-serif),
+  newroman: ('Times New Roman', serif),
+  courier: ('Courier New', monospace),
+  verdana: ('Verdana', sans-serif),
+  georgia: ('Georgia', serif),
+  impact: ('Impact', sans-serif),
+  trebuchet: ('Trebuchet MS', sans-serif),
+  palatino: ('Palatino Linotype', serif),
+  console: ('Lucida Console', monospace),
+  cursive: ('Cursive', cursive),
+  fantasy: ('fantasy', fantasy),
+  segoe: ('Segoe UI', Tahoma, Geneva, Verdana, sans-seri)f
+);

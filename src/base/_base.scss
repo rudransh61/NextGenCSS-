@@ -15,7 +15,9 @@ html {
   font-family: $default-font;
 
   // lazy load (default)
-  @extend .lazy-load;
+  @if(Syntax(lazy-load)){
+    @extend .lazy-load;
+  }
 }
 
 /* Define font-size utility classes for heading tags. */

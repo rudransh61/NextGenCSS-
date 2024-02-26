@@ -49,6 +49,45 @@
 .font-neugray {
   color: #f0f0f0; }
 
+.font-arial {
+  font-family: "Arial", sans-serif; }
+
+.font-helvetica {
+  font-family: "Helvetica", sans-serif; }
+
+.font-newroman {
+  font-family: "Times New Roman", serif; }
+
+.font-courier {
+  font-family: "Courier New", monospace; }
+
+.font-verdana {
+  font-family: "Verdana", sans-serif; }
+
+.font-georgia {
+  font-family: "Georgia", serif; }
+
+.font-impact {
+  font-family: "Impact", sans-serif; }
+
+.font-trebuchet {
+  font-family: "Trebuchet MS", sans-serif; }
+
+.font-palatino {
+  font-family: "Palatino Linotype", serif; }
+
+.font-console {
+  font-family: "Lucida Console", monospace; }
+
+.font-cursive {
+  font-family: "Cursive", cursive; }
+
+.font-fantasy {
+  font-family: "fantasy", fantasy; }
+
+.font-segoe {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-seri f; }
+
 /* Set the base font size for the root element. */
 html {
   font-size: 16px; }
@@ -171,12 +210,6 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex; }
 
-.lazy-load, * {
-  content-visibility: auto; }
-
-.no-lazy-load {
-  content-visibility: visible; }
-
 body {
   font-size: 16px; }
 
@@ -237,6 +270,45 @@ body {
 .font-neugray {
   color: #f0f0f0; }
 
+.font-arial {
+  font-family: "Arial", sans-serif; }
+
+.font-helvetica {
+  font-family: "Helvetica", sans-serif; }
+
+.font-newroman {
+  font-family: "Times New Roman", serif; }
+
+.font-courier {
+  font-family: "Courier New", monospace; }
+
+.font-verdana {
+  font-family: "Verdana", sans-serif; }
+
+.font-georgia {
+  font-family: "Georgia", serif; }
+
+.font-impact {
+  font-family: "Impact", sans-serif; }
+
+.font-trebuchet {
+  font-family: "Trebuchet MS", sans-serif; }
+
+.font-palatino {
+  font-family: "Palatino Linotype", serif; }
+
+.font-console {
+  font-family: "Lucida Console", monospace; }
+
+.font-cursive {
+  font-family: "Cursive", cursive; }
+
+.font-fantasy {
+  font-family: "fantasy", fantasy; }
+
+.font-segoe {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-seri f; }
+
 button {
   cursor: pointer;
   outline: 0;
@@ -296,6 +368,14 @@ button {
   color: #fff;
   background-color: #228b22;
   height: 48px; }
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: #fff; }
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: #fff; }
 
 .bg-primary {
   background-color: #0074d9 !important; }
@@ -1294,6 +1374,66 @@ input[type="checkbox"] {
   .neumorphic-input:hover {
     box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
     /* Slightly larger shadow on hover */ }
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto; }
+
+.input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.checkbox {
+  margin-right: 5px; }
+
+.radio {
+  margin-right: 5px; }
+
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 5px;
+  font-size: 0.9em; }
+
+.success-message {
+  color: #2ecc71;
+  margin-top: 5px;
+  font-size: 0.9em; }
+
+.button-secondary {
+  background-color: #95a5a6;
+  color: #fff; }
+
+.button-danger {
+  background-color: #e74c3c;
+  color: #fff; }
+
+.button-large {
+  padding: 12px; }
+
+.button-small {
+  padding: 8px; }
+
+.button-rounded {
+  border-radius: 20px; }
 
 .square {
   border-radius: 0; }

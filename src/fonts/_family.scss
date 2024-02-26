@@ -1,0 +1,13 @@
+
+// Mixin to generate font classes
+// $font-map in variables
+@mixin font-classes($font-map) {
+  @each $name, $font-family in $font-map {
+    .#{Syntax(font)}-#{$name} {
+      font-family: $font-family;
+    }
+  }
+}
+
+// Use the mixin to generate font classes
+@include font-classes($font-families);
