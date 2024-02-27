@@ -1,107 +1,88 @@
 // Importing variables file
-
 // @import "../variables/variables";
-
 // Padding syntax: pd-{some number} compiled as: padding: {some number}
-
 // Padding utility mixin
 @mixin padding-utility($num) {
-  .#{Syntax(padding)}-#{$num} {
+  .#{nth(Syntax(padding),1)}-#{$num} {
     padding: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding utility for different values
-@include padding-utility(0);
-@include padding-utility(1);
-@include padding-utility(2);
-@include padding-utility(3);
-@include padding-utility(4);
+
 
 // Syntax: pd-{direction}-{some number} compiled as: padding-{direction}: {some number}
 
 // Padding top utility
 @mixin padding-top-utility($num) {
-  .#{Syntax(padding)}-top-#{$num} {
+  .#{nth(Syntax(padding),1)}-top-#{$num} {
     padding-top: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding top utility for different values
-@include padding-top-utility(0);
-@include padding-top-utility(1);
-@include padding-top-utility(2);
-@include padding-top-utility(3);
-@include padding-top-utility(4);
 
 // Padding bottom utility
 @mixin padding-bottom-utility($num) {
-  .#{Syntax(padding)}-bottom-#{$num} {
+  .#{nth(Syntax(padding),1)}-bottom-#{$num} {
     padding-bottom: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding bottom utility for different values
-@include padding-bottom-utility(0);
-@include padding-bottom-utility(1);
-@include padding-bottom-utility(2);
-@include padding-bottom-utility(3);
-@include padding-bottom-utility(4);
 
 // Padding right utility
 @mixin padding-right-utility($num) {
-  .#{Syntax(padding)}-right-#{$num} {
+  .#{nth(Syntax(padding),1)}-right-#{$num} {
     padding-right: #{$num * $base-unit-padding}rem;
   }
 }
-
-// Including padding right utility for different values
-@include padding-right-utility(0);
-@include padding-right-utility(1);
-@include padding-right-utility(2);
-@include padding-right-utility(3);
-@include padding-right-utility(4);
 
 // Padding left utility
 @mixin padding-left-utility($num) {
-  .#{Syntax(padding)}-left-#{$num} {
+  .#{nth(Syntax(padding),1)}-left-#{$num} {
     padding-left: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding left utility for different values
-@include padding-left-utility(0);
-@include padding-left-utility(1);
-@include padding-left-utility(2);
-@include padding-left-utility(3);
-@include padding-left-utility(4);
 
 // Padding horizontal utility
 @mixin padding-horizontal-utility($num) {
-  .#{Syntax(padding)}-x-#{$num} {
+  .#{nth(Syntax(padding),1)}-x-#{$num} {
     padding-right: #{$num * $base-unit-padding}rem;
     padding-left: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding horizontal utility for different values
-@include padding-horizontal-utility(0);
-@include padding-horizontal-utility(1);
-@include padding-horizontal-utility(2);
-@include padding-horizontal-utility(3);
-@include padding-horizontal-utility(4);
 
 // Padding vertical utility
 @mixin padding-vertical-utility($num) {
-  .#{Syntax(padding)}-y-#{$num} {
+  .#{nth(Syntax(padding),1)}-y-#{$num} {
     padding-top: #{$num * $base-unit-padding}rem;
     padding-bottom: #{$num * $base-unit-padding}rem;
   }
 }
 
-// Including padding vertical utility for different values
-@include padding-vertical-utility(0);
-@include padding-vertical-utility(1);
-@include padding-vertical-utility(2);
-@include padding-vertical-utility(3);
-@include padding-vertical-utility(4);
+
+
+
+
+$nums :4 ;
+// Import every mixin :-
+@if(nth(Syntax(padding), 2)) {
+  $nums : nth(Syntax(padding),2);
+}
+
+@for $i from 0 through $nums {
+  // Including padding utility for different values
+  @include padding-utility($i);
+  // Including padding top utility for different values
+  @include padding-top-utility($i);
+  // Including padding bottom utility for different values
+  @include padding-bottom-utility($i);
+  // Including padding right utility for different values
+  @include padding-right-utility($i);
+  // Including padding left utility for different values
+  @include padding-left-utility($i);
+  // Including padding horizontal utility for different values
+  @include padding-horizontal-utility($i);
+  // Including padding vertical utility for different values
+  @include padding-vertical-utility($i);
+}

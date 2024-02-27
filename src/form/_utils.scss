@@ -63,29 +63,29 @@
   // Additional utility classes for buttons
   
   // Secondary button
-  .button-secondary {
-    background-color: #95a5a6;
-    color: #fff;
+  .#{Syntax(button)}-secondary {
+    background-color: Get-Color('gray');
+    color: Get-Color('white');
   }
   
   // Danger button
-  .button-danger {
-    background-color: #e74c3c;
-    color: #fff;
+  .#{Syntax(button)}-danger {
+    background-color: Get-Color('alert');
+    color: Get-Color('white');
   }
   
   // Large button
-  .button-large {
+  .#{Syntax(button)}-large {
     padding: 12px;
   }
   
   // Small button
-  .button-small {
+  .#{Syntax(button)}-small {
     padding: 8px;
   }
   
   // Rounded button
-  .button-rounded {
+  .#{Syntax(button)}-rounded {
     border-radius: 20px;
   }
   
