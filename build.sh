@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # go to the src folder
 cd ./src
 

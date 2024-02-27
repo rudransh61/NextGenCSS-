@@ -6,102 +6,85 @@
 
 // Margin utility mixin
 @mixin margin-utility($num) {
-  .#{Syntax(margin)}-#{$num} {
+  .#{nth(Syntax(margin),1)}-#{$num} {
     margin: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin utility for different values
-@include margin-utility(0);
-@include margin-utility(1);
-@include margin-utility(2);
-@include margin-utility(3);
-@include margin-utility(4);
 
 // Syntax: pd-{direction}-{some number} compiled as: margin-{direction}: {some number};
 
 // Margin top utility
 @mixin margin-top-utility($num) {
-  .#{Syntax(margin)}-top-#{$num} {
+  .#{nth(Syntax(margin),1)}-top-#{$num} {
     margin-top: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin top utility for different values
-@include margin-top-utility(0);
-@include margin-top-utility(1);
-@include margin-top-utility(2);
-@include margin-top-utility(3);
-@include margin-top-utility(4);
 
 // Margin bottom utility
 @mixin margin-bottom-utility($num) {
-  .#{Syntax(margin)}-bottom-#{$num} {
+  .#{nth(Syntax(margin),1)}-bottom-#{$num} {
     margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin bottom utility for different values
-@include margin-bottom-utility(0);
-@include margin-bottom-utility(1);
-@include margin-bottom-utility(2);
-@include margin-bottom-utility(3);
-@include margin-bottom-utility(4);
 
 // Margin right utility
 @mixin margin-right-utility($num) {
-  .#{Syntax(margin)}-right-#{$num} {
+  .#{nth(Syntax(margin),1)}-right-#{$num} {
     margin-right: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin right utility for different values
-@include margin-right-utility(0);
-@include margin-right-utility(1);
-@include margin-right-utility(2);
-@include margin-right-utility(3);
-@include margin-right-utility(4);
 
 // Margin left utility
 @mixin margin-left-utility($num) {
-  .#{Syntax(margin)}-left-#{$num} {
+  .#{nth(Syntax(margin),1)}-left-#{$num} {
     margin-left: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin left utility for different values
-@include margin-left-utility(0);
-@include margin-left-utility(1);
-@include margin-left-utility(2);
-@include margin-left-utility(3);
-@include margin-left-utility(4);
 
 // Margin horizontal utility
 @mixin margin-horizontal-utility($num) {
-  .#{Syntax(margin)}-x-#{$num} {
+  .#{nth(Syntax(margin),1)}-x-#{$num} {
     margin-right: #{$num * $base-unit-margin}rem;
     margin-left: #{$num * $base-unit-margin}rem;
   }
 }
 
 // Including margin horizontal utility for different values
-@include margin-horizontal-utility(0);
-@include margin-horizontal-utility(1);
-@include margin-horizontal-utility(2);
-@include margin-horizontal-utility(3);
-@include margin-horizontal-utility(4);
 
 // Margin vertical utility
 @mixin margin-vertical-utility($num) {
-  .#{Syntax(margin)}-y-#{$num} {
+  .#{nth(Syntax(margin),1)}-y-#{$num} {
     margin-top: #{$num * $base-unit-margin}rem;
     margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
 
-// Including margin vertical utility for different values
-@include margin-vertical-utility(0);
-@include margin-vertical-utility(1);
-@include margin-vertical-utility(2);
-@include margin-vertical-utility(3);
-@include margin-vertical-utility(4);
+
+
+
+
+$nums : 4;
+
+@if(nth(Syntax(margin),2)){
+	$nums : nth(Syntax(margin),2);
+}
+
+@for $i from 1 through $nums{
+	@include margin-left-utility($i);
+	@include margin-right-utility($i);
+	@include margin-bottom-utility($i);
+	@include margin-top-utility($i);
+	@include margin-utility($i);
+	@include margin-horizontal-utility($i);
+	@include margin-vertical-utility($i);
+}
