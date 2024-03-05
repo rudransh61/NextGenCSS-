@@ -5,6 +5,7 @@
 
 ## Installation
 
+* [Install and Use](installation/install-and-use.md)
 * [Set Up](installation/set-up.md)
 * [React](installation/react.md)
 
@@ -28,7 +29,7 @@
 * [NavBar](components/navbar.md)
 * [Switch](components/switch.md)
 
-## ⚒ Utilities
+## ⚒️ Utilities
 
 * [Display](utilities/display.md)
 * [Align](utilities/align.md)
@@ -45,6 +46,6 @@
 
 * [Input Box](forms/input-box.md)
 
-## ☺ Releases and Changelog
+## ☺️ Releases and Changelog
 
 * [0.0 🔥🔥 1st Release](releases-and-changelog/0.0-1st-release.md)
