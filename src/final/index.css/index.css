@@ -1175,44 +1175,68 @@ button {
 .size-0 {
   transform: scale(0); }
 
+.size-00 {
+  transform: scale(0); }
+
 .size-1 {
   transform: scale(1); }
-
-.size-2 {
-  transform: scale(2); }
-
-.size-3 {
-  transform: scale(3); }
-
-.size-4 {
-  transform: scale(4); }
 
 .size-01 {
   transform: scale(0.1); }
 
+.size-2 {
+  transform: scale(2); }
+
 .size-02 {
   transform: scale(0.2); }
+
+.size-3 {
+  transform: scale(3); }
 
 .size-03 {
   transform: scale(0.3); }
 
+.size-4 {
+  transform: scale(4); }
+
 .size-04 {
   transform: scale(0.4); }
+
+.size-5 {
+  transform: scale(5); }
 
 .size-05 {
   transform: scale(0.5); }
 
+.size-6 {
+  transform: scale(6); }
+
 .size-06 {
   transform: scale(0.6); }
+
+.size-7 {
+  transform: scale(7); }
 
 .size-07 {
   transform: scale(0.7); }
 
+.size-8 {
+  transform: scale(8); }
+
 .size-08 {
   transform: scale(0.8); }
 
+.size-9 {
+  transform: scale(9); }
+
 .size-09 {
   transform: scale(0.9); }
+
+.size-10 {
+  transform: scale(10); }
+
+.size-010 {
+  transform: scale(1); }
 
 .box-border {
   box-sizing: border-box; }
