@@ -199,5 +199,10 @@ https://github.com/rudransh61/NextGenCSS-/assets/115872354/08cf0c1a-3afa-4269-b8
 </a>
 
 Lets Make it to 100🌟
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=#rudransh61/NextGenCSS-&Timeline" frameBorder="0"></iframe>
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=rudransh61/NextGenCSS-&type=Date)](https://star-history.com/#rudransh61/NextGenCSS-&Date)
+
+
 Thanks 😁
