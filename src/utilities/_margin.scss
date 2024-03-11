@@ -1,119 +1,90 @@
-@import '../variables/variables';
+// Importing variables file
 
+@import "../variables/variables";
 
-//Margin Syntax :- mg-{some number}
-// Compiled as :- margin : {some number};
+// Margin syntax: mg-{some number} compiled as: margin: {some number};
 
+// Margin utility mixin
 @mixin margin-utility($num) {
-    .mg-#{$num} {
-      margin: #{$num*$base-unit-margin}px;
-    }
+  .#{nth(Syntax(margin),1)}-#{$num} {
+    margin: #{$num * $base-unit-margin}rem;
   }
-  
-  @include margin-utility(0);
-  @include margin-utility(1);
-  @include margin-utility(2);
-  @include margin-utility(3);
-  @include margin-utility(4);
+}
 
+// Including margin utility for different values
 
+// Syntax: pd-{direction}-{some number} compiled as: margin-{direction}: {some number};
 
-
-
-
-// Syntax :- pd-{direction}-{some number}
-// Compiled as :- margin-{direction} : {some number};
-
-
-// margin top
+// Margin top utility
 @mixin margin-top-utility($num) {
-  .mg-top-#{$num} {
-    margin-top: #{$num*$base-unit-margin}px;
+  .#{nth(Syntax(margin),1)}-top-#{$num} {
+    margin-top: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-top-utility(0);
-@include margin-top-utility(1);
-@include margin-top-utility(2);
-@include margin-top-utility(3);
-@include margin-top-utility(4);
 
+// Including margin top utility for different values
 
-
-
-//margin bottom
+// Margin bottom utility
 @mixin margin-bottom-utility($num) {
-  .mg-bottom-#{$num} {
-    margin-bottom: #{$num*$base-unit-margin}px;
+  .#{nth(Syntax(margin),1)}-bottom-#{$num} {
+    margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-bottom-utility(0);
-@include margin-bottom-utility(1);
-@include margin-bottom-utility(2);
-@include margin-bottom-utility(3);
-@include margin-bottom-utility(4);
 
+// Including margin bottom utility for different values
 
-
-
-//margin right
+// Margin right utility
 @mixin margin-right-utility($num) {
-  .mg-right-#{$num} {
-    margin-right: #{$num*$base-unit-margin}px;
+  .#{nth(Syntax(margin),1)}-right-#{$num} {
+    margin-right: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-right-utility(0);
-@include margin-right-utility(1);
-@include margin-right-utility(2);
-@include margin-right-utility(3);
-@include margin-right-utility(4);
 
+// Including margin right utility for different values
 
-
-//margin left
+// Margin left utility
 @mixin margin-left-utility($num) {
-  .mg-left-#{$num} {
-    margin-left: #{$num*$base-unit-margin}px;
+  .#{nth(Syntax(margin),1)}-left-#{$num} {
+    margin-left: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-left-utility(0);
-@include margin-left-utility(1);
-@include margin-left-utility(2);
-@include margin-left-utility(3);
-@include margin-left-utility(4);
 
+// Including margin left utility for different values
 
-
-
-
-
-//margin horizontal
+// Margin horizontal utility
 @mixin margin-horizontal-utility($num) {
-  .mg-x-#{$num} {
-    margin-right: #{$num*$base-unit-padding}rem;
-    margin-left: #{$num*$base-unit-padding}rem;
+  .#{nth(Syntax(margin),1)}-x-#{$num} {
+    margin-right: #{$num * $base-unit-margin}rem;
+    margin-left: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-horizontal-utility(0);
-@include margin-horizontal-utility(1);
-@include margin-horizontal-utility(2);
-@include margin-horizontal-utility(3);
-@include margin-horizontal-utility(4);
 
-//margin vertical
+// Including margin horizontal utility for different values
+
+// Margin vertical utility
 @mixin margin-vertical-utility($num) {
-  .mg-y-#{$num} {
-    margin-top: #{$num*$base-unit-padding}rem;
-    margin-bottom: #{$num*$base-unit-padding}rem;
+  .#{nth(Syntax(margin),1)}-y-#{$num} {
+    margin-top: #{$num * $base-unit-margin}rem;
+    margin-bottom: #{$num * $base-unit-margin}rem;
   }
 }
-@include margin-vertical-utility(0);
-@include margin-vertical-utility(1);
-@include margin-vertical-utility(2);
-@include margin-vertical-utility(3);
-@include margin-vertical-utility(4);
 
 
 
 
 
+$nums : 4;
 
+@if(nth(Syntax(margin),2)){
+	$nums : nth(Syntax(margin),2);
+}
+
+@for $i from 1 through $nums{
+	@include margin-left-utility($i);
+	@include margin-right-utility($i);
+	@include margin-bottom-utility($i);
+	@include margin-top-utility($i);
+	@include margin-utility($i);
+	@include margin-horizontal-utility($i);
+	@include margin-vertical-utility($i);
+}

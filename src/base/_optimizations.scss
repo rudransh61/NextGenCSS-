@@ -1,14 +1,8 @@
+// Lazy Loading Optimization
+// Define lazy load content visibility
 
-
-// some optimizations
-
-
-// lazy load content 
-.lazy-load{
-    content-visibility: auto;
+@if(Syntax(lazy-load)){
+  .lazy-load {
+    content-visibility: auto; // 'content-visibility' is not supported by Firefox, Firefox for Android.
+  }
 }
-
-.no-lazy-load{
-    content-visibility: visible;
-}
-

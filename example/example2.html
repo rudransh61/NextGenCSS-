@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css">
+    <link rel="stylesheet" href="../src/index.css" media="print"
+    onload="this.media='all'">
 </head>
 <body>
     <h1>This is h1 tag</h1>
@@ -29,5 +30,57 @@
   <li>li 2</li>
   <li>li 3</li>
 </ol>
+
+<div class="container mg-3">
+  <div class="column b-dark">
+    <div class="card">
+      <h3 class="card-title">Hello</h3>
+      <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="column b-dark">
+    <div class="card">
+      <h3 class="card-title">Hello</h3>
+      <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="column b-dark">
+    <div class="card">
+      <h3 class="card-title">Hello</h3>
+      <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="column b-dark">
+    <div class="card">
+      <h3 class="card-title">Hello</h3>
+      <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="column b-dark">
+    <div class="card">
+      <h3 class="card-title">Hello</h3>
+      <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+
+<!--Neumorphism -->
+<div class="neumorphic-card">
+  <h2 class="neumorphic-heading">Neumorphic Card</h2>
+  <p class="neumorphic-paragraph">This is a neumorphic card with some content.</p>
+  <div class="neumorphic-border">
+    <!-- Content with neumorphic border -->
+    <p>This is an example of a neumorphic-bordered section.</p>
+  </div>
+</div>
+
+<button class="neumorphic-button">Neumorphic Button</button>
+
+<input type="text" class="neumorphic-input" placeholder="Neumorphic Input">
+
+<div class="neumorphic-toggle">
+  <input type="checkbox" id="toggle" />
+  <label for="toggle" class="neumorphic-toggle-label"></label>
+</div>
 </body>
 </html>

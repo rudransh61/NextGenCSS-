@@ -4,6 +4,9 @@
 //all variables 
 @import 'variables/variables.scss';
 
+//syntax
+@import './syntax/syntax';
+
 //fonts
 @import 'fonts/_fonts.scss';
 
@@ -21,4 +24,16 @@
 
 //components
 @import './components/components';
+
+//forms
+@import './form/form';
+
+//icons
+@import './icon/icon';
+
+//table
+@import './table/table';
+
+//neumorphisms
+@import './neumorphism/neumorphism';
 

@@ -17,6 +17,7 @@ $purple: #967BB6;  // purple
 $choco: #D2691E;   // choco
 $pink: #FF69B4;    // pink
 $white: #FFFFFF;   // white
+$neugray : #f0f0f0; // gray for neumorphism
 </code></pre>
 
 <figure><img src="../.gitbook/assets/img2.png" alt=""><figcaption><p>Color Example</p></figcaption></figure>

@@ -1,17 +1,23 @@
-// align
+// Align utility classes
+// Flex content alignment
+.align-start {
+  align-content: flex-start;
+}
+.align-end {
+  align-content: flex-end;
+}
+.align-center {
+  align-content: center;
+}
+.align-stretch {
+  align-content: stretch;
+}
+.align-space {
+  align-content: space-around;
+}
 
-.align-start{
-    align-content: flex-start;
-}
-.align-end{
-    align-content: flex-end;
-}
-.align-center{
-    align-content: center;
-}
-.align-stretch{
-    align-content: stretch;
-}
-.align-space{
-    align-content: space-around;
+
+// float none
+.no-float{
+  float : none;
 }

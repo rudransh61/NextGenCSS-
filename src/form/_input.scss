@@ -1,24 +1,35 @@
+// Common input styles
 input {
-    display: inline-block;
-    padding: 0.625rem 1.25rem;
-    border: none;
-    border-radius: 0.3125rem;
-    font-size: 1rem;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-
-// check button
+// Styles for checkbox input
 input[type="checkbox"] {
-    width: 0.9rem;
-    height: 0.9rem;
-    background-color: Get-Color('primary');
-    border: 0.5rem solid Get-Color('dark');
-    /* Thick and light border */
-    border-radius: 1rem;
-    /* Curvy border */
-    box-shadow: 0 0 0.625 Get-Color('dark');
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: Get-Color("primary");
+  border: 0.5rem solid Get-Color("dark"); /* Thick and light border */
+  border-radius: 1rem; /* Curvy border */
+  box-shadow: 0 0 0.625 Get-Color("dark");
 }
+
+// Hover effect for checkbox
 input[type="checkbox"]:hover {
-    color: Get-Color('gray');
+  color: Get-Color("gray");
+}
+
+.neumorphic-input {
+  background-color: #e0e0e0; /* Light background color */
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff; /* Neumorphic inset shadow */
+  &:hover{
+    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff; /* Slightly larger shadow on hover */
+  }
 }

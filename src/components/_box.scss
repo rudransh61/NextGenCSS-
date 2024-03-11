@@ -1,17 +1,46 @@
-@mixin box() {
-    width: 100%;
-    max-width:$xl;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
+// Box Mixin
+@mixin box($maxWidth: $xl) {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.box {
-    @include box();
+// Box Class
+.#{Syntax(container)} {
+  @include box(); // Use the default max-width ($xl)
 
-    .center-box {
-        justify-content: center;
-        align-items: center;
+  // Utility to center content inside box
+  .center-#{Syntax(container)} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Utility to make box width 100%
+  .full-width-#{Syntax(container)} {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  // Media queries for responsive design
+  @media (max-width: 767px) {
+    .mv {
+      @include box(767px);
     }
+  }
+
+  @media (max-width: 991px) {
+    .tv {
+      @include box(991px);
+    }
+  }
+
+  @media (max-width: 1536px) {
+    .dv {
+      @include box(1536px);
+    }
+  }
 }

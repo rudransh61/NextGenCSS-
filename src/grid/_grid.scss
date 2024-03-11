@@ -1,68 +1,50 @@
+// Configuration variables
+$columns: 12; // Number of columns in the grid
+$gap: 1rem;   // Column gap
 
-// Mixin to generate grid container styles
-@mixin container {
-  max-width: $container-width;
+// Container
+.container {
   margin-left: auto;
   margin-right: auto;
-}
-
-// Mixin to generate column styles
-@mixin column($span, $columns: $grid-columns) {
-  width: percentage($span / $columns);
-  float: left;
-  margin-right: $gutter-width;
-
-  // Responsive styles
-  @media screen and (max-width: $sm) {
-    width: auto;
-    float: none;
-    margin-right: 0;
-    margin-bottom: $gutter-width;
-  }
-}
-
-// Mixin to clear floats
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-// Create grid container class
-.container {
-  @include container;
-  @include clearfix; // Clear floats inside the container
-}
-
-// Create column classes using a loop
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    @include column($i);
-  }
-}
-
-// Example usage
-.grid {
-  @include container;
-}
-
-.grid-item {
-  @include clearfix; // Clear floats inside the content container
-
-  .col-4 {
-    @include column(4);
-  }
-
-  .col-8 {
-    @include column(8);
-  }
+  max-width: 1140px; // Adjust as needed
+  padding-left: $gap / 2;
+  padding-right: $gap / 2;
 
   // Responsive adjustments
-  @media screen and (max-width: $md) {
-    .col-4, .col-8 {
-      width: 100%; 
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+}
+
+// Columns
+.column {
+  float: left;
+  margin: 0 $gap / 2;
+
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+// Helper classes for column widths
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: percentage($i / $columns);
+  }
+}
+
+// Responsive adjustments for helper classes
+@media screen and (max-width: 768px) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: 100%;
     }
   }
 }

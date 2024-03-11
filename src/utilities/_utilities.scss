@@ -1,17 +1,21 @@
-@import '../variables/variables'; // variables imported
+@import "../variables/variables"; // Importing variables
 
-//import padding and margin files
-@import './padding';
-@import './margin';
+// Importing padding and margin files
+@import "./padding";
+@import "./margin";
 
-//import size utility class
-@import './size';
+// Importing size utility class
+@import "./size";
 
-//importing files to handle display property of object
-@import './display';
-@import './_flex-box.scss';
+// Importing files to handle display property of objects
+@import "./display";
+@import "./_flex-box.scss";
 
-//import center and align classes]
-@import './center';
-@import './left';
-@import './right';
+// Importing center and align classes
+@import "./center";
+@import "./left";
+@import "./right";
+
+
+@import './clear';
+@import './overflow';

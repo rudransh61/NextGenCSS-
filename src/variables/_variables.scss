@@ -1,45 +1,80 @@
-//colors
-@import './colors';
+// Import colors
+@import "./colors";
 
-// default
-$default-padding : 0.1rem;
-$default-margin : 0.1rem;
+// Default values for padding and margin
+$default-padding: 0.1rem;
+$default-margin: 0.1rem;
 
+// Fonts configuration
+$default-font: "Poppins", sans-serif;
+$text-font: "Crimson Text", serif;
+$heading-font: "Poppins", sans-serif;
+$bold-font: 600;
 
-//fonts
-$default-font : 'Poppins',
-sans-serif;
-$text-font :'Crimson Text', serif;
-$heading-font : 'Poppins',
-sans-serif;
-$bold-font : 600;
+// Units configuration
+$base-unit-padding: 1;
+$base-unit-margin: 1;
 
+// Grid configuration
+// Configuration variables
+$columns: 12; // Number of columns in the grid
+$gap: 1rem; // Column gap
 
-//units
-$base-unit-padding : 1;
-$base-unit-margin : 1;
+// Card styling parameters
+$card-padding: 0.75rem;
+$card-margin: 0.75rem;
+$card-border-thickness: 0 0.2rem 0.2rem 0;
+$card-border-radius: 1.25rem;
+$card-border-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.1);
+$card-font-size: 1rem;
 
-//grid
-$grid-columns: 12;
-$gutter-width : 20px;
-$container-width: 1000px;
-
-//card
-$card-padding :0.75rem;
-$card-margin : 0.75rem;
-$card-border-thickness : 0 0.2rem 0.2rem 0;
-$card-border-radius : 1.25rem;
-$card-border-shadow : 0.0625rem 0.1875rem 0.3125rem rgba(0,0,0,0.1);
-$card-font-size : 1rem;
-
-
-
-
-
-//breakpoints
+// Breakpoints definition
 // Define your breakpoints
-$xs : 0px;
-$sm : 480px;
-$md : 720px;
-$lg : 960px;
-$xl : 1200px;
+$xs: 0px;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+
+// all Neumorphic variables
+$neumorphic-font-family: 'Arial', sans-serif;
+$neumorphic-font-size: 16px;
+$neumorphic-line-height: 1.5;
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+
+// Base styles for spacing
+$base-spacing-unit: 8px;
+
+// Base styles for borders
+$base-border-radius: 4px;
+$base-border-width: 1px;
+$base-border-color: #ddd;
+
+// Base styles for shadows
+$base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Base styles for transitions
+$base-transition-duration: 0.3s;
+$base-transition-ease: ease-in-out;
+
+
+
+// Define font families
+$font-families: (
+  arial: ('Arial', sans-serif),
+  helvetica: ('Helvetica', sans-serif),
+  newroman: ('Times New Roman', serif),
+  courier: ('Courier New', monospace),
+  verdana: ('Verdana', sans-serif),
+  georgia: ('Georgia', serif),
+  impact: ('Impact', sans-serif),
+  trebuchet: ('Trebuchet MS', sans-serif),
+  palatino: ('Palatino Linotype', serif),
+  console: ('Lucida Console', monospace),
+  cursive: ('Cursive', cursive),
+  fantasy: ('fantasy', fantasy),
+  segoe: ('Segoe UI', Tahoma, Geneva, Verdana, sans-seri)f
+);

@@ -1,18 +1,54 @@
 // @import '../../variables/variables';
-@import './_border_right.scss';
-@import './_border_left.scss';
-@import './_border_top.scss';
-@import './_border_bottom.scss';
-// Border utility classes for specific sides
-// @import '../../variables/variables';
-// border utility classes for specific sides
+// Imports individual border utility files for specific sides.
+
+// Border utility classes for specific sides using specified colors.
 @mixin border($color) {
-    border: .1rem solid $color; 
+  border: 0.1rem solid $color;
 }
 
 @for $i from 1 through length($colors) {
-    .b-#{nth($color-names,$i)}{
-      @include border(nth($colors,$i));
-  
+  // Generates classes for borders with individual color names.
+  .#{Syntax(border)}-#{nth($color-names,$i)} {
+    @include border(nth($colors, $i));
+  }
+}
+
+@mixin border-curve($color) {
+  border: 0.1rem solid $color;
+  border-radius: 1rem;
+}
+
+@for $i from 1 through length($colors) {
+  // Creates classes for bottom curve border using color names.
+  .#{Syntax(border)}-curve-#{nth($color-names,$i)} {
+    @include border-curve(nth($colors, $i));
+  }
+}
+
+// Usage example for a neumorphic border
+
+@for $i from 1 through length($colors) {
+  $color: nth($colors, $i);
+  $color-name: nth($color-names, $i);
+
+  // Define base styles for neumorphic div
+  .#{Syntax(neumorphic)}-#{Syntax(border)}-#{$color-name} {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid $color;
+    box-shadow: 5px 5px 10px lighten($color, 20%), -5px -5px 10px lighten($color, 40%);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 8px 8px 12px lighten($color, 20%), -8px -8px 12px lighten($color, 40%);
     }
   }
+}
+
+
+
+// Import other border utilities 
+@import './border_bottom';
+@import './border_left';
+@import './border_right';
+@import './border_top';

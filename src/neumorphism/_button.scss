@@ -1,0 +1,30 @@
+
+// Neumorphic button mixin
+@mixin neumorphic-button-for-color($color, $color-name) {
+    &.neumorphic-button-#{$color-name} {
+      display: inline-block;
+      padding: 10px 20px;
+      border: $base-border-width solid $base-border-color;
+      border-radius: $base-border-radius;
+      background-color: $color;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 5px 5px 10px lighten($color, 20%), -5px -5px 10px lighten($color, 40%);
+      transition: background-color $base-transition-duration $base-transition-ease, 
+                  box-shadow $base-transition-duration $base-transition-ease;
+  
+      &:hover {
+        background-color: darken($color, 10%);
+        box-shadow: 8px 8px 12px lighten($color, 20%), -8px -8px 12px lighten($color, 40%);
+      }
+    }
+  }
+  
+  // Generate neumorphic button styles for all colors
+  @for $i from 1 through length($colors) {
+    $color: nth($colors, $i);
+    $color-name: nth($color-names, $i);
+  
+    @include neumorphic-button-for-color($color, $color-name);
+  }
+  

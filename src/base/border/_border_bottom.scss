@@ -1,12 +1,25 @@
 // @import '../../variables/variables';
-// border-bottom utility classes for specific sides
+
+// Border-bottom utility classes for specific sides using colors.
 @mixin border-bottom($color) {
-    border-bottom: .1rem solid $color; 
+  border-bottom: 0.1rem solid $color;
 }
 
 @for $i from 1 through length($colors) {
-    .bb-#{nth($color-names,$i)}{
-      @include border-bottom(nth($colors,$i));
-  
-    }
+  // Creates classes for bottom border using color names.
+  .#{Syntax(border)}-#{Syntax(bottom)}-#{nth($color-names,$i)} {
+    @include border-bottom(nth($colors, $i));
   }
+}
+
+@mixin border-curve-bottom($color) {
+  border-bottom: 0.1rem solid $color;
+  border-radius: 1rem;
+}
+
+@for $i from 1 through length($colors) {
+  // Creates classes for bottom curve border using color names.
+  .#{Syntax(border)}-#{Syntax(bottom)}-curve-#{nth($color-names,$i)} {
+    @include border-curve-bottom(nth($colors, $i));
+  }
+}

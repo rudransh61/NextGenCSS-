@@ -1,32 +1,56 @@
-//display property
-// Flex container utility
+// Display property utilities
+// Flex and grid container utilities
 
 // Inline-flex container utility
 .inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 // Block element utility
 .block {
-    display: block;
+  display: block;
 }
 
 // Inline element utility
 .inline {
-    display: inline;
+  display: inline;
 }
 
 // Inline-block element utility
 .inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
-// Grid container utility
-.grid {
-    display: grid;
+// Hidden
+.hide{
+  display : none;
 }
 
-// Grid item utility
-.grid-item {
-    grid: 1 / span 1;
+//Table
+.table{
+  display : table;
+}
+
+.inline-table{
+  display:inline-table;
+}
+
+.table-col{
+  display : table-column;
+}
+
+.table-footer{
+  display: table-footer-group;
+}
+
+.table-header{
+  display: table-header-group;
+}
+
+.flow-root{
+  display : flow-root;
+}
+
+.list-items{
+ display: list-item; 
 }

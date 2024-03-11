@@ -1,32 +1,24 @@
-// @import '../variables/variables';
+// Card Styles
+.#{Syntax(card)} {
+  display: block;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: $card-padding;
+  width: 100%;
+  max-width: 40%;
+  overflow: hidden;
+  // add title to card
+  .#{Syntax(card)}-title {
+    font-size: $card-font-size;
+    padding-bottom: $card-padding;
+    font-weight: bold;
+  }
+  // add this to the body of your card
+  .#{Syntax(card)}-body {
+    font-size: $card-font-size;
 
-//card
-
-.card{
-    display : block;
-    gap : 1rem;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    padding: $card-padding;
-
-    width : 100%;
-    max-width : 40%;
-
-    overflow: hidden;
-    // border : $card-border-thickness solid #ddd;
-    // box-shadow : $card-border-shadow;
-
-
-    .card-title{
-        font-size: $card-font-size;
-        padding-bottom : $card-padding;
-        font-weight: bold;
+    a {
+      text-decoration: underline;
     }
-    
-    .card-body{
-        font-size : $card-font-size;
-
-        a{
-            text-decoration : underline ;
-        }
-    }
+  }
 }

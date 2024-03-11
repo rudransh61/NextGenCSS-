@@ -1,0 +1,91 @@
+// Form utility classes
+
+// Form container
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  // Input styles
+  .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  // Checkbox styles
+  .checkbox {
+    margin-right: 5px;
+  }
+  
+  // Radio button styles
+  .radio {
+    margin-right: 5px;
+  }
+  
+  // Select styles
+  .select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  // Textarea styles
+  .textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  // Error message styles
+  .error-message {
+    color: #e74c3c;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  // Success message styles
+  .success-message {
+    color: #2ecc71;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  // Additional utility classes for buttons
+  
+  // Secondary button
+  .#{Syntax(button)}-secondary {
+    background-color: Get-Color('gray');
+    color: Get-Color('white');
+  }
+  
+  // Danger button
+  .#{Syntax(button)}-danger {
+    background-color: Get-Color('alert');
+    color: Get-Color('white');
+  }
+  
+  // Large button
+  .#{Syntax(button)}-large {
+    padding: 12px;
+  }
+  
+  // Small button
+  .#{Syntax(button)}-small {
+    padding: 8px;
+  }
+  
+  // Rounded button
+  .#{Syntax(button)}-rounded {
+    border-radius: 20px;
+  }
+  

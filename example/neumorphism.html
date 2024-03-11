@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Design System Example</title>
+    <link rel="stylesheet" href="../src/index.css"> <!-- Link to your compiled Sass file -->
+    <style>
+        /* Add any additional custom styles here */
+    </style>
+</head>
+
+<body class="neumorphic">
+    <div class="box neumorphic-div-neugray">
+        <header class="full-width-box text-center">
+            <nav class="navbar bg-neugray">
+                <h1 class="neumorphic-heading font-dark">An Ugly Page</h1>
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger font-dark">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="#" class="neumorphic-button-alert">
+                            <div class="font-white">Ugly Home</div>
+                        </a></li>
+                    <li><a href="#" class="neumorphic-button-primary">
+                            <div class="font-white">Ugly About</div>
+                        </a></li>
+                    <li><a href="#" class="neumorphic-button-leaf">
+                            <div class="font-white">Ugly Contact</div>
+                        </a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <section class="mg-b-3">
+            <div class="neumorphic-div-neugray pd-3 grid">
+                <div class="grid-item box">
+                    <div class="pd-4 left">
+                        <h2>Ugly Neumorphic Design</h2>
+                        <p>Rate this design out of 10</p>
+                        <div class="neumorphic-toggle">
+                            <input type="checkbox" id="toggle-switch">
+                            <label for="toggle-switch" class="neumorphic-toggle-label"></label>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="../logo.png" class="right size-06">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="full-width-box text-center neumorphic-div-white">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
