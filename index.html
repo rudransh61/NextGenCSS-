@@ -7,6 +7,7 @@
     <title>NextGenCSS - A Flexible CSS Framework</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/prism.min.js"></script>
     <style>
         /* Custom styles can be added here */
@@ -56,7 +57,7 @@
                 <a href="#features" class="ml-4">Features</a>
                 <a href="#contributors" class="ml-4">Contributors</a>
                 <a href="#get-started" class="ml-4">Get Started</a>
-                <a href="https://github.com/rudransh61/NextGenCSS-" target="_blank" class="ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">GitHub</a>
+                <a href="https://github.com/rudransh61/NextGenCSS-" target="_blank" class="ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"><i class="fa fa-github" style="font-size:24px"></i></a>
             </div>
         </div>
     </nav>
@@ -121,18 +122,12 @@
         <div class="container mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 backdrop-filter backdrop-blur-lg">Example Usage</h2>
             <div class="code-example text-left">
-                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;NextGenCSS&lt;/title&gt;
-    &lt;link href="https://cdn.jsdelivr.net/gh/rudransh61/NextGenCSS-/src/index.css" rel="stylesheet"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-      &lt;h1 &gt;Namaste 🙏&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+                <pre><code class="language-scss">
+                  $syntax : (
+                    //...other code
+                    padding : "my-padding",
+                    //..other code
+                  ); </code></pre>
             </div>
         </div>
     </section>
@@ -179,7 +174,7 @@
             }
         });
     </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 </body>
 
 </html>

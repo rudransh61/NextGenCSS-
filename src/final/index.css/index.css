@@ -1397,77 +1397,77 @@ button {
       padding-left: 1rem;
       padding-right: 1rem; } }
 
-.column {
+.col {
   float: left;
   margin: 0 0.5rem; }
   @media screen and (max-width: 768px) {
-    .column {
+    .col {
       float: none;
       display: block;
       width: 100%;
       margin-left: 0;
       margin-right: 0; } }
 
-.col-1 {
+.col -1 {
   width: 8.33333%; }
 
-.col-2 {
+.col -2 {
   width: 16.66667%; }
 
-.col-3 {
+.col -3 {
   width: 25%; }
 
-.col-4 {
+.col -4 {
   width: 33.33333%; }
 
-.col-5 {
+.col -5 {
   width: 41.66667%; }
 
-.col-6 {
+.col -6 {
   width: 50%; }
 
-.col-7 {
+.col -7 {
   width: 58.33333%; }
 
-.col-8 {
+.col -8 {
   width: 66.66667%; }
 
-.col-9 {
+.col -9 {
   width: 75%; }
 
-.col-10 {
+.col -10 {
   width: 83.33333%; }
 
-.col-11 {
+.col -11 {
   width: 91.66667%; }
 
-.col-12 {
+.col -12 {
   width: 100%; }
 
 @media screen and (max-width: 768px) {
-  .col-1 {
+  .col -1 {
     width: 100%; }
-  .col-2 {
+  .col -2 {
     width: 100%; }
-  .col-3 {
+  .col -3 {
     width: 100%; }
-  .col-4 {
+  .col -4 {
     width: 100%; }
-  .col-5 {
+  .col -5 {
     width: 100%; }
-  .col-6 {
+  .col -6 {
     width: 100%; }
-  .col-7 {
+  .col -7 {
     width: 100%; }
-  .col-8 {
+  .col -8 {
     width: 100%; }
-  .col-9 {
+  .col -9 {
     width: 100%; }
-  .col-10 {
+  .col -10 {
     width: 100%; }
-  .col-11 {
+  .col -11 {
     width: 100%; }
-  .col-12 {
+  .col -12 {
     width: 100%; } }
 
 .card {
@@ -1607,44 +1607,32 @@ input[type="checkbox"] {
     /* Your Styles */ } }
 
 footer {
-  padding: 40px 0; }
-  footer ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0; }
-    footer ul li {
-      padding: 0 10px; }
-    footer ul a {
-      color: inherit;
-      text-decoration: none;
-      opacity: 0.8; }
-      footer ul a:hover {
-        opacity: 1; }
-  footer .social {
-    text-align: center;
-    padding-bottom: 25px; }
-    footer .social > a {
-      font-size: 24px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; }
+  footer > .social-icons {
+    margin-top: 10px; }
+    footer > .social-icons .icon {
       display: inline-block;
-      text-align: center;
-      border-radius: 50%;
-      border: 1px solid #ccc;
-      margin: 0 8px;
-      color: inherit;
-      opacity: 0.75; }
-      footer .social > a:hover {
-        opacity: 0.9; }
+      margin-right: 10px;
+      font-size: 20px; }
+      footer > .social-icons .icon.facebook {
+        color: #3b5998; }
+      footer > .social-icons .icon.twitter {
+        color: #1da1f2; }
+      footer > .social-icons .icon.instagram {
+        color: #c13584; }
   footer .copyright {
     margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 0; }
+    font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    footer footer {
+      padding: 15px; }
+    footer .social-icons {
+      margin-top: 8px; }
+    footer .copyright {
+      margin-top: 10px; } }
 
 /* Remove this switch when in use */
 .component-title {

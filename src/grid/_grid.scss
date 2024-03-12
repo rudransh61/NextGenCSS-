@@ -3,7 +3,7 @@ $columns: 12; // Number of columns in the grid
 $gap: 1rem;   // Column gap
 
 // Container
-.container {
+.#{Syntax(grid-container)} {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px; // Adjust as needed
@@ -19,7 +19,7 @@ $gap: 1rem;   // Column gap
 }
 
 // Columns
-.column {
+.#{Syntax(grid-column)} {
   float: left;
   margin: 0 $gap / 2;
 
@@ -35,7 +35,7 @@ $gap: 1rem;   // Column gap
 
 // Helper classes for column widths
 @for $i from 1 through $columns {
-  .col-#{$i} {
+  .#{Syntax(grid-column)} -#{$i} {
     width: percentage($i / $columns);
   }
 }
@@ -43,7 +43,7 @@ $gap: 1rem;   // Column gap
 // Responsive adjustments for helper classes
 @media screen and (max-width: 768px) {
   @for $i from 1 through $columns {
-    .col-#{$i} {
+    .#{Syntax(grid-column)} -#{$i} {
       width: 100%;
     }
   }

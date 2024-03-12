@@ -1,60 +1,56 @@
+// Define common styles for the footer
 footer {
-    padding: 40px 0;
-    background-color: Get-Color('white');
-    color: Get-Color('gray');
-  
-    ul {
-      padding: 0;
-      list-style: none;
-      text-align: center;
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 0;
-  
-      li {
-        padding: 0 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+
+  // Social media icons styles
+  > .social-icons {
+    margin-top: 10px;
+
+    // Style each social media icon individually
+    .icon {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 20px;
+
+      // Add specific styles for each social media icon
+      &.facebook {
+        color: #3b5998;
       }
-  
-      a {
-        color: inherit;
-        text-decoration: none;
-        opacity: 0.8;
-  
-        &:hover {
-          opacity: 1;
-        }
+
+      &.twitter {
+        color: #1da1f2;
       }
-    }
-  
-    .social {
-      text-align: center;
-      padding-bottom: 25px;
-  
-      > a {
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        border: 1px solid #ccc;
-        margin: 0 8px;
-        color: inherit;
-        opacity: 0.75;
-  
-        &:hover {
-          opacity: 0.9;
-        }
+
+      &.instagram {
+        color: #c13584;
       }
-    }
-  
-    .copyright {
-      color: Get-Color('gray');
-      margin-top: 15px;
-      text-align: center;
-      font-size: 13px;
-      margin-bottom: 0;
+
+      // Add more social media icons as needed
     }
   }
-  
+
+  // Copyright text styles
+  .copyright {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  // Responsive styles using media queries
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 15px;
+    }
+
+    .social-icons {
+      margin-top: 8px;
+    }
+
+    .copyright {
+      margin-top: 10px;
+    }
+  }
+}
