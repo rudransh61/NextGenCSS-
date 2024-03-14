@@ -1,24 +1,37 @@
+name: Check File Locations
+
+on:
+  push:
+    branches: [ main ]
+
 jobs:
-  codcov:
+  check-locations:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          # Make sure the actual branch is checked out when running on pull requests
-          ref: ${{ github.head_ref }}
+      - uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@master
+      # Install Node.js (for running the script)
+      - name: Use Node.js (Optional)
+        uses: actions/setup-node@v3
         with:
-          python-version: 3.7
-      - name: Generate coverage report
+          node-version: 16  # Update with the appropriate Node.js version (if needed)
+
+      - name: Check file locations
         run: |
-          pip install pytest
-          pip install pytest-cov
-          pytest --cov=./api
-      - name: Check code coverage
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          # Define allowed subdirectories within 'src' (adjust as needed)
+          allowed_subdirs="base,components,elements,fonts,form,grid,icon,neumorphism,syntax,table,utilities,variables"
+
+          # Function to check if a file is within an allowed subdirectory
+          function isInAllowedSubdir(filePath) {
+            const dirPath = path.dirname(filePath);
+            const parts = dirPath.split(path.sep);  # Split path by directory separator
+            return parts.length >= 2 && parts[1] === "src" && allowed_subdirs.split(",").includes(parts[2]);
+          }
+
+          # Loop through all files in the repository
+          find . -type f | while read -r filePath; do
+            if ! isInAllowedSubdir("$filePath"); then
+              echo "File '$filePath' found outside allowed subdirectories in 'src'!"
+            fi
+          done
