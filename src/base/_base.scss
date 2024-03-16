@@ -82,6 +82,11 @@ hr {
   border-top: 0.0625rem solid Get-Color("dark");
 }
 
+/* Light mode styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
 
 
 
@@ -108,3 +113,6 @@ hr {
 
 //import border
 @import "./border/border";
+
+//Dark Mode
+@import "./dark_mode.scss";

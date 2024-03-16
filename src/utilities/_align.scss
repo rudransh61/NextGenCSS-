@@ -1,18 +1,18 @@
 // Align utility classes
 // Flex content alignment
-.align-start {
+.#{Syntax(align)}-start {
   align-content: flex-start;
 }
-.align-end {
+.#{Syntax(align)}-end {
   align-content: flex-end;
 }
-.align-center {
+.#{Syntax(align)}-#{Syntax(center)} {
   align-content: center;
 }
-.align-stretch {
+.#{Syntax(align)}-stretch {
   align-content: stretch;
 }
-.align-space {
+.#{Syntax(align)}-space {
   align-content: space-around;
 }
 

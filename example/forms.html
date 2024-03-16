@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../src/index.css">
 </head>
 
-<body>
-    <div class="center">
+<body class="non">
+    <div class="form">
         <div class="form-container">
-            <input type="text" class="input" placeholder="Username">
+            <input type="text" class="input border-radius-5" placeholder="Username">
             <input type="password" class="input" placeholder="Password">
             <button class="button">Submit</button>
             <div class="checkbox">
@@ -21,11 +21,11 @@
             <div class="radio">
                 <input type="radio" id="radio1" class="radio" name="radioGroup">
                 <label for="radio1">Radio 1</label>
-              </div>
-              <div class="radio">
+            </div>
+            <div class="radio">
                 <input type="radio" id="radio2" class="radio" name="radioGroup">
                 <label for="radio2">Radio 2</label>
-              </div>
+            </div>
             <select class="select">
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
@@ -33,14 +33,21 @@
             <textarea class="textarea" placeholder="Your message"></textarea>
             <p class="error-message">This is an error message.</p>
             <p class="success-message">This is a success message.</p>
+            <button class="btn font-white">Submit</button>
         </div>
 
-        <button class="btn-secondary">Secondary Button</button>
-        <button class="btn-danger">Danger Button</button>
-        <button class="btn-large">Large Button</button>
-        <button class="btn-small">Small Button</button>
-        <button class="btn-rounded">Rounded Button</button>
+        <button class="btn-secondary font-white">Secondary Button</button>
+        <button class="btn-danger font-white">Danger Button</button>
+        <button class="btn-large font-white">Large Button</button>
+        <button class="btn-small font-white">Small Button</button>
+        <button class="btn-rounded font-white">Rounded Button</button>
     </div>
+    <button id="toggleDarkMode" class="font-white">Toggle Dark Mode</button>
+    <script>
+        document.getElementById("toggleDarkMode").addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 
 
 </body>

@@ -1,0 +1,19 @@
+/* Define border radius values */
+$border-radii: (
+  1: 0.125rem,
+  2: 0.25rem,
+  3: 0.5rem,
+  4: 1rem,
+  5: 2rem
+);
+
+/* Generate utility classes for border radius */
+@each $size, $value in $border-radii {
+  .border-radius-#{$size} {
+    border-radius: $value;
+  }
+
+  .rounded-#{$size} {
+    border-radius: $value;
+  }
+}

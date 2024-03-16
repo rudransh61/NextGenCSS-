@@ -1,5 +1,5 @@
 // Common input styles
-input {
+input, .input {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   border: none;
@@ -9,7 +9,7 @@ input {
 }
 
 // Styles for checkbox input
-input[type="checkbox"] {
+input[type="checkbox"] , .checkbox{
   width: 0.9rem;
   height: 0.9rem;
   background-color: Get-Color("primary");
@@ -19,7 +19,7 @@ input[type="checkbox"] {
 }
 
 // Hover effect for checkbox
-input[type="checkbox"]:hover {
+input[type="checkbox"]:hover , .checkbox:hover {
   color: Get-Color("gray");
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Playfair+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
@@ -143,6 +144,11 @@ li {
 hr {
   padding: 0rem;
   border-top: 0.0625rem solid #000000; }
+
+/* Light mode styles */
+body {
+  background-color: #ffffff;
+  color: #000000; }
 
 *,
 *::before,
@@ -941,6 +947,62 @@ button {
   border-top: 0.1rem solid #f0f0f0;
   border-radius: 1rem; }
 
+/* Define border radius values */
+/* Generate utility classes for border radius */
+.border-radius-1 {
+  border-radius: 0.125rem; }
+
+.rounded-1 {
+  border-radius: 0.125rem; }
+
+.border-radius-2 {
+  border-radius: 0.25rem; }
+
+.rounded-2 {
+  border-radius: 0.25rem; }
+
+.border-radius-3 {
+  border-radius: 0.5rem; }
+
+.rounded-3 {
+  border-radius: 0.5rem; }
+
+.border-radius-4 {
+  border-radius: 1rem; }
+
+.rounded-4 {
+  border-radius: 1rem; }
+
+.border-radius-5 {
+  border-radius: 2rem; }
+
+.rounded-5 {
+  border-radius: 2rem; }
+
+.dark-mode {
+  /* Invert all elements on the body while attempting to not alter the hue substantially. */
+  /* Workarounds and optical adjustments. */
+  /* Firefox workaround: Set the background colour for the html
+     element separately because, unlike other browsers, Firefox
+     doesn’t apply the filter to the root element’s background. */
+  background-color: #111;
+  /* Do not invert media (revert the invert). */
+  /* Improve contrast on icons. */
+  /* Re-enable code block backgrounds. */
+  /* Improve contrast on list item markers. */ }
+  .dark-mode * {
+    filter: invert(100%) hue-rotate(180deg); }
+  .dark-mode img,
+  .dark-mode video,
+  .dark-mode iframe {
+    filter: invert(100%) hue-rotate(180deg); }
+  .dark-mode .icon {
+    filter: invert(15%) hue-rotate(180deg); }
+  .dark-mode pre {
+    filter: invert(6%); }
+  .dark-mode li::marker {
+    color: #666; }
+
 .pd-0 {
   padding: 0rem; }
 
@@ -1693,7 +1755,7 @@ footer {
   left: calc(50% - 27px/2 + 10px);
   top: calc(50% - 27px/2); }
 
-input {
+input, .input {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   border: none;
@@ -1701,7 +1763,7 @@ input {
   font-size: 1rem;
   cursor: pointer; }
 
-input[type="checkbox"] {
+input[type="checkbox"], .checkbox {
   width: 0.9rem;
   height: 0.9rem;
   background-color: #0074d9;
@@ -1723,59 +1785,55 @@ input[type="checkbox"] {
     box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
     /* Slightly larger shadow on hover */ }
 
-.form-container {
+.form .form-container, form .form-container {
   max-width: 400px;
   margin: 0 auto; }
 
-.input {
+.form .input, form .input {
   padding: 8px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box; }
 
-.checkbox {
+.form .checkbox, form .checkbox {
   margin-right: 5px; }
 
-.radio {
+.form .radio, form .radio {
   margin-right: 5px; }
 
-.select {
+.form .select, form .select {
   padding: 8px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box; }
 
-.textarea {
+.form .textarea, form .textarea {
   padding: 8px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box; }
 
-.error-message {
-  color: #e74c3c;
+.form .error-message, form .error-message {
   margin-top: 5px;
   font-size: 0.9em; }
 
-.success-message {
-  color: #2ecc71;
+.form .success-message, form .success-message {
+  color: #228b22;
   margin-top: 5px;
   font-size: 0.9em; }
 
-.btn-danger {
+.form .btn-danger, form .btn-danger {
   background-color: #dc143c; }
 
-.btn-large {
+.form .btn-large, form .btn-large {
   padding: 12px; }
 
-.btn-small {
+.form .btn-small, form .btn-small {
   padding: 8px; }
 
-.btn-rounded {
+.form .btn-rounded, form .btn-rounded {
   border-radius: 20px; }
 
 .square {
