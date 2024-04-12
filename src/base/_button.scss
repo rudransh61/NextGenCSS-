@@ -129,3 +129,19 @@ button {
     }
   }
 }
+// simple button
+.buttons a button {
+  font-size: 1.7rem;
+  padding: 3rem;
+  border: 0.125rem solid black;
+  font-weight: 500;
+  font-family: "Poppins", "Times New Roman", Times, serif;
+}
+.buttons a button {
+  background-color: darkmagenta;
+  color: #00c3ff;
+}
+.buttons a button:hover {
+  background-color: black;
+  color: white;
+}
