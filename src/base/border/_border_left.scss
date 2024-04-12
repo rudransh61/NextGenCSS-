@@ -6,11 +6,15 @@
 }
 
 @for $i from 1 through length($colors) {
-  // Generates classes for the left border using color names.
-  .#{Syntax(border)}-#{Syntax(left)}-#{nth($color-names,$i)} {
-    @include border-left(nth($colors, $i));
+
+  // Creates classes for bottom border using color names.
+  @for $j from 1 through 10 {
+    .#{Syntax(border)}-#{Syntax(bottom)}-#{nth($color-names,$i)}-#{$j} {
+      @include border-left(Shade(nth($colors, $i),$j));
+    }
   }
 }
+
 
 @mixin border-curve-left($color) {
   border-left: 0.1rem solid $color;
@@ -18,8 +22,11 @@
 }
 
 @for $i from 1 through length($colors) {
-  // Creates classes for bottom curve border using color names.
-  .#{Syntax(border)}-#{Syntax(left)}-curve-#{nth($color-names,$i)} {
-    @include border-curve-left(nth($colors, $i));
+
+  // Creates classes for bottom border using color names.
+  @for $j from 1 through 10 {
+    .#{Syntax(border)}-#{Syntax(bottom)}-curve-#{nth($color-names,$i)}-#{$j} {
+      @include border-curve-left(Shade(nth($colors, $i),$j));
+    }
   }
 }

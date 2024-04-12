@@ -36,25 +36,10 @@ $colors-list : (
 );
 // Updated Get-Color function
 @function Get-Color($color) {
-//   $color-index: Index($color-names, $color);
-  
-//   // Check if the index is a valid number before using nth
-//   @if type-of($color-index) == 'number' {
-//     @return nth($colors, $color-index);
-//   } @else {
-//     @return null; // Return null if the color is not found in the list
-//   }
-// }
-
-// // Function to get index of an element in a list
-// @function Index($list, $element) {
-//   @for $i from 1 through length($list) {
-//     @if nth($list, $i) == $element {
-//       @return $i;
-//     }
-//   }
-//   @return null; // Return null if the element is not found in the list
-
   @return map-get($colors-list, $color )
 }
 
+// Get Shade of a Color
+@function Shade($color, $amount) {
+    @return darken($color, abs($amount*5));
+}

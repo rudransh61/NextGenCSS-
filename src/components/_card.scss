@@ -1,24 +1,43 @@
 // Card Styles
 .#{Syntax(card)} {
-  display: block;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  padding: $card-padding;
   width: 100%;
-  max-width: 40%;
-  overflow: hidden;
-  // add title to card
-  .#{Syntax(card)}-title {
-    font-size: $card-font-size;
-    padding-bottom: $card-padding;
-    font-weight: bold;
-  }
-  // add this to the body of your card
-  .#{Syntax(card)}-body {
-    font-size: $card-font-size;
+  max-width: 320px; // Adjust as needed
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 
-    a {
-      text-decoration: underline;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  // Title style
+  .#{Syntax(card)}-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  // Body style
+  .#{Syntax(card)}-body {
+    font-size: 1rem;
+    color: #666666;
+  }
+
+  // Link style
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3;
     }
   }
 }
