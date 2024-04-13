@@ -1,147 +1,77 @@
-// Button styles
-// Default button style
-button {
+// Button mixin for common styles
+@mixin button($bg-color, $text-color: white, $hover-bg-color: darken($bg-color, 10%)) {
   cursor: pointer;
   outline: 0;
-  color: white;
-  background-color: #3498db; // Blue
-  border-color: #3498db; // Blue
   display: inline-block;
   font-weight: 600;
   line-height: 1.5;
   text-align: center;
-  border: 0.0625rem solid transparent;
-  padding: 0.875rem 1.5rem; // Increased padding for more comfortable clicking
+  background-color: $bg-color;
+  border: 1px solid $bg-color;
+  padding: 1rem 2rem;
   font-size: 1rem;
-  border-radius: 0.5rem; // Slightly rounded corners
+  border-radius: 0.5rem;
+  color: $text-color;
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #2980b9; // Darker blue on hover
+    background-color: $hover-bg-color;
   }
+}
 
-  @media (max-width: 768px) {
-    padding: 0.75rem 1rem; // Adjusted padding for smaller screens
-    font-size: 0.875rem; // Decreased font size for smaller screens
-  }
+// Default button style
+.#{Syntax(button)}-default {
+  @include button($primary);
 }
 
 // Curve edge button style
 .#{Syntax(button)}-curve {
-  outline: none;
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: bold; // Bold font weight for emphasis
-  border-radius: 2rem; // More rounded corners
-  border: none;
-  background: #2ecc71; // Green
-  color: white;
-
-  &:hover {
-    background-color: #27ae60; // Darker green on hover
-  }
-
-  @media (max-width: 768px) {
-    padding: 0.75rem 1rem; // Adjusted padding for smaller screens
-    font-size: 0.875rem; // Decreased font size for smaller screens
-  }
+  @include button($success);
+  border-radius: 2rem;
 }
 
 // Bootstrap-like button style
 .#{Syntax(button)}-bootstrap {
-  cursor: pointer;
-  outline: 0;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.75rem 1.5rem; // Slightly increased padding
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: #f39c12; // Orange
-  border-color: #f39c12; // Orange
-
-  &:hover {
-    color: white;
-    background-color: #d35400; // Darker orange on hover
-    border-color: #d35400; // Darker orange on hover
-  }
-
-  @media (max-width: 768px) {
-    padding: 0.75rem 1rem; // Adjusted padding for smaller screens
-    font-size: 0.875rem; // Decreased font size for smaller screens
-  }
+  @include button($warning, #f39c12, #d35400);
 }
 
 // Circular button style
 .#{Syntax(button)}-circle {
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 50%; // Circular shape
-  transition-property: background-color, border-color, color, box-shadow, filter;
-  transition-duration: 0.3s;
-  border: 1px solid transparent;
+  @include button($success);
+  border-radius: 50%;
   min-width: 160px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  padding: 1rem 1.5rem; // Increased padding for more comfortable clicking
-  color: white;
-  background-color: #2ecc71; // Green
-
-  &:hover {
-    background-color: #27ae60; // Darker green on hover
-  }
-
-  @media (max-width: 768px) {
-    padding: 0.75rem 1rem; // Adjusted padding for smaller screens
-    font-size: 0.875rem; // Decreased font size for smaller screens
-  }
 }
 
-// Button styles for secondary actions
+// Secondary button style
 .#{Syntax(button)}-secondary {
-  background-color: #95a5a6; // Gray
-  color: white;
+  @include button($gray);
 }
 
-// Button styles for danger actions
+// Danger button style
 .#{Syntax(button)}-danger {
-  background-color: #e74c3c; // Red
-  color: white;
+  @include button($alert);
 }
 
-// Loop to generate button styles with different colors
-@for $i from 1 through length($colors) {
-  // Default button style with different colors
-  .#{Syntax(button)}-color-#{nth($color-names, $i)} {
-    background-color: nth($colors, $i);
-    border-color: nth($colors, $i);
-    
-    &:hover {
-      background-color: darken(nth($colors, $i), 10%); // Darken color on hover
-    }
+// Custom color button style
+@each $color, $value in $colors-list {
+  .#{Syntax(button)}-color-#{$color} {
+    @include button($value);
   }
 }
-// simple button
-.buttons a button {
+
+// Simple button style
+.#{Syntax(button)}-simple {
   font-size: 1.7rem;
   padding: 3rem;
   border: 0.125rem solid black;
   font-weight: 500;
   font-family: "Poppins", "Times New Roman", Times, serif;
-}
-.buttons a button {
-  background-color: darkmagenta;
-  color: #00c3ff;
-}
-.buttons a button:hover {
-  background-color: black;
-  color: white;
+  background-color: $dark;
+  color: $primary;
+
+  &:hover {
+    // background-color: black;
+    opacity : 0.5;
+    color: white;
+  }
 }
