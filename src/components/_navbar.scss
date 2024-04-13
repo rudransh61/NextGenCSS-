@@ -1,115 +1,97 @@
-// Navbar Styles
+$primary-color: #007bff; // Adjust as needed
+
+// Navbar styles
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: Get-Color("primary");
-  color: Get-Color("white");
-}
+  align-items: center;
+  background-color: #f8f9fa; // Navbar background color
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: Navbar shadow
 
-.nav-links a {
-  color: Get-Color("white");
-}
-
-/* Logo Styles / Font Size */
-.logo {
-  font-size: 32px;
-}
-
-/* Navbar Menu Styles */
-.menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
-}
-
-.menu li:hover {
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-.menu li {
-  padding: 5px 14px;
-}
-
-/* Dropdown Menu Styles */
-.services {
-  position: relative;
-}
-
-.dropdown {
-  padding: 1em 0;
-  position: absolute;
-  display: none;
-  border-radius: 8px;
-  top: 35px;
-}
-
-.dropdown li + li {
-  margin-top: 10px;
-}
-
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
-}
-
-.dropdown li:hover {
-  transition: 0.3s ease;
-}
-
-.services:hover .dropdown {
-  display: block;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-/* Hamburger Menu Styles */
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-color; // Brand color
   }
 
-  .menu li:hover {
-    display: inline-block;
-    transition: 0.3s ease;
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+
+    .nav-item {
+      margin-right: 1rem;
+
+      a {
+        text-decoration: none;
+        color: #333; // Navbar text color
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color; // Change color on hover
+        }
+      }
+    }
   }
 
-  .menu li + li {
-    margin-top: 12px;
+  // Hamburger menu styles
+  .burger-menu {
+    display: none; // Hidden by default on larger screens
+    cursor: pointer;
+
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: $primary-color; // Hamburger color
+      margin: 6px 0;
+      transition: 0.4s;
+    }
   }
 
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
+  // Responsive styles
+  @media (max-width: 768px) {
+    .navbar-nav {
+      display: none; // Hide navbar links on smaller screens
+    }
 
-  .hamburger {
-    display: block;
-  }
+    .burger-menu {
+      display: block; // Show hamburger menu on smaller screens
+    }
 
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
+    // Show/hide navbar links on hamburger menu click
+    .active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; // Adjust as needed
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa; // Navbar background color
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: Navbar shadow
 
-  .dropdown li:hover {
-    /* Your Styles */
+      .nav-item {
+        margin-right: 0; // Remove margin between items
+
+        a {
+          color: #333; // Navbar text color
+
+          &:hover {
+            color: $primary-color; // Change color on hover
+          }
+        }
+      }
+    }
+
+    // Rotate hamburger bars on click to form close icon
+    .active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
   }
 }

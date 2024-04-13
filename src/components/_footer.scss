@@ -1,56 +1,29 @@
-// Define common styles for the footer
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+// Footer Utility Class
+.footer {
+  background-color: #333; // Dark background color
+  color: #fff; // Light text color
+  padding: 2rem; // Padding for content
+  text-align: center; // Center align text
+  font-size : 1.25rem;
+  
+  // Links in footer
+  a {
+    color: #fff; // White color for links
+    text-decoration: none; // Remove underline
+    transition: color 0.3s ease; // Smooth color transition on hover
+    
+    &:hover {
+      color: #007bff; // Change color on hover
+    }
 
-
-  // Social media icons styles
-  > .social-icons {
-    margin-top: 10px;
-
-    // Style each social media icon individually
-    .icon {
-      display: inline-block;
-      margin-right: 10px;
-      font-size: 20px;
-
-      // Add specific styles for each social media icon
-      &.facebook {
-        color: #3b5998;
-      }
-
-      &.twitter {
-        color: #1da1f2;
-      }
-
-      &.instagram {
-        color: #c13584;
-      }
-
-      // Add more social media icons as needed
+    // Icon styling
+    i {
+      margin-right: 0.5rem; // Add spacing between icon and text
     }
   }
 
-  // Copyright text styles
-  .copyright {
-    margin-top: 15px;
-    font-size: 14px;
-  }
-
-  // Responsive styles using media queries
-  @media screen and (max-width: 768px) {
-    footer {
-      padding: 15px;
-    }
-
-    .social-icons {
-      margin-top: 8px;
-    }
-
-    .copyright {
-      margin-top: 10px;
-    }
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding: 1rem; // Adjusted padding for smaller screens
   }
 }

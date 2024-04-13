@@ -1,43 +1,60 @@
-// Card Styles
+/* Common Variables */
+$secondary-color: #666666;
+$card-padding: 1.5rem;
+
+/* Card Styles */
 .#{Syntax(card)} {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  max-width: 320px; // Adjust as needed
-  padding: 1.5rem;
+  max-width: 270px; /* Adjust as needed */
+  padding: $card-padding;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+.#{Syntax(card)} img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners for the image */
+}
+
+.#{Syntax(card)} .#{Syntax(card)}-content {
+  padding: 1rem;
+}
+
+/* Title style */
+.#{Syntax(card)}-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+/* Body style */
+.#{Syntax(card)}-body {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.4;
+}
+
+/* Link style */
+.#{Syntax(card)}-link {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    color: darken($primary, 10%);
   }
+}
 
-  // Title style
-  .#{Syntax(card)}-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333333;
-  }
-
-  // Body style
-  .#{Syntax(card)}-body {
-    font-size: 1rem;
-    color: #666666;
-  }
-
-  // Link style
-  a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #0056b3;
-    }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .#{Syntax(card)} {
+    max-width: 100%; /* Full width on smaller screens */
   }
 }
