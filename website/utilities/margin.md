@@ -4,29 +4,32 @@ description: Margin
 
 # Margin
 
+## Syntax (custom)
 
+````sass
+```other code
+    //Utilities
+    margin: ("mg",4), 
+    // First Element is name of utility : "mg"
+    // Second Element is maximum number of margin units : 4
+```
+````
 
 ## Syntax
 
 To give margin , there are 7 ways to give margin
 
-
-
 * **`.mg-{num}` :**`margin:{num};`
-* **`.mg-top-{num}`** :  `margin-top:{num};`
-* **`.mg-bottom-{num}`**  : `margin-bottom:{num};`
-* **`.mg-right-{num}`**  : `margin-right:{num};`
-* **`.mg-left-{num}`**  : `margin-left:{num};`
-* .**`mg-x-{num}`**  : `margin-right:{num}; margin-left:{num}`
-* **`.mg-y-{num}`**  : `margin-top:{num}; margin-bottom:{num}`
-
-
+* **`.mg-top-{num}`** : `margin-top:{num};`
+* **`.mg-bottom-{num}`** : `margin-bottom:{num};`
+* **`.mg-right-{num}`** : `margin-right:{num};`
+* **`.mg-left-{num}`** : `margin-left:{num};`
+* .**`mg-x-{num}`** : `margin-right:{num}; margin-left:{num}`
+* **`.mg-y-{num}`** : `margin-top:{num}; margin-bottom:{num}`
 
 ## Rules of {num}
 
-possible values :&#x20;
-
-
+possible values :
 
 * 0
 * 1
@@ -150,4 +153,3 @@ $base-unit-margin : 1;
 @include margin-vertical-utility(4);
 
 ```
-

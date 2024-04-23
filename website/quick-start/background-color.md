@@ -4,7 +4,13 @@ description: Change your background color
 
 # BackGround Color
 
+## Syntax&#x20;
 
+````sass
+```other code
+    background : "bg",
+```
+````
 
 ## Background Color
 
@@ -13,8 +19,6 @@ _To set **BackGround Color** use_ **`.bg-{...}`** _class_
 ### Syntax
 
 `.bg-{...color-name}`
-
-
 
 ## **Examples**
 

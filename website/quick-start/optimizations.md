@@ -6,7 +6,16 @@ description: >-
 
 # Optimizations
 
+## Syntax File
 
+```scss
+ // ./src/syntax/_syntax.scss
+ 
+ ... other code
+ //optimizations
+    lazy-load : false, // true of false
+... other code
+```
 
 ## Lazy Load
 

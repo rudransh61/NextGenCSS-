@@ -4,29 +4,32 @@ description: Padding in NextGenCSS
 
 # Padding
 
+## Syntax(custom)
 
+````sass
+```other code
+    //Utilities
+    padding : ("pd",4), 
+    // First Element is name of utility : "pd"
+    // Second Element is maximum number of padding units : 4
+```
+````
 
 ## Syntax
 
 To give margin , there are 7 ways to give margin
 
-
-
 * **`.pd-{num}` :**`padding:{num};`
-* **`.pd-top-{num}`** :  `padding-top:{num};`
-* **`.pd-bottom-{num}`**  : `padding-bottom:{num};`
-* **`.pd-right-{num}`**  : `padding-right:{num};`
-* **`.pd-left-{num}`**  : `padding-left:{num};`
-* .**`pd-x-{num}`**  : `padding-right:{num}; margin-left:{num}`
-* **`.pd-y-{num}`**  : `padding-top:{num}; margin-bottom:{num}`
-
-
+* **`.pd-top-{num}`** : `padding-top:{num};`
+* **`.pd-bottom-{num}`** : `padding-bottom:{num};`
+* **`.pd-right-{num}`** : `padding-right:{num};`
+* **`.pd-left-{num}`** : `padding-left:{num};`
+* .**`pd-x-{num}`** : `padding-right:{num}; margin-left:{num}`
+* **`.pd-y-{num}`** : `padding-top:{num}; margin-bottom:{num}`
 
 ## Rules of {num}
 
-possible values :&#x20;
-
-
+possible values :
 
 * 0
 * 1
@@ -150,4 +153,3 @@ $base-unit-padding : 1;
 @include padding-vertical-utility(4);
 
 ```
-

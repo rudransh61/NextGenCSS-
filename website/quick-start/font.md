@@ -4,11 +4,15 @@ description: Font in NextGenCSS
 
 # Font
 
+## Syntax
 
+````sass
+```other code
+    font : "font",
+```
+````
 
 ## Font family
-
-
 
 * `.font-serif`
 * `.font-sans`
@@ -16,9 +20,7 @@ description: Font in NextGenCSS
 
 ## Font Color
 
-
-
-* Check colors from[ Colors Page](colors.md) , Syntax:-`.font-{..color}` &#x20;
+* Check colors from[ Colors Page](colors.md) , Syntax:-`.font-{..color}`
 * `.font-primary`
 * `.font-dark`
 * `.font-alert`

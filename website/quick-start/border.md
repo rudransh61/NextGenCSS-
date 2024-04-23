@@ -4,25 +4,25 @@ description: Border of your HTML element
 
 # Border
 
+## Syntax&#x20;
 
+````sass
+```other code in syntax file
+   border : "b",
+```
+````
 
 ## Border
 
-_To give the border to your HTML element_&#x20;
+_To give the border to your HTML element_
 
 _There are majorly **5** types of border with_ [_colors_](colors.md)
 
-
-
-* `.b-{..color..}`   To give border in all direction (top,bottom,left,right)
-* `.bt-{..color..}`   To give border in top direction
-* `.bb-{..color..}`   To give border in bottom direction
-* `.bl-{..color..}`   To give border in left direction
-* `.br-{..color..}`   To give border in right direction
-
-
-
-
+* `.b-{..color..}` To give border in all direction (top,bottom,left,right)
+* `.bt-{..color..}` To give border in top direction
+* `.bb-{..color..}` To give border in bottom direction
+* `.bl-{..color..}` To give border in left direction
+* `.br-{..color..}` To give border in right direction
 
 ## Examples
 

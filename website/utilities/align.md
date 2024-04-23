@@ -4,7 +4,13 @@ description: Align Utility
 
 # Align
 
+## Syntax (custom)
 
+````scss
+```other code
+    align : "align",
+```
+````
 
 ## Syntax
 
