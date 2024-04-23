@@ -1,45 +1,31 @@
 // Define color variables
-$primary: #0074d9;
-$dark: #000000;
-$alert: #dc143c;
-$leaf: #228b22;
-$orange: #ff4500;
-$yellow: #ffd700;
-$gray: #708090;
-$purple: #967bb6;
-$choco: #d2691e;
-$pink: #ff69b4;
-$white: #ffffff;
-$neugray : #f0f0f0;
+// $primary: #0074d9;
+// $dark: #000000;
+// $alert: #dc143c;
+// $leaf: #228b22;
+// $orange: #ff4500;
+// $yellow: #ffd700;
+// $gray: #708090;
+// $purple: #967bb6;
+// $choco: #d2691e;
+// $pink: #ff69b4;
+// $white: #ffffff;
+// $neugray : #f0f0f0;
 
 // List of colors
-$colors: $primary, $dark, $alert, $leaf, $orange, $yellow, $gray, $purple,
-  $choco, $pink, $white, $neugray;
+$colors: map-keys(Syntax(colors));
 
 // Names for colors
-$color-names: "primary", "dark", "alert", "leaf", "orange", "yellow", "gray",
-  "purple", "choco", "pink", "white" , "neugray";
+$color-names: map-values(Syntax(colors));
 
-$colors-list : (
-  primary : $primary,
-  dark : $dark,
-  alert : $alert,
-  leaf : $leaf,
-  orange : $orange,
-  yellow : $yellow,
-  gray : $gray,
-  purple : $purple,
-  choco : $choco,
-  pink : $pink,
-  white : $white,
-  neugra : $neugray
-);
+$colors-list : Syntax(colors);
 // Updated Get-Color function
 @function Get-Color($color) {
-  @return map-get($colors-list, $color )
+  @return map-get($colors-list, $color)
 }
 
 // Get Shade of a Color
 @function Shade($color, $amount) {
-    @return darken($color, abs($amount*5));
+    // @return darken($color, abs($amount*5));
+    @return $color
 }

@@ -1,11 +1,12 @@
 //sass modules
 @use 'sass:math';
-
-//all variables 
-@import 'variables/variables.scss';
+@use 'sass:color';
 
 //syntax
 @import './syntax/syntax';
+
+//all variables 
+@import 'variables/variables.scss';
 
 //fonts
 @import 'fonts/_fonts.scss';

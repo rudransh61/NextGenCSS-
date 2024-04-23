@@ -216,18 +216,15 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex; }
 
-body {
-  font-size: 16px; }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
   body {
     font-size: 16px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) {
   body {
     font-size: 18px; } }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   body {
     font-size: 20px; } }
 
@@ -5632,7 +5629,7 @@ button {
   left: calc(50% - 27px/2 + 10px);
   top: calc(50% - 27px/2); }
 
-input, .input {
+.input {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   border: none;
@@ -5640,27 +5637,23 @@ input, .input {
   font-size: 1rem;
   cursor: pointer; }
 
-input[type="checkbox"], .checkbox {
+.checkbox {
   width: 0.9rem;
   height: 0.9rem;
   background-color: #0074d9;
   border: 0.5rem solid #000000;
-  /* Thick and light border */
   border-radius: 1rem;
-  /* Curvy border */
   box-shadow: 0 0 0.625 #000000; }
 
 .neumorphic-input {
   background-color: #e0e0e0;
-  /* Light background color */
   border: none;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff;
-  /* Neumorphic inset shadow */ }
-  .neumorphic-input:hover {
-    box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff;
-    /* Slightly larger shadow on hover */ }
+  box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff; }
+
+.neumorphic-input:hover {
+  box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #ffffff; }
 
 .form .form-container, form .form-container {
   max-width: 400px;

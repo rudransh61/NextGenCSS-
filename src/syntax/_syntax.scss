@@ -52,7 +52,40 @@ $syntax : (
     right : "right",
     left : "left",
     top : "top",
-    bottom : "bottom"
+    bottom : "bottom",
+
+    //breakpoints
+    font-sizes: (
+        default: 16px,
+        mobile: 16px,
+        tablet: 18px,
+        desktop: 20px
+    ),
+    breakpoints: (
+        mobile: 767px,
+        tablet: 992px,
+        desktop: 1200px
+    ),
+
+    //forms 
+    input : "input",
+    checkbox : "checkbox",
+
+    // colors 
+    colors : (
+        primary : #0074d9,
+        dark: #000000,
+        alert: #dc143c,
+        leaf: #228b22,
+        orange: #ff4500,
+        yellow: #ffd700,
+        gray: #708090,
+        purple: #967bb6,
+        choco: #d2691e,
+        pink: #ff69b4,
+        white: #ffffff,
+        neugray : #f0f0f0
+    )
 );
 
 

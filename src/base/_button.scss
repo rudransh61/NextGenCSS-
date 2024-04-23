@@ -125,7 +125,7 @@ button {
     border-color: nth($colors, $i);
     
     &:hover {
-      background-color: darken(nth($colors, $i), 10%); // Darken color on hover
+      background-color: Shade(nth($colors, $i), 50%); // Darken color on hover
     }
   }
 }

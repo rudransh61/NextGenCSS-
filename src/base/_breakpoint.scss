@@ -1,25 +1,19 @@
-// Default body font-size
-body {
-  font-size: 16px;
-}
+// Define breakpoints and corresponding font sizes
+$breakpoints: Syntax(breakpoints);
 
-// Mobile view: Adjust font-size for screens up to 767px wide
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 16px; // Adjust as needed
+$font-sizes: Syntax(font-sizes);
+
+// Mixin to generate media queries
+@mixin responsive-font-size($breakpoint, $size) {
+  @media only screen and (min-width: $breakpoint) {
+    body {
+      font-size: $size;
+    }
   }
 }
 
-// Tablet view: Adjust font-size for screens from 768px to 991px wide
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 18px; // Adjust as needed
-  }
-}
-
-// Desktop view: Adjust font-size for screens wider than 992px
-@media only screen and (min-width: 992px) {
-  body {
-    font-size: 20px; // Adjust as needed
-  }
+// Loop through breakpoints and font sizes to generate media queries
+@each $bp, $width in $breakpoints {
+  $size: map-get($font-sizes, $bp);
+  @include responsive-font-size($width, $size);
 }
